@@ -13,6 +13,8 @@ code
 
 玩味一下，丰富天池代码；
 
+**Score: 0.8525**
+
 相关教程可咨：
 > https://github.com/IvanaXu/DataSAS
 > 
