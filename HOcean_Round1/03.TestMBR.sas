@@ -1,12 +1,12 @@
 	
 	OPTIONS COMPRESS = YES;
 /*	00.逻辑库 */
-	LIBNAME ANA "C:\Users\IvanXu\Desktop\data\hy_round1";
-	%LET CP = C:\Users\IvanXu\Desktop\code\Hy_round1;
-	%LET DP = C:\Users\IvanXu\Desktop\data\hy_round1\hy_round1_train_20200102\hy_round1_train_20200102;
-	%LET TP = C:\Users\IvanXu\Desktop\data\hy_round1\hy_round1_testA_20200102\hy_round1_testA_20200102;
+	LIBNAME ANA ".\data\hy_round1";
+	%LET CP = .\code\Hy_round1;
+	%LET DP = .\data\hy_round1\hy_round1_train_20200102\hy_round1_train_20200102;
+	%LET TP = .\data\hy_round1\hy_round1_testA_20200102\hy_round1_testA_20200102;
 
-	%LET PN = 000009;
+	%LET PN = 000001;
 
 
 %LET P = 1;
@@ -868,7 +868,7 @@ output;
 	ELSE T = "拖网";
 	RUN;
 
-	FILENAME EXPT "C:\Users\IvanXu\Desktop\data\hy_round1\result&PN..csv" ENCODING="UTF-8";
+	FILENAME EXPT ".\data\hy_round1\result&PN..csv" ENCODING="UTF-8";
 	PROC EXPORT 
 	    DATA = RESULT(KEEP = ID T)
 	    OUTFILE = EXPT DBMS = CSV REPLACE;
