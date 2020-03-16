@@ -477,7 +477,7 @@ csv数据读取，并打印日志
 	    PUTNAMES = NO;
 	RUN;
 ```
-相关链接，https://github.com/IvanaXu/TianChiProj/tree/master/LDocker
+相关链接，https://github.com/IvanaXu/TianChiProj/tree/master/HOcean_Round1
 
 #### 二、附录
 %INCLUDE "&CP.\02.MacroS1.sas";
