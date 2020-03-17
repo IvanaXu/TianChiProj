@@ -25,10 +25,10 @@ code
 	OPTIONS COMPRESS = YES;
 	
 /*	00.逻辑库 */
-	LIBNAME ANA "C:\Users\IvanXu\Desktop\data\hy_round1";
-	%LET CP = C:\Users\IvanXu\Desktop\code\Hy_round1;
-	%LET DP = C:\Users\IvanXu\Desktop\data\hy_round1\hy_round1_train_20200102\hy_round1_train_20200102;
-	%LET TP = C:\Users\IvanXu\Desktop\data\hy_round1\hy_round1_testA_20200102\hy_round1_testA_20200102;
+	LIBNAME ANA ".\data\hy_round1";
+	%LET CP = .\code\Hy_round1;
+	%LET DP = .\data\hy_round1\hy_round1_train_20200102\hy_round1_train_20200102;
+	%LET TP = .\data\hy_round1\hy_round1_testA_20200102\hy_round1_testA_20200102;
 
 	%LET PN = 000001;
 ```
