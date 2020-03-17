@@ -49,7 +49,7 @@
 		%MACRO T();
 			PROC DELETE DATA = ANA.TEST;RUN;
 
-			%DO I = 7000 %TO 10999;
+			%DO I = 7000 %TO 8999;
 				%PUT &I.;
 
 				FILENAME INPT "&TP.\&I..csv" ENCODING = "UTF-8";
