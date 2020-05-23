@@ -37,6 +37,7 @@ echo ----------------------------------------------
 export GH_TOKEN="YOUR_TOKEN_HERE"
 sudo echo $GH_TOKEN|docker login docker.pkg.github.com -u IvanaXu --password-stdin 
 sudo docker push $regurl:$ver
+# docker.pkg.github.com/ivanaxu/tianchiproj/ldocker:1.0
 
 
 
