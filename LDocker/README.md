@@ -313,7 +313,10 @@ echo ----------------------------------------------
 #### 四、提交
 Nice！
 
-相关链接，https://github.com/IvanaXu/TianChiProj/tree/master/LDocker
+> 相关链接 https://github.com/IvanaXu/TianChiProj/tree/master/LDocker
+>
+> 容器链接 docker pull docker.pkg.github.com/ivanaxu/tianchiproj/ldocker:1.0
+>
 
 
 
