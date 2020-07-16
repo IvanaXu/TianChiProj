@@ -149,7 +149,9 @@ dftest1.to_csv('myspace/submit_O2O.csv', index=False, header=False)
 print(dftest1.head())
 
 # score:0.5346
-# 
+# 相关链接, 求Star！！！：
+# https://github.com/IvanaXu/TianChiProj/tree/master/O2OCoupon
+# 未完待续
 
 
 
