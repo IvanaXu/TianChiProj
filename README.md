@@ -8,6 +8,8 @@ TianChiProj
 >
 > O2OCoupon, https://tianchi.aliyun.com/competition/entrance/231593/introduction
 > 
+> Pokemon, https://tianchi.aliyun.com/competition/entrance/531822/introduction
+> 
 > SCdata2020, http://www.scdata.net.cn/kfds/urgent2/pages/saitiData.html
 > 
 > UsedCarPrice, https://tianchi.aliyun.com/competition/entrance/231784/introduction
