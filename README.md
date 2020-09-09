@@ -14,6 +14,8 @@ TianChiProj
 >
 > SecurityAI_Round4, https://tianchi.aliyun.com/competition/entrance/531806/introduction
 >
+> TestRisk, https://tianchi.aliyun.com/competition/entrance/531830/introduction
+>
 > UsedCarPrice, https://tianchi.aliyun.com/competition/entrance/231784/introduction
 >  
 
