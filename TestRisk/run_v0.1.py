@@ -7,8 +7,8 @@ dt = "/Users/ivan/Desktop/ALL/Data/TestRisk"
 dtrai = pd.read_csv(f"{dt}/train.csv")
 dtest = pd.read_csv(f"{dt}/testA.csv")
 
-dtrai["req"] = [f"{_1}.{_2}" for _1, _2 in zip(dtrai.grade, dtrai.subGrade)]
-dtest["req"] = [f"{_1}.{_2}" for _1, _2 in zip(dtest.grade, dtest.subGrade)]
+dtrai["req"] = dtrai.subGrade
+dtest["req"] = dtest.subGrade
 
 print(pd.value_counts(dtrai.isDefault))
 
