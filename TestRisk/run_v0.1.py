@@ -13,7 +13,7 @@ dtest["req"] = dtest.subGrade
 print(pd.value_counts(dtrai.isDefault))
 
 _ = pd.crosstab(dtrai.req, dtrai.isDefault)
-_["yp"] = _[0]/(_[0]+_[1])
+_["yp"] = _[1]/(_[0]+_[1])
 _.reset_index(inplace=True)
 _.sort_values(by="yp", inplace=True)
 print(_[["req", "yp"]])
