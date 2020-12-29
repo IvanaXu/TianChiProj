@@ -147,8 +147,8 @@ data = dict(
     workers_per_gpu=2,
     train=dict(
         type='CocoDataset',
-        ann_file='data/coco/annotations/annotations_trai.json',
-        img_prefix='data/coco/img/',
+        ann_file='code/train/env/mmdetection-master/data/coco/annotations/annotations_trai.json',
+        img_prefix='code/train/env/mmdetection-master/data/coco/img/',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(type='LoadAnnotations', with_bbox=True),
@@ -165,8 +165,8 @@ data = dict(
         ]),
     val=dict(
         type='CocoDataset',
-        ann_file='data/coco/annotations/annotations_test.json',
-        img_prefix='data/coco/img/',
+        ann_file='code/train/env/mmdetection-master/data/coco/annotations/annotations_test.json',
+        img_prefix='code/train/env/mmdetection-master/data/coco/img/',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
@@ -188,8 +188,8 @@ data = dict(
         ]),
     test=dict(
         type='CocoDataset',
-        ann_file='data/coco/annotations/annotations_vals.json',
-        img_prefix='data/coco/img/',
+        ann_file='code/train/env/mmdetection-master/data/coco/annotations/annotations_vals.json',
+        img_prefix='code/train/env/mmdetection-master/data/coco/img/',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
@@ -210,7 +210,7 @@ data = dict(
                 ])
         ]))
 evaluation = dict(interval=1, metric='bbox')
-optimizer = dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0001)
+optimizer = dict(type='SGD', lr=0.02, momentum=0.9, weight_decay=0.0001)
 optimizer_config = dict(grad_clip=None)
 lr_config = dict(
     policy='step',
@@ -218,13 +218,13 @@ lr_config = dict(
     warmup_iters=500,
     warmup_ratio=0.001,
     step=[8, 11])
-total_epochs = 4
-checkpoint_config = dict(interval=4)
-log_config = dict(interval=100, hooks=[dict(type='TextLoggerHook')])
+total_epochs = 1
+checkpoint_config = dict(interval=1)
+log_config = dict(interval=50, hooks=[dict(type='TextLoggerHook')])
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
-load_from = '/home/admin/.cache/torch/checkpoints/X.pth'
+load_from = None
 resume_from = None
 workflow = [('train', 2), ('val', 1)]
-work_dir = '/home/admin/jupyter/SecurityAI_Round5/data/work'
+work_dir = 'code/train/env/mmdetection-master/work_dirs'
 gpu_ids = range(0, 1)
