@@ -1,0 +1,312 @@
+2020-11-17 15:57:23,491 - mmdet - INFO - Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 18:10:19) [GCC 7.2.0]
+CUDA available: True
+CUDA_HOME: /usr/local/cuda
+NVCC: Cuda compilation tools, release 10.0, V10.0.130
+GPU 0: Tesla P100-PCIE-16GB
+GCC: gcc (GCC) 5.3.0
+PyTorch: 1.3.1+cu100
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - Intel(R) Math Kernel Library Version 2019.0.4 Product Build 20190411 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v0.20.5 (Git Hash 0125f28c61c1f822fd48570b4c1066f96fcb9b2e)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - NNPACK is enabled
+  - CUDA Runtime 10.0
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_61,code=sm_61;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_37,code=compute_37
+  - CuDNN 7.6.3
+  - Magma 2.5.1
+  - Build settings: BLAS=MKL, BUILD_NAMEDTENSOR=OFF, BUILD_TYPE=Release, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -fopenmp -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -O2 -fPIC -Wno-narrowing -Wall -Wextra -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Wno-stringop-overflow, DISABLE_NUMA=1, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, USE_CUDA=True, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, USE_STATIC_DISPATCH=OFF, 
+
+TorchVision: 0.4.2+cu100
+OpenCV: 4.4.0
+MMCV: 1.0.5
+MMDetection: 2.3.0+788fa8d
+MMDetection Compiler: GCC 7.3
+MMDetection CUDA Compiler: 10.0
+------------------------------------------------------------
+
+2020-11-17 15:57:23,491 - mmdet - INFO - Distributed training: False
+2020-11-17 15:57:23,879 - mmdet - INFO - Config:
+model = dict(
+    type='FasterRCNN',
+    pretrained='torchvision://resnet50',
+    backbone=dict(
+        type='ResNet',
+        depth=50,
+        num_stages=4,
+        out_indices=(0, 1, 2, 3),
+        frozen_stages=1,
+        norm_cfg=dict(type='BN', requires_grad=True),
+        norm_eval=True,
+        style='pytorch'),
+    neck=dict(
+        type='FPN',
+        in_channels=[256, 512, 1024, 2048],
+        out_channels=256,
+        num_outs=5),
+    rpn_head=dict(
+        type='RPNHead',
+        in_channels=256,
+        feat_channels=256,
+        anchor_generator=dict(
+            type='AnchorGenerator',
+            scales=[8],
+            ratios=[0.5, 1.0, 2.0],
+            strides=[4, 8, 16, 32, 64]),
+        bbox_coder=dict(
+            type='DeltaXYWHBBoxCoder',
+            target_means=[0.0, 0.0, 0.0, 0.0],
+            target_stds=[1.0, 1.0, 1.0, 1.0]),
+        loss_cls=dict(
+            type='CrossEntropyLoss', use_sigmoid=True, loss_weight=1.0),
+        loss_bbox=dict(type='L1Loss', loss_weight=1.0)),
+    roi_head=dict(
+        type='StandardRoIHead',
+        bbox_roi_extractor=dict(
+            type='SingleRoIExtractor',
+            roi_layer=dict(type='RoIAlign', output_size=7, sampling_ratio=0),
+            out_channels=256,
+            featmap_strides=[4, 8, 16, 32]),
+        bbox_head=dict(
+            type='Shared2FCBBoxHead',
+            in_channels=256,
+            fc_out_channels=1024,
+            roi_feat_size=7,
+            num_classes=2,
+            bbox_coder=dict(
+                type='DeltaXYWHBBoxCoder',
+                target_means=[0.0, 0.0, 0.0, 0.0],
+                target_stds=[0.1, 0.1, 0.2, 0.2]),
+            reg_class_agnostic=False,
+            loss_cls=dict(
+                type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0),
+            loss_bbox=dict(type='L1Loss', loss_weight=1.0))))
+train_cfg = dict(
+    rpn=dict(
+        assigner=dict(
+            type='MaxIoUAssigner',
+            pos_iou_thr=0.7,
+            neg_iou_thr=0.3,
+            min_pos_iou=0.3,
+            match_low_quality=True,
+            ignore_iof_thr=-1),
+        sampler=dict(
+            type='RandomSampler',
+            num=256,
+            pos_fraction=0.5,
+            neg_pos_ub=-1,
+            add_gt_as_proposals=False),
+        allowed_border=-1,
+        pos_weight=-1,
+        debug=False),
+    rpn_proposal=dict(
+        nms_across_levels=False,
+        nms_pre=2000,
+        nms_post=1000,
+        max_num=1000,
+        nms_thr=0.7,
+        min_bbox_size=0),
+    rcnn=dict(
+        assigner=dict(
+            type='MaxIoUAssigner',
+            pos_iou_thr=0.5,
+            neg_iou_thr=0.5,
+            min_pos_iou=0.5,
+            match_low_quality=False,
+            ignore_iof_thr=-1),
+        sampler=dict(
+            type='RandomSampler',
+            num=512,
+            pos_fraction=0.25,
+            neg_pos_ub=-1,
+            add_gt_as_proposals=True),
+        pos_weight=-1,
+        debug=False))
+test_cfg = dict(
+    rpn=dict(
+        nms_across_levels=False,
+        nms_pre=1000,
+        nms_post=1000,
+        max_num=1000,
+        nms_thr=0.7,
+        min_bbox_size=0),
+    rcnn=dict(
+        score_thr=0.05,
+        nms=dict(type='nms', iou_threshold=0.5),
+        max_per_img=100))
+dataset_type = 'CocoDataset'
+data_root = 'data/coco/'
+img_norm_cfg = dict(
+    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+train_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', with_bbox=True),
+    dict(type='Resize', img_scale=(1550, 1550), keep_ratio=True),
+    dict(type='RandomFlip', flip_ratio=0.5),
+    dict(
+        type='Normalize',
+        mean=[123.675, 116.28, 103.53],
+        std=[58.395, 57.12, 57.375],
+        to_rgb=True),
+    dict(type='Pad', size_divisor=32),
+    dict(type='DefaultFormatBundle'),
+    dict(type='Collect', keys=['img', 'gt_bboxes', 'gt_labels'])
+]
+test_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(
+        type='MultiScaleFlipAug',
+        img_scale=(1550, 1550),
+        flip=False,
+        transforms=[
+            dict(type='Resize', keep_ratio=True),
+            dict(type='RandomFlip'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size_divisor=32),
+            dict(type='ImageToTensor', keys=['img']),
+            dict(type='Collect', keys=['img'])
+        ])
+]
+data = dict(
+    samples_per_gpu=2,
+    workers_per_gpu=2,
+    train=dict(
+        type='CocoDataset',
+        ann_file='data/coco/annotations/annotations_trai.json',
+        img_prefix='data/coco/img/',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', with_bbox=True),
+            dict(type='Resize', img_scale=(1550, 1550), keep_ratio=True),
+            dict(type='RandomFlip', flip_ratio=0.5),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size_divisor=32),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_bboxes', 'gt_labels'])
+        ]),
+    val=dict(
+        type='CocoDataset',
+        ann_file='data/coco/annotations/annotations_test.json',
+        img_prefix='data/coco/img/',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(1550, 1550),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=True),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='Pad', size_divisor=32),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img'])
+                ])
+        ]),
+    test=dict(
+        type='CocoDataset',
+        ann_file='data/coco/annotations/annotations_vals.json',
+        img_prefix='data/coco/img/',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(1550, 1550),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=True),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='Pad', size_divisor=32),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img'])
+                ])
+        ]))
+evaluation = dict(interval=1, metric='bbox')
+optimizer = dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0001)
+optimizer_config = dict(grad_clip=None)
+lr_config = dict(
+    policy='step',
+    warmup='linear',
+    warmup_iters=500,
+    warmup_ratio=0.001,
+    step=[8, 11])
+total_epochs = 4
+checkpoint_config = dict(interval=4)
+log_config = dict(interval=100, hooks=[dict(type='TextLoggerHook')])
+dist_params = dict(backend='nccl')
+log_level = 'INFO'
+load_from = '/home/admin/.cache/torch/checkpoints/X.pth'
+resume_from = None
+workflow = [('train', 2), ('val', 1)]
+work_dir = '/home/admin/jupyter/SecurityAI_Round5/data/work'
+gpu_ids = range(0, 1)
+
+2020-11-17 15:57:24,382 - mmdet - INFO - load model from: torchvision://resnet50
+2020-11-17 15:57:32,366 - mmdet - WARNING - The model and loaded state dict do not match exactly
+
+unexpected key in source state_dict: fc.weight, fc.bias
+
+2020-11-17 15:57:42,787 - mmdet - INFO - load checkpoint from /home/admin/.cache/torch/checkpoints/X.pth
+2020-11-17 15:57:50,797 - mmdet - WARNING - The model and loaded state dict do not match exactly
+
+unexpected key in source state_dict: conv1.weight, bn1.running_mean, bn1.running_var, bn1.weight, bn1.bias, layer1.0.conv1.weight, layer1.0.bn1.running_mean, layer1.0.bn1.running_var, layer1.0.bn1.weight, layer1.0.bn1.bias, layer1.0.conv2.weight, layer1.0.bn2.running_mean, layer1.0.bn2.running_var, layer1.0.bn2.weight, layer1.0.bn2.bias, layer1.0.conv3.weight, layer1.0.bn3.running_mean, layer1.0.bn3.running_var, layer1.0.bn3.weight, layer1.0.bn3.bias, layer1.0.downsample.0.weight, layer1.0.downsample.1.running_mean, layer1.0.downsample.1.running_var, layer1.0.downsample.1.weight, layer1.0.downsample.1.bias, layer1.1.conv1.weight, layer1.1.bn1.running_mean, layer1.1.bn1.running_var, layer1.1.bn1.weight, layer1.1.bn1.bias, layer1.1.conv2.weight, layer1.1.bn2.running_mean, layer1.1.bn2.running_var, layer1.1.bn2.weight, layer1.1.bn2.bias, layer1.1.conv3.weight, layer1.1.bn3.running_mean, layer1.1.bn3.running_var, layer1.1.bn3.weight, layer1.1.bn3.bias, layer1.2.conv1.weight, layer1.2.bn1.running_mean, layer1.2.bn1.running_var, layer1.2.bn1.weight, layer1.2.bn1.bias, layer1.2.conv2.weight, layer1.2.bn2.running_mean, layer1.2.bn2.running_var, layer1.2.bn2.weight, layer1.2.bn2.bias, layer1.2.conv3.weight, layer1.2.bn3.running_mean, layer1.2.bn3.running_var, layer1.2.bn3.weight, layer1.2.bn3.bias, layer2.0.conv1.weight, layer2.0.bn1.running_mean, layer2.0.bn1.running_var, layer2.0.bn1.weight, layer2.0.bn1.bias, layer2.0.conv2.weight, layer2.0.bn2.running_mean, layer2.0.bn2.running_var, layer2.0.bn2.weight, layer2.0.bn2.bias, layer2.0.conv3.weight, layer2.0.bn3.running_mean, layer2.0.bn3.running_var, layer2.0.bn3.weight, layer2.0.bn3.bias, layer2.0.downsample.0.weight, layer2.0.downsample.1.running_mean, layer2.0.downsample.1.running_var, layer2.0.downsample.1.weight, layer2.0.downsample.1.bias, layer2.1.conv1.weight, layer2.1.bn1.running_mean, layer2.1.bn1.running_var, layer2.1.bn1.weight, layer2.1.bn1.bias, layer2.1.conv2.weight, layer2.1.bn2.running_mean, layer2.1.bn2.running_var, layer2.1.bn2.weight, layer2.1.bn2.bias, layer2.1.conv3.weight, layer2.1.bn3.running_mean, layer2.1.bn3.running_var, layer2.1.bn3.weight, layer2.1.bn3.bias, layer2.2.conv1.weight, layer2.2.bn1.running_mean, layer2.2.bn1.running_var, layer2.2.bn1.weight, layer2.2.bn1.bias, layer2.2.conv2.weight, layer2.2.bn2.running_mean, layer2.2.bn2.running_var, layer2.2.bn2.weight, layer2.2.bn2.bias, layer2.2.conv3.weight, layer2.2.bn3.running_mean, layer2.2.bn3.running_var, layer2.2.bn3.weight, layer2.2.bn3.bias, layer2.3.conv1.weight, layer2.3.bn1.running_mean, layer2.3.bn1.running_var, layer2.3.bn1.weight, layer2.3.bn1.bias, layer2.3.conv2.weight, layer2.3.bn2.running_mean, layer2.3.bn2.running_var, layer2.3.bn2.weight, layer2.3.bn2.bias, layer2.3.conv3.weight, layer2.3.bn3.running_mean, layer2.3.bn3.running_var, layer2.3.bn3.weight, layer2.3.bn3.bias, layer3.0.conv1.weight, layer3.0.bn1.running_mean, layer3.0.bn1.running_var, layer3.0.bn1.weight, layer3.0.bn1.bias, layer3.0.conv2.weight, layer3.0.bn2.running_mean, layer3.0.bn2.running_var, layer3.0.bn2.weight, layer3.0.bn2.bias, layer3.0.conv3.weight, layer3.0.bn3.running_mean, layer3.0.bn3.running_var, layer3.0.bn3.weight, layer3.0.bn3.bias, layer3.0.downsample.0.weight, layer3.0.downsample.1.running_mean, layer3.0.downsample.1.running_var, layer3.0.downsample.1.weight, layer3.0.downsample.1.bias, layer3.1.conv1.weight, layer3.1.bn1.running_mean, layer3.1.bn1.running_var, layer3.1.bn1.weight, layer3.1.bn1.bias, layer3.1.conv2.weight, layer3.1.bn2.running_mean, layer3.1.bn2.running_var, layer3.1.bn2.weight, layer3.1.bn2.bias, layer3.1.conv3.weight, layer3.1.bn3.running_mean, layer3.1.bn3.running_var, layer3.1.bn3.weight, layer3.1.bn3.bias, layer3.2.conv1.weight, layer3.2.bn1.running_mean, layer3.2.bn1.running_var, layer3.2.bn1.weight, layer3.2.bn1.bias, layer3.2.conv2.weight, layer3.2.bn2.running_mean, layer3.2.bn2.running_var, layer3.2.bn2.weight, layer3.2.bn2.bias, layer3.2.conv3.weight, layer3.2.bn3.running_mean, layer3.2.bn3.running_var, layer3.2.bn3.weight, layer3.2.bn3.bias, layer3.3.conv1.weight, layer3.3.bn1.running_mean, layer3.3.bn1.running_var, layer3.3.bn1.weight, layer3.3.bn1.bias, layer3.3.conv2.weight, layer3.3.bn2.running_mean, layer3.3.bn2.running_var, layer3.3.bn2.weight, layer3.3.bn2.bias, layer3.3.conv3.weight, layer3.3.bn3.running_mean, layer3.3.bn3.running_var, layer3.3.bn3.weight, layer3.3.bn3.bias, layer3.4.conv1.weight, layer3.4.bn1.running_mean, layer3.4.bn1.running_var, layer3.4.bn1.weight, layer3.4.bn1.bias, layer3.4.conv2.weight, layer3.4.bn2.running_mean, layer3.4.bn2.running_var, layer3.4.bn2.weight, layer3.4.bn2.bias, layer3.4.conv3.weight, layer3.4.bn3.running_mean, layer3.4.bn3.running_var, layer3.4.bn3.weight, layer3.4.bn3.bias, layer3.5.conv1.weight, layer3.5.bn1.running_mean, layer3.5.bn1.running_var, layer3.5.bn1.weight, layer3.5.bn1.bias, layer3.5.conv2.weight, layer3.5.bn2.running_mean, layer3.5.bn2.running_var, layer3.5.bn2.weight, layer3.5.bn2.bias, layer3.5.conv3.weight, layer3.5.bn3.running_mean, layer3.5.bn3.running_var, layer3.5.bn3.weight, layer3.5.bn3.bias, layer4.0.conv1.weight, layer4.0.bn1.running_mean, layer4.0.bn1.running_var, layer4.0.bn1.weight, layer4.0.bn1.bias, layer4.0.conv2.weight, layer4.0.bn2.running_mean, layer4.0.bn2.running_var, layer4.0.bn2.weight, layer4.0.bn2.bias, layer4.0.conv3.weight, layer4.0.bn3.running_mean, layer4.0.bn3.running_var, layer4.0.bn3.weight, layer4.0.bn3.bias, layer4.0.downsample.0.weight, layer4.0.downsample.1.running_mean, layer4.0.downsample.1.running_var, layer4.0.downsample.1.weight, layer4.0.downsample.1.bias, layer4.1.conv1.weight, layer4.1.bn1.running_mean, layer4.1.bn1.running_var, layer4.1.bn1.weight, layer4.1.bn1.bias, layer4.1.conv2.weight, layer4.1.bn2.running_mean, layer4.1.bn2.running_var, layer4.1.bn2.weight, layer4.1.bn2.bias, layer4.1.conv3.weight, layer4.1.bn3.running_mean, layer4.1.bn3.running_var, layer4.1.bn3.weight, layer4.1.bn3.bias, layer4.2.conv1.weight, layer4.2.bn1.running_mean, layer4.2.bn1.running_var, layer4.2.bn1.weight, layer4.2.bn1.bias, layer4.2.conv2.weight, layer4.2.bn2.running_mean, layer4.2.bn2.running_var, layer4.2.bn2.weight, layer4.2.bn2.bias, layer4.2.conv3.weight, layer4.2.bn3.running_mean, layer4.2.bn3.running_var, layer4.2.bn3.weight, layer4.2.bn3.bias, fc.weight, fc.bias
+
+missing keys in source state_dict: backbone.conv1.weight, backbone.bn1.weight, backbone.bn1.bias, backbone.bn1.running_mean, backbone.bn1.running_var, backbone.layer1.0.conv1.weight, backbone.layer1.0.bn1.weight, backbone.layer1.0.bn1.bias, backbone.layer1.0.bn1.running_mean, backbone.layer1.0.bn1.running_var, backbone.layer1.0.conv2.weight, backbone.layer1.0.bn2.weight, backbone.layer1.0.bn2.bias, backbone.layer1.0.bn2.running_mean, backbone.layer1.0.bn2.running_var, backbone.layer1.0.conv3.weight, backbone.layer1.0.bn3.weight, backbone.layer1.0.bn3.bias, backbone.layer1.0.bn3.running_mean, backbone.layer1.0.bn3.running_var, backbone.layer1.0.downsample.0.weight, backbone.layer1.0.downsample.1.weight, backbone.layer1.0.downsample.1.bias, backbone.layer1.0.downsample.1.running_mean, backbone.layer1.0.downsample.1.running_var, backbone.layer1.1.conv1.weight, backbone.layer1.1.bn1.weight, backbone.layer1.1.bn1.bias, backbone.layer1.1.bn1.running_mean, backbone.layer1.1.bn1.running_var, backbone.layer1.1.conv2.weight, backbone.layer1.1.bn2.weight, backbone.layer1.1.bn2.bias, backbone.layer1.1.bn2.running_mean, backbone.layer1.1.bn2.running_var, backbone.layer1.1.conv3.weight, backbone.layer1.1.bn3.weight, backbone.layer1.1.bn3.bias, backbone.layer1.1.bn3.running_mean, backbone.layer1.1.bn3.running_var, backbone.layer1.2.conv1.weight, backbone.layer1.2.bn1.weight, backbone.layer1.2.bn1.bias, backbone.layer1.2.bn1.running_mean, backbone.layer1.2.bn1.running_var, backbone.layer1.2.conv2.weight, backbone.layer1.2.bn2.weight, backbone.layer1.2.bn2.bias, backbone.layer1.2.bn2.running_mean, backbone.layer1.2.bn2.running_var, backbone.layer1.2.conv3.weight, backbone.layer1.2.bn3.weight, backbone.layer1.2.bn3.bias, backbone.layer1.2.bn3.running_mean, backbone.layer1.2.bn3.running_var, backbone.layer2.0.conv1.weight, backbone.layer2.0.bn1.weight, backbone.layer2.0.bn1.bias, backbone.layer2.0.bn1.running_mean, backbone.layer2.0.bn1.running_var, backbone.layer2.0.conv2.weight, backbone.layer2.0.bn2.weight, backbone.layer2.0.bn2.bias, backbone.layer2.0.bn2.running_mean, backbone.layer2.0.bn2.running_var, backbone.layer2.0.conv3.weight, backbone.layer2.0.bn3.weight, backbone.layer2.0.bn3.bias, backbone.layer2.0.bn3.running_mean, backbone.layer2.0.bn3.running_var, backbone.layer2.0.downsample.0.weight, backbone.layer2.0.downsample.1.weight, backbone.layer2.0.downsample.1.bias, backbone.layer2.0.downsample.1.running_mean, backbone.layer2.0.downsample.1.running_var, backbone.layer2.1.conv1.weight, backbone.layer2.1.bn1.weight, backbone.layer2.1.bn1.bias, backbone.layer2.1.bn1.running_mean, backbone.layer2.1.bn1.running_var, backbone.layer2.1.conv2.weight, backbone.layer2.1.bn2.weight, backbone.layer2.1.bn2.bias, backbone.layer2.1.bn2.running_mean, backbone.layer2.1.bn2.running_var, backbone.layer2.1.conv3.weight, backbone.layer2.1.bn3.weight, backbone.layer2.1.bn3.bias, backbone.layer2.1.bn3.running_mean, backbone.layer2.1.bn3.running_var, backbone.layer2.2.conv1.weight, backbone.layer2.2.bn1.weight, backbone.layer2.2.bn1.bias, backbone.layer2.2.bn1.running_mean, backbone.layer2.2.bn1.running_var, backbone.layer2.2.conv2.weight, backbone.layer2.2.bn2.weight, backbone.layer2.2.bn2.bias, backbone.layer2.2.bn2.running_mean, backbone.layer2.2.bn2.running_var, backbone.layer2.2.conv3.weight, backbone.layer2.2.bn3.weight, backbone.layer2.2.bn3.bias, backbone.layer2.2.bn3.running_mean, backbone.layer2.2.bn3.running_var, backbone.layer2.3.conv1.weight, backbone.layer2.3.bn1.weight, backbone.layer2.3.bn1.bias, backbone.layer2.3.bn1.running_mean, backbone.layer2.3.bn1.running_var, backbone.layer2.3.conv2.weight, backbone.layer2.3.bn2.weight, backbone.layer2.3.bn2.bias, backbone.layer2.3.bn2.running_mean, backbone.layer2.3.bn2.running_var, backbone.layer2.3.conv3.weight, backbone.layer2.3.bn3.weight, backbone.layer2.3.bn3.bias, backbone.layer2.3.bn3.running_mean, backbone.layer2.3.bn3.running_var, backbone.layer3.0.conv1.weight, backbone.layer3.0.bn1.weight, backbone.layer3.0.bn1.bias, backbone.layer3.0.bn1.running_mean, backbone.layer3.0.bn1.running_var, backbone.layer3.0.conv2.weight, backbone.layer3.0.bn2.weight, backbone.layer3.0.bn2.bias, backbone.layer3.0.bn2.running_mean, backbone.layer3.0.bn2.running_var, backbone.layer3.0.conv3.weight, backbone.layer3.0.bn3.weight, backbone.layer3.0.bn3.bias, backbone.layer3.0.bn3.running_mean, backbone.layer3.0.bn3.running_var, backbone.layer3.0.downsample.0.weight, backbone.layer3.0.downsample.1.weight, backbone.layer3.0.downsample.1.bias, backbone.layer3.0.downsample.1.running_mean, backbone.layer3.0.downsample.1.running_var, backbone.layer3.1.conv1.weight, backbone.layer3.1.bn1.weight, backbone.layer3.1.bn1.bias, backbone.layer3.1.bn1.running_mean, backbone.layer3.1.bn1.running_var, backbone.layer3.1.conv2.weight, backbone.layer3.1.bn2.weight, backbone.layer3.1.bn2.bias, backbone.layer3.1.bn2.running_mean, backbone.layer3.1.bn2.running_var, backbone.layer3.1.conv3.weight, backbone.layer3.1.bn3.weight, backbone.layer3.1.bn3.bias, backbone.layer3.1.bn3.running_mean, backbone.layer3.1.bn3.running_var, backbone.layer3.2.conv1.weight, backbone.layer3.2.bn1.weight, backbone.layer3.2.bn1.bias, backbone.layer3.2.bn1.running_mean, backbone.layer3.2.bn1.running_var, backbone.layer3.2.conv2.weight, backbone.layer3.2.bn2.weight, backbone.layer3.2.bn2.bias, backbone.layer3.2.bn2.running_mean, backbone.layer3.2.bn2.running_var, backbone.layer3.2.conv3.weight, backbone.layer3.2.bn3.weight, backbone.layer3.2.bn3.bias, backbone.layer3.2.bn3.running_mean, backbone.layer3.2.bn3.running_var, backbone.layer3.3.conv1.weight, backbone.layer3.3.bn1.weight, backbone.layer3.3.bn1.bias, backbone.layer3.3.bn1.running_mean, backbone.layer3.3.bn1.running_var, backbone.layer3.3.conv2.weight, backbone.layer3.3.bn2.weight, backbone.layer3.3.bn2.bias, backbone.layer3.3.bn2.running_mean, backbone.layer3.3.bn2.running_var, backbone.layer3.3.conv3.weight, backbone.layer3.3.bn3.weight, backbone.layer3.3.bn3.bias, backbone.layer3.3.bn3.running_mean, backbone.layer3.3.bn3.running_var, backbone.layer3.4.conv1.weight, backbone.layer3.4.bn1.weight, backbone.layer3.4.bn1.bias, backbone.layer3.4.bn1.running_mean, backbone.layer3.4.bn1.running_var, backbone.layer3.4.conv2.weight, backbone.layer3.4.bn2.weight, backbone.layer3.4.bn2.bias, backbone.layer3.4.bn2.running_mean, backbone.layer3.4.bn2.running_var, backbone.layer3.4.conv3.weight, backbone.layer3.4.bn3.weight, backbone.layer3.4.bn3.bias, backbone.layer3.4.bn3.running_mean, backbone.layer3.4.bn3.running_var, backbone.layer3.5.conv1.weight, backbone.layer3.5.bn1.weight, backbone.layer3.5.bn1.bias, backbone.layer3.5.bn1.running_mean, backbone.layer3.5.bn1.running_var, backbone.layer3.5.conv2.weight, backbone.layer3.5.bn2.weight, backbone.layer3.5.bn2.bias, backbone.layer3.5.bn2.running_mean, backbone.layer3.5.bn2.running_var, backbone.layer3.5.conv3.weight, backbone.layer3.5.bn3.weight, backbone.layer3.5.bn3.bias, backbone.layer3.5.bn3.running_mean, backbone.layer3.5.bn3.running_var, backbone.layer4.0.conv1.weight, backbone.layer4.0.bn1.weight, backbone.layer4.0.bn1.bias, backbone.layer4.0.bn1.running_mean, backbone.layer4.0.bn1.running_var, backbone.layer4.0.conv2.weight, backbone.layer4.0.bn2.weight, backbone.layer4.0.bn2.bias, backbone.layer4.0.bn2.running_mean, backbone.layer4.0.bn2.running_var, backbone.layer4.0.conv3.weight, backbone.layer4.0.bn3.weight, backbone.layer4.0.bn3.bias, backbone.layer4.0.bn3.running_mean, backbone.layer4.0.bn3.running_var, backbone.layer4.0.downsample.0.weight, backbone.layer4.0.downsample.1.weight, backbone.layer4.0.downsample.1.bias, backbone.layer4.0.downsample.1.running_mean, backbone.layer4.0.downsample.1.running_var, backbone.layer4.1.conv1.weight, backbone.layer4.1.bn1.weight, backbone.layer4.1.bn1.bias, backbone.layer4.1.bn1.running_mean, backbone.layer4.1.bn1.running_var, backbone.layer4.1.conv2.weight, backbone.layer4.1.bn2.weight, backbone.layer4.1.bn2.bias, backbone.layer4.1.bn2.running_mean, backbone.layer4.1.bn2.running_var, backbone.layer4.1.conv3.weight, backbone.layer4.1.bn3.weight, backbone.layer4.1.bn3.bias, backbone.layer4.1.bn3.running_mean, backbone.layer4.1.bn3.running_var, backbone.layer4.2.conv1.weight, backbone.layer4.2.bn1.weight, backbone.layer4.2.bn1.bias, backbone.layer4.2.bn1.running_mean, backbone.layer4.2.bn1.running_var, backbone.layer4.2.conv2.weight, backbone.layer4.2.bn2.weight, backbone.layer4.2.bn2.bias, backbone.layer4.2.bn2.running_mean, backbone.layer4.2.bn2.running_var, backbone.layer4.2.conv3.weight, backbone.layer4.2.bn3.weight, backbone.layer4.2.bn3.bias, backbone.layer4.2.bn3.running_mean, backbone.layer4.2.bn3.running_var, neck.lateral_convs.0.conv.weight, neck.lateral_convs.0.conv.bias, neck.lateral_convs.1.conv.weight, neck.lateral_convs.1.conv.bias, neck.lateral_convs.2.conv.weight, neck.lateral_convs.2.conv.bias, neck.lateral_convs.3.conv.weight, neck.lateral_convs.3.conv.bias, neck.fpn_convs.0.conv.weight, neck.fpn_convs.0.conv.bias, neck.fpn_convs.1.conv.weight, neck.fpn_convs.1.conv.bias, neck.fpn_convs.2.conv.weight, neck.fpn_convs.2.conv.bias, neck.fpn_convs.3.conv.weight, neck.fpn_convs.3.conv.bias, rpn_head.rpn_conv.weight, rpn_head.rpn_conv.bias, rpn_head.rpn_cls.weight, rpn_head.rpn_cls.bias, rpn_head.rpn_reg.weight, rpn_head.rpn_reg.bias, roi_head.bbox_head.fc_cls.weight, roi_head.bbox_head.fc_cls.bias, roi_head.bbox_head.fc_reg.weight, roi_head.bbox_head.fc_reg.bias, roi_head.bbox_head.shared_fcs.0.weight, roi_head.bbox_head.shared_fcs.0.bias, roi_head.bbox_head.shared_fcs.1.weight, roi_head.bbox_head.shared_fcs.1.bias
+
+2020-11-17 15:57:50,800 - mmdet - INFO - Start running, host: admin@fuxilabor_labor0_S4_Odps_S96_dsw_prepaid_cnsh_838_2020111707413, work_dir: /home/admin/jupyter/SecurityAI_Round5/data/work
+2020-11-17 15:57:50,800 - mmdet - INFO - workflow: [('train', 2), ('val', 1)], max: 4 epochs
+2020-11-17 15:59:09,537 - mmdet - INFO - Epoch [1][100/624]	lr: 1.988e-03, eta: 0:31:21, time: 0.785, data_time: 0.034, memory: 8600, loss_rpn_cls: 0.5303, loss_rpn_bbox: 0.2611, loss_cls: 0.2447, acc: 91.7910, loss_bbox: 0.0535, loss: 1.0895
+2020-11-17 16:00:25,435 - mmdet - INFO - Epoch [1][200/624]	lr: 3.986e-03, eta: 0:29:33, time: 0.759, data_time: 0.012, memory: 8600, loss_rpn_cls: 0.2860, loss_rpn_bbox: 0.2152, loss_cls: 0.1382, acc: 95.2666, loss_bbox: 0.1014, loss: 0.7408
+2020-11-17 16:01:41,722 - mmdet - INFO - Epoch [1][300/624]	lr: 5.984e-03, eta: 0:28:08, time: 0.763, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.2720, loss_rpn_bbox: 0.2187, loss_cls: 0.1457, acc: 95.2002, loss_bbox: 0.1096, loss: 0.7460
+2020-11-17 16:02:58,373 - mmdet - INFO - Epoch [1][400/624]	lr: 7.982e-03, eta: 0:26:50, time: 0.766, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.2501, loss_rpn_bbox: 0.1999, loss_cls: 0.1458, acc: 95.0527, loss_bbox: 0.1151, loss: 0.7110
+2020-11-17 16:04:14,399 - mmdet - INFO - Epoch [1][500/624]	lr: 9.980e-03, eta: 0:25:30, time: 0.760, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.2259, loss_rpn_bbox: 0.1890, loss_cls: 0.1690, acc: 94.4932, loss_bbox: 0.1378, loss: 0.7217
+2020-11-17 16:05:29,987 - mmdet - INFO - Epoch [1][600/624]	lr: 1.000e-02, eta: 0:24:10, time: 0.756, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.2421, loss_rpn_bbox: 0.1950, loss_cls: 0.1794, acc: 94.0771, loss_bbox: 0.1536, loss: 0.7701
+2020-11-17 16:06:13,123 - mmdet - INFO - Evaluating bbox...
+2020-11-17 16:06:20,655 - mmdet - INFO - Epoch [1][624/624]	lr: 1.000e-02, bbox_mAP: 0.0950, bbox_mAP_50: 0.2540, bbox_mAP_75: 0.0510, bbox_mAP_s: 0.0000, bbox_mAP_m: 0.0100, bbox_mAP_l: 0.0960, bbox_mAP_copypaste: 0.095 0.254 0.051 0.000 0.010 0.096
+2020-11-17 16:07:38,211 - mmdet - INFO - Epoch [2][100/624]	lr: 1.000e-02, eta: 0:21:52, time: 0.773, data_time: 0.034, memory: 10076, loss_rpn_cls: 0.1931, loss_rpn_bbox: 0.1749, loss_cls: 0.1764, acc: 93.9268, loss_bbox: 0.1587, loss: 0.7031
+2020-11-17 16:08:53,913 - mmdet - INFO - Epoch [2][200/624]	lr: 1.000e-02, eta: 0:20:41, time: 0.757, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1918, loss_rpn_bbox: 0.1760, loss_cls: 0.1872, acc: 93.8086, loss_bbox: 0.1632, loss: 0.7182
+2020-11-17 16:10:09,463 - mmdet - INFO - Epoch [2][300/624]	lr: 1.000e-02, eta: 0:19:29, time: 0.755, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1996, loss_rpn_bbox: 0.1688, loss_cls: 0.1947, acc: 93.1602, loss_bbox: 0.1759, loss: 0.7390
+2020-11-17 16:11:25,046 - mmdet - INFO - Epoch [2][400/624]	lr: 1.000e-02, eta: 0:18:17, time: 0.756, data_time: 0.013, memory: 10076, loss_rpn_cls: 0.1984, loss_rpn_bbox: 0.1648, loss_cls: 0.1696, acc: 94.1445, loss_bbox: 0.1518, loss: 0.6847
+2020-11-17 16:12:40,625 - mmdet - INFO - Epoch [2][500/624]	lr: 1.000e-02, eta: 0:17:03, time: 0.756, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1893, loss_rpn_bbox: 0.1641, loss_cls: 0.1827, acc: 93.6445, loss_bbox: 0.1706, loss: 0.7067
+2020-11-17 16:13:55,852 - mmdet - INFO - Epoch [2][600/624]	lr: 1.000e-02, eta: 0:15:49, time: 0.752, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1502, loss_rpn_bbox: 0.1541, loss_cls: 0.1806, acc: 94.0371, loss_bbox: 0.1724, loss: 0.6573
+2020-11-17 16:14:38,617 - mmdet - INFO - Evaluating bbox...
+2020-11-17 16:14:43,542 - mmdet - INFO - Epoch [2][624/624]	lr: 1.000e-02, bbox_mAP: 0.3420, bbox_mAP_50: 0.4150, bbox_mAP_75: 0.3490, bbox_mAP_s: 0.0000, bbox_mAP_m: 0.0140, bbox_mAP_l: 0.3440, bbox_mAP_copypaste: 0.342 0.415 0.349 0.000 0.014 0.344
+2020-11-17 16:15:14,757 - mmdet - INFO - Epoch(train) [2][76]	loss_rpn_cls: 0.1921, loss_rpn_bbox: 0.1632, loss_cls: 0.2678, acc: 91.9742, loss_bbox: 0.2194, loss: 0.8426
+2020-11-17 16:16:32,395 - mmdet - INFO - Epoch [3][100/624]	lr: 1.000e-02, eta: 0:14:04, time: 0.774, data_time: 0.034, memory: 10076, loss_rpn_cls: 0.1828, loss_rpn_bbox: 0.1640, loss_cls: 0.1848, acc: 93.8955, loss_bbox: 0.1659, loss: 0.6974
+2020-11-17 16:17:47,424 - mmdet - INFO - Epoch [3][200/624]	lr: 1.000e-02, eta: 0:12:51, time: 0.750, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1608, loss_rpn_bbox: 0.1541, loss_cls: 0.1685, acc: 94.1572, loss_bbox: 0.1558, loss: 0.6392
+2020-11-17 16:19:02,375 - mmdet - INFO - Epoch [3][300/624]	lr: 1.000e-02, eta: 0:11:38, time: 0.749, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1507, loss_rpn_bbox: 0.1507, loss_cls: 0.1970, acc: 93.3047, loss_bbox: 0.1796, loss: 0.6780
+2020-11-17 16:20:17,480 - mmdet - INFO - Epoch [3][400/624]	lr: 1.000e-02, eta: 0:10:25, time: 0.751, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1630, loss_rpn_bbox: 0.1444, loss_cls: 0.1899, acc: 93.4541, loss_bbox: 0.1790, loss: 0.6763
+2020-11-17 16:21:32,146 - mmdet - INFO - Epoch [3][500/624]	lr: 1.000e-02, eta: 0:09:12, time: 0.747, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1319, loss_rpn_bbox: 0.1431, loss_cls: 0.1673, acc: 94.3838, loss_bbox: 0.1485, loss: 0.5909
+2020-11-17 16:22:47,038 - mmdet - INFO - Epoch [3][600/624]	lr: 1.000e-02, eta: 0:07:58, time: 0.749, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1509, loss_rpn_bbox: 0.1605, loss_cls: 0.1908, acc: 93.6396, loss_bbox: 0.1751, loss: 0.6774
+2020-11-17 16:23:30,174 - mmdet - INFO - Evaluating bbox...
+2020-11-17 16:23:37,552 - mmdet - INFO - Epoch [3][624/624]	lr: 1.000e-02, bbox_mAP: 0.3510, bbox_mAP_50: 0.4810, bbox_mAP_75: 0.3740, bbox_mAP_s: 0.0010, bbox_mAP_m: 0.0980, bbox_mAP_l: 0.3690, bbox_mAP_copypaste: 0.351 0.481 0.374 0.001 0.098 0.369
+2020-11-17 16:24:55,548 - mmdet - INFO - Epoch [4][100/624]	lr: 1.000e-02, eta: 0:06:23, time: 0.778, data_time: 0.035, memory: 10076, loss_rpn_cls: 0.1318, loss_rpn_bbox: 0.1615, loss_cls: 0.1974, acc: 93.2656, loss_bbox: 0.1864, loss: 0.6772
+2020-11-17 16:26:10,871 - mmdet - INFO - Epoch [4][200/624]	lr: 1.000e-02, eta: 0:05:10, time: 0.753, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1615, loss_rpn_bbox: 0.1517, loss_cls: 0.1840, acc: 93.7461, loss_bbox: 0.1679, loss: 0.6651
+2020-11-17 16:27:25,326 - mmdet - INFO - Epoch [4][300/624]	lr: 1.000e-02, eta: 0:03:57, time: 0.745, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1360, loss_rpn_bbox: 0.1372, loss_cls: 0.1845, acc: 93.8867, loss_bbox: 0.1660, loss: 0.6238
+2020-11-17 16:28:40,443 - mmdet - INFO - Epoch [4][400/624]	lr: 1.000e-02, eta: 0:02:44, time: 0.751, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1303, loss_rpn_bbox: 0.1379, loss_cls: 0.1888, acc: 93.4326, loss_bbox: 0.1794, loss: 0.6363
+2020-11-17 16:29:55,204 - mmdet - INFO - Epoch [4][500/624]	lr: 1.000e-02, eta: 0:01:31, time: 0.748, data_time: 0.012, memory: 10076, loss_rpn_cls: 0.1168, loss_rpn_bbox: 0.1389, loss_cls: 0.1741, acc: 93.8838, loss_bbox: 0.1664, loss: 0.5962
+2020-11-17 16:31:09,923 - mmdet - INFO - Epoch [4][600/624]	lr: 1.000e-02, eta: 0:00:17, time: 0.747, data_time: 0.013, memory: 10076, loss_rpn_cls: 0.1277, loss_rpn_bbox: 0.1461, loss_cls: 0.1934, acc: 93.3418, loss_bbox: 0.1858, loss: 0.6530
+2020-11-17 16:31:27,906 - mmdet - INFO - Saving checkpoint at 4 epochs
+2020-11-17 16:31:55,024 - mmdet - INFO - Evaluating bbox...
+2020-11-17 16:32:02,818 - mmdet - INFO - Epoch [4][624/624]	lr: 1.000e-02, bbox_mAP: 0.4010, bbox_mAP_50: 0.5050, bbox_mAP_75: 0.4360, bbox_mAP_s: 0.0060, bbox_mAP_m: 0.1220, bbox_mAP_l: 0.4260, bbox_mAP_copypaste: 0.401 0.505 0.436 0.006 0.122 0.426
+2020-11-17 16:32:33,723 - mmdet - INFO - Epoch(train) [4][76]	loss_rpn_cls: 0.1487, loss_rpn_bbox: 0.1416, loss_cls: 0.2169, acc: 92.4458, loss_bbox: 0.2058, loss: 0.7131

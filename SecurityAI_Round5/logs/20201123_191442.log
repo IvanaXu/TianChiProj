@@ -1,0 +1,306 @@
+2020-11-23 19:14:42,687 - mmdet - INFO - Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 18:10:19) [GCC 7.2.0]
+CUDA available: True
+CUDA_HOME: /usr/local/cuda
+NVCC: Cuda compilation tools, release 10.0, V10.0.130
+GPU 0: Tesla P100-PCIE-16GB
+GCC: gcc (GCC) 5.3.0
+PyTorch: 1.3.1+cu100
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - Intel(R) Math Kernel Library Version 2019.0.4 Product Build 20190411 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v0.20.5 (Git Hash 0125f28c61c1f822fd48570b4c1066f96fcb9b2e)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - NNPACK is enabled
+  - CUDA Runtime 10.0
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_61,code=sm_61;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_37,code=compute_37
+  - CuDNN 7.6.3
+  - Magma 2.5.1
+  - Build settings: BLAS=MKL, BUILD_NAMEDTENSOR=OFF, BUILD_TYPE=Release, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -fopenmp -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -O2 -fPIC -Wno-narrowing -Wall -Wextra -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Wno-stringop-overflow, DISABLE_NUMA=1, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, USE_CUDA=True, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, USE_STATIC_DISPATCH=OFF, 
+
+TorchVision: 0.4.2+cu100
+OpenCV: 4.4.0
+MMCV: 1.0.5
+MMDetection: 2.3.0+788fa8d
+MMDetection Compiler: GCC 7.3
+MMDetection CUDA Compiler: 10.0
+------------------------------------------------------------
+
+2020-11-23 19:14:42,687 - mmdet - INFO - Distributed training: False
+2020-11-23 19:14:43,082 - mmdet - INFO - Config:
+model = dict(
+    type='FasterRCNN',
+    pretrained='torchvision://resnet50',
+    backbone=dict(
+        type='ResNet',
+        depth=50,
+        num_stages=4,
+        out_indices=(0, 1, 2, 3),
+        frozen_stages=1,
+        norm_cfg=dict(type='BN', requires_grad=True),
+        norm_eval=True,
+        style='pytorch'),
+    neck=dict(
+        type='FPN',
+        in_channels=[256, 512, 1024, 2048],
+        out_channels=256,
+        num_outs=5),
+    rpn_head=dict(
+        type='RPNHead',
+        in_channels=256,
+        feat_channels=256,
+        anchor_generator=dict(
+            type='AnchorGenerator',
+            scales=[8],
+            ratios=[0.5, 1.0, 2.0],
+            strides=[4, 8, 16, 32, 64]),
+        bbox_coder=dict(
+            type='DeltaXYWHBBoxCoder',
+            target_means=[0.0, 0.0, 0.0, 0.0],
+            target_stds=[1.0, 1.0, 1.0, 1.0]),
+        loss_cls=dict(
+            type='CrossEntropyLoss', use_sigmoid=True, loss_weight=1.0),
+        loss_bbox=dict(type='L1Loss', loss_weight=1.0)),
+    roi_head=dict(
+        type='StandardRoIHead',
+        bbox_roi_extractor=dict(
+            type='SingleRoIExtractor',
+            roi_layer=dict(type='RoIAlign', output_size=7, sampling_ratio=0),
+            out_channels=256,
+            featmap_strides=[4, 8, 16, 32]),
+        bbox_head=dict(
+            type='Shared2FCBBoxHead',
+            in_channels=256,
+            fc_out_channels=1024,
+            roi_feat_size=7,
+            num_classes=2,
+            bbox_coder=dict(
+                type='DeltaXYWHBBoxCoder',
+                target_means=[0.0, 0.0, 0.0, 0.0],
+                target_stds=[0.1, 0.1, 0.2, 0.2]),
+            reg_class_agnostic=False,
+            loss_cls=dict(
+                type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0),
+            loss_bbox=dict(type='L1Loss', loss_weight=1.0))))
+train_cfg = dict(
+    rpn=dict(
+        assigner=dict(
+            type='MaxIoUAssigner',
+            pos_iou_thr=0.7,
+            neg_iou_thr=0.3,
+            min_pos_iou=0.3,
+            match_low_quality=True,
+            ignore_iof_thr=-1),
+        sampler=dict(
+            type='RandomSampler',
+            num=256,
+            pos_fraction=0.5,
+            neg_pos_ub=-1,
+            add_gt_as_proposals=False),
+        allowed_border=-1,
+        pos_weight=-1,
+        debug=False),
+    rpn_proposal=dict(
+        nms_across_levels=False,
+        nms_pre=2000,
+        nms_post=1000,
+        max_num=1000,
+        nms_thr=0.7,
+        min_bbox_size=0),
+    rcnn=dict(
+        assigner=dict(
+            type='MaxIoUAssigner',
+            pos_iou_thr=0.5,
+            neg_iou_thr=0.5,
+            min_pos_iou=0.5,
+            match_low_quality=False,
+            ignore_iof_thr=-1),
+        sampler=dict(
+            type='RandomSampler',
+            num=512,
+            pos_fraction=0.25,
+            neg_pos_ub=-1,
+            add_gt_as_proposals=True),
+        pos_weight=-1,
+        debug=False))
+test_cfg = dict(
+    rpn=dict(
+        nms_across_levels=False,
+        nms_pre=1000,
+        nms_post=1000,
+        max_num=1000,
+        nms_thr=0.7,
+        min_bbox_size=0),
+    rcnn=dict(
+        score_thr=0.05,
+        nms=dict(type='nms', iou_threshold=0.5),
+        max_per_img=100))
+dataset_type = 'CocoDataset'
+data_root = 'data/coco/'
+img_norm_cfg = dict(
+    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+train_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', with_bbox=True),
+    dict(type='Resize', img_scale=(1550, 1550), keep_ratio=True),
+    dict(type='RandomFlip', flip_ratio=0.5),
+    dict(
+        type='Normalize',
+        mean=[123.675, 116.28, 103.53],
+        std=[58.395, 57.12, 57.375],
+        to_rgb=True),
+    dict(type='Pad', size_divisor=32),
+    dict(type='DefaultFormatBundle'),
+    dict(type='Collect', keys=['img', 'gt_bboxes', 'gt_labels'])
+]
+test_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(
+        type='MultiScaleFlipAug',
+        img_scale=(1550, 1550),
+        flip=False,
+        transforms=[
+            dict(type='Resize', keep_ratio=True),
+            dict(type='RandomFlip'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size_divisor=32),
+            dict(type='ImageToTensor', keys=['img']),
+            dict(type='Collect', keys=['img'])
+        ])
+]
+data = dict(
+    samples_per_gpu=2,
+    workers_per_gpu=2,
+    train=dict(
+        type='CocoDataset',
+        ann_file='data/coco/annotations/annotations_trai.json',
+        img_prefix='data/coco/img/',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', with_bbox=True),
+            dict(type='Resize', img_scale=(1550, 1550), keep_ratio=True),
+            dict(type='RandomFlip', flip_ratio=0.5),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size_divisor=32),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_bboxes', 'gt_labels'])
+        ]),
+    val=dict(
+        type='CocoDataset',
+        ann_file='data/coco/annotations/annotations_test.json',
+        img_prefix='data/coco/img/',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(1550, 1550),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=True),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='Pad', size_divisor=32),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img'])
+                ])
+        ]),
+    test=dict(
+        type='CocoDataset',
+        ann_file='data/coco/annotations/annotations_vals.json',
+        img_prefix='data/coco/img/',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(1550, 1550),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=True),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='Pad', size_divisor=32),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img'])
+                ])
+        ]))
+evaluation = dict(interval=1, metric='bbox')
+optimizer = dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0001)
+optimizer_config = dict(grad_clip=None)
+lr_config = dict(
+    policy='step',
+    warmup='linear',
+    warmup_iters=500,
+    warmup_ratio=0.001,
+    step=[8, 11])
+total_epochs = 4
+checkpoint_config = dict(interval=4)
+log_config = dict(interval=100, hooks=[dict(type='TextLoggerHook')])
+dist_params = dict(backend='nccl')
+log_level = 'INFO'
+load_from = '/home/admin/.cache/torch/checkpoints/X.pth'
+resume_from = None
+workflow = [('train', 2), ('val', 1)]
+work_dir = '/home/admin/jupyter/SecurityAI_Round5/data/work'
+gpu_ids = range(0, 1)
+
+2020-11-23 19:14:43,591 - mmdet - INFO - load model from: torchvision://resnet50
+2020-11-23 19:14:51,380 - mmdet - WARNING - The model and loaded state dict do not match exactly
+
+unexpected key in source state_dict: fc.weight, fc.bias
+
+2020-11-23 19:15:01,722 - mmdet - INFO - load checkpoint from /home/admin/.cache/torch/checkpoints/X.pth
+2020-11-23 19:15:08,429 - mmdet - INFO - Start running, host: admin@fuxilabor_labor0_S4_Odps_S96_dsw_prepaid_cnsh_838_2020112310060, work_dir: /home/admin/jupyter/SecurityAI_Round5/data/work
+2020-11-23 19:15:08,430 - mmdet - INFO - workflow: [('train', 2), ('val', 1)], max: 4 epochs
+2020-11-23 19:16:26,078 - mmdet - INFO - Epoch [1][100/624]	lr: 1.988e-03, eta: 0:30:55, time: 0.775, data_time: 0.033, memory: 9778, loss_rpn_cls: 0.0022, loss_rpn_bbox: 0.0280, loss_cls: 0.0287, acc: 98.7959, loss_bbox: 0.0732, loss: 0.1321
+2020-11-23 19:17:40,928 - mmdet - INFO - Epoch [1][200/624]	lr: 3.986e-03, eta: 0:29:08, time: 0.748, data_time: 0.012, memory: 9822, loss_rpn_cls: 0.0022, loss_rpn_bbox: 0.0241, loss_cls: 0.0282, acc: 98.8398, loss_bbox: 0.0645, loss: 0.1191
+2020-11-23 19:18:55,796 - mmdet - INFO - Epoch [1][300/624]	lr: 5.984e-03, eta: 0:27:42, time: 0.749, data_time: 0.012, memory: 11886, loss_rpn_cls: 0.0027, loss_rpn_bbox: 0.0255, loss_cls: 0.0348, acc: 98.5527, loss_bbox: 0.0689, loss: 0.1318
+2020-11-23 19:20:10,564 - mmdet - INFO - Epoch [1][400/624]	lr: 7.982e-03, eta: 0:26:22, time: 0.748, data_time: 0.012, memory: 11886, loss_rpn_cls: 0.0021, loss_rpn_bbox: 0.0265, loss_cls: 0.0300, acc: 98.6699, loss_bbox: 0.0642, loss: 0.1227
+2020-11-23 19:21:25,457 - mmdet - INFO - Epoch [1][500/624]	lr: 9.980e-03, eta: 0:25:04, time: 0.749, data_time: 0.012, memory: 11886, loss_rpn_cls: 0.0020, loss_rpn_bbox: 0.0287, loss_cls: 0.0301, acc: 98.7490, loss_bbox: 0.0671, loss: 0.1279
+2020-11-23 19:22:40,406 - mmdet - INFO - Epoch [1][600/624]	lr: 1.000e-02, eta: 0:23:47, time: 0.749, data_time: 0.012, memory: 11886, loss_rpn_cls: 0.0032, loss_rpn_bbox: 0.0280, loss_cls: 0.0345, acc: 98.5049, loss_bbox: 0.0714, loss: 0.1372
+2020-11-23 19:23:24,521 - mmdet - INFO - Evaluating bbox...
+2020-11-23 19:23:26,116 - mmdet - INFO - Epoch [1][624/624]	lr: 1.000e-02, bbox_mAP: 0.8510, bbox_mAP_50: 0.9060, bbox_mAP_75: 0.9060, bbox_mAP_s: 0.6450, bbox_mAP_m: 0.8940, bbox_mAP_l: 0.8980, bbox_mAP_copypaste: 0.851 0.906 0.906 0.645 0.894 0.898
+2020-11-23 19:24:43,447 - mmdet - INFO - Epoch [2][100/624]	lr: 1.000e-02, eta: 0:21:34, time: 0.771, data_time: 0.033, memory: 11911, loss_rpn_cls: 0.0021, loss_rpn_bbox: 0.0298, loss_cls: 0.0261, acc: 98.9053, loss_bbox: 0.0674, loss: 0.1254
+2020-11-23 19:25:58,457 - mmdet - INFO - Epoch [2][200/624]	lr: 1.000e-02, eta: 0:20:25, time: 0.750, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0028, loss_rpn_bbox: 0.0292, loss_cls: 0.0301, acc: 98.7256, loss_bbox: 0.0677, loss: 0.1298
+2020-11-23 19:27:13,330 - mmdet - INFO - Epoch [2][300/624]	lr: 1.000e-02, eta: 0:19:14, time: 0.749, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0022, loss_rpn_bbox: 0.0296, loss_cls: 0.0334, acc: 98.5693, loss_bbox: 0.0721, loss: 0.1373
+2020-11-23 19:28:28,210 - mmdet - INFO - Epoch [2][400/624]	lr: 1.000e-02, eta: 0:18:03, time: 0.749, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0024, loss_rpn_bbox: 0.0313, loss_cls: 0.0295, acc: 98.7637, loss_bbox: 0.0686, loss: 0.1318
+2020-11-23 19:29:43,306 - mmdet - INFO - Epoch [2][500/624]	lr: 1.000e-02, eta: 0:16:51, time: 0.751, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0025, loss_rpn_bbox: 0.0313, loss_cls: 0.0315, acc: 98.7080, loss_bbox: 0.0768, loss: 0.1420
+2020-11-23 19:30:58,447 - mmdet - INFO - Epoch [2][600/624]	lr: 1.000e-02, eta: 0:15:39, time: 0.751, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0034, loss_rpn_bbox: 0.0298, loss_cls: 0.0349, acc: 98.5762, loss_bbox: 0.0761, loss: 0.1442
+2020-11-23 19:31:42,564 - mmdet - INFO - Evaluating bbox...
+2020-11-23 19:31:44,191 - mmdet - INFO - Epoch [2][624/624]	lr: 1.000e-02, bbox_mAP: 0.8560, bbox_mAP_50: 0.9060, bbox_mAP_75: 0.9050, bbox_mAP_s: 0.6450, bbox_mAP_m: 0.9080, bbox_mAP_l: 0.9010, bbox_mAP_copypaste: 0.856 0.906 0.905 0.645 0.908 0.901
+2020-11-23 19:32:17,125 - mmdet - INFO - Epoch(train) [2][82]	loss_rpn_cls: 0.0028, loss_rpn_bbox: 0.0339, loss_cls: 0.0311, acc: 98.7412, loss_bbox: 0.0725, loss: 0.1402
+2020-11-23 19:33:34,288 - mmdet - INFO - Epoch [3][100/624]	lr: 1.000e-02, eta: 0:13:55, time: 0.770, data_time: 0.034, memory: 11911, loss_rpn_cls: 0.0024, loss_rpn_bbox: 0.0309, loss_cls: 0.0284, acc: 98.8867, loss_bbox: 0.0684, loss: 0.1301
+2020-11-23 19:34:49,398 - mmdet - INFO - Epoch [3][200/624]	lr: 1.000e-02, eta: 0:12:44, time: 0.751, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0029, loss_rpn_bbox: 0.0307, loss_cls: 0.0311, acc: 98.7197, loss_bbox: 0.0770, loss: 0.1417
+2020-11-23 19:36:04,423 - mmdet - INFO - Epoch [3][300/624]	lr: 1.000e-02, eta: 0:11:32, time: 0.750, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0028, loss_rpn_bbox: 0.0298, loss_cls: 0.0327, acc: 98.6016, loss_bbox: 0.0741, loss: 0.1393
+2020-11-23 19:37:19,330 - mmdet - INFO - Epoch [3][400/624]	lr: 1.000e-02, eta: 0:10:20, time: 0.749, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0028, loss_rpn_bbox: 0.0318, loss_cls: 0.0309, acc: 98.6777, loss_bbox: 0.0762, loss: 0.1417
+2020-11-23 19:38:34,483 - mmdet - INFO - Epoch [3][500/624]	lr: 1.000e-02, eta: 0:09:08, time: 0.752, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0023, loss_rpn_bbox: 0.0309, loss_cls: 0.0371, acc: 98.3564, loss_bbox: 0.0751, loss: 0.1454
+2020-11-23 19:39:49,364 - mmdet - INFO - Epoch [3][600/624]	lr: 1.000e-02, eta: 0:07:55, time: 0.749, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0024, loss_rpn_bbox: 0.0315, loss_cls: 0.0311, acc: 98.6816, loss_bbox: 0.0782, loss: 0.1433
+2020-11-23 19:40:33,744 - mmdet - INFO - Evaluating bbox...
+2020-11-23 19:40:35,301 - mmdet - INFO - Epoch [3][624/624]	lr: 1.000e-02, bbox_mAP: 0.8590, bbox_mAP_50: 0.9100, bbox_mAP_75: 0.9100, bbox_mAP_s: 0.6390, bbox_mAP_m: 0.8930, bbox_mAP_l: 0.9070, bbox_mAP_copypaste: 0.859 0.910 0.910 0.639 0.893 0.907
+2020-11-23 19:41:52,837 - mmdet - INFO - Epoch [4][100/624]	lr: 1.000e-02, eta: 0:06:20, time: 0.773, data_time: 0.033, memory: 11911, loss_rpn_cls: 0.0024, loss_rpn_bbox: 0.0301, loss_cls: 0.0299, acc: 98.7881, loss_bbox: 0.0766, loss: 0.1391
+2020-11-23 19:43:07,900 - mmdet - INFO - Epoch [4][200/624]	lr: 1.000e-02, eta: 0:05:08, time: 0.751, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0027, loss_rpn_bbox: 0.0300, loss_cls: 0.0327, acc: 98.5752, loss_bbox: 0.0734, loss: 0.1388
+2020-11-23 19:44:22,891 - mmdet - INFO - Epoch [4][300/624]	lr: 1.000e-02, eta: 0:03:56, time: 0.750, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0021, loss_rpn_bbox: 0.0284, loss_cls: 0.0313, acc: 98.6035, loss_bbox: 0.0718, loss: 0.1336
+2020-11-23 19:45:37,926 - mmdet - INFO - Epoch [4][400/624]	lr: 1.000e-02, eta: 0:02:43, time: 0.750, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0018, loss_rpn_bbox: 0.0299, loss_cls: 0.0334, acc: 98.5635, loss_bbox: 0.0758, loss: 0.1410
+2020-11-23 19:46:52,936 - mmdet - INFO - Epoch [4][500/624]	lr: 1.000e-02, eta: 0:01:30, time: 0.750, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0038, loss_rpn_bbox: 0.0333, loss_cls: 0.0329, acc: 98.7012, loss_bbox: 0.0746, loss: 0.1446
+2020-11-23 19:48:07,838 - mmdet - INFO - Epoch [4][600/624]	lr: 1.000e-02, eta: 0:00:17, time: 0.749, data_time: 0.012, memory: 11911, loss_rpn_cls: 0.0023, loss_rpn_bbox: 0.0306, loss_cls: 0.0327, acc: 98.5801, loss_bbox: 0.0705, loss: 0.1361
+2020-11-23 19:48:25,701 - mmdet - INFO - Saving checkpoint at 4 epochs
+2020-11-23 19:48:53,664 - mmdet - INFO - Evaluating bbox...
+2020-11-23 19:48:55,221 - mmdet - INFO - Epoch [4][624/624]	lr: 1.000e-02, bbox_mAP: 0.8520, bbox_mAP_50: 0.9010, bbox_mAP_75: 0.9010, bbox_mAP_s: 0.6520, bbox_mAP_m: 0.9030, bbox_mAP_l: 0.8960, bbox_mAP_copypaste: 0.852 0.901 0.901 0.652 0.903 0.896
+2020-11-23 19:49:27,963 - mmdet - INFO - Epoch(train) [4][82]	loss_rpn_cls: 0.0023, loss_rpn_bbox: 0.0350, loss_cls: 0.0280, acc: 98.8341, loss_bbox: 0.0722, loss: 0.1376
