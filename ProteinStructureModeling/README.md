@@ -94,7 +94,5 @@ AlphaFold2已经接近严丝合缝，V1差异还比较大，但V2、V3已经有�
 - [Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2)
 
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/2666308/1644537561959-c061f12f-c4dd-4bfa-a41e-91a6ae3b70df.png#clientId=u75216a51-bfa7-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=691&id=u5807fd69&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1382&originWidth=2157&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1945874&status=done&style=none&taskId=uaa0b38b5-a18b-458d-9a6e-156c7c8c5d4&title=&width=1078.5)
-详见[https://github.com/IvanaXu/TianChiProj/tree/master/ProteinStructureModeling](https://github.com/IvanaXu/TianChiProj/tree/master/ProteinStructureModeling)
-## [
-](https://fanpusci.blog.caixin.com/archives/248361)
 
+详见[https://github.com/IvanaXu/TianChiProj/tree/master/ProteinStructureModeling](https://github.com/IvanaXu/TianChiProj/tree/master/ProteinStructureModeling)
