@@ -33,5 +33,7 @@
 >
 > 012.UsedCarPrice, https://tianchi.aliyun.com/competition/entrance/231784/introduction
 >  
+> 013.iFutureCar, https://tianchi.aliyun.com/competition/entrance/531995/introduction
+> 
 
 Coming Soon...
