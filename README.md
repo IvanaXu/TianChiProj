@@ -38,5 +38,7 @@
 >  
 > 013.iFutureCar, https://tianchi.aliyun.com/competition/entrance/531995/introduction
 > 
+> 014.iDeepRec, https://tianchi.aliyun.com/competition/entrance/532005/introduction
+> 
 
 Coming Soon...
