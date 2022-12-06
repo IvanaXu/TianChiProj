@@ -2,7 +2,8 @@
 <div align=center>
 <img src="99.Temp/logo1.png"/>
 
-https://github.com/IvanaXu/TianChiProj/projects
+https://tianchi.aliyun.com
+
 </div>
 
 ---
@@ -45,4 +46,6 @@ https://github.com/IvanaXu/TianChiProj/projects
 > 014.iDeepRec, https://tianchi.aliyun.com/competition/entrance/532005/introduction
 > 
 
-Coming Soon...
+_😌 Coming Soon..._
+
+> https://github.com/IvanaXu/TianChiProj/projects
