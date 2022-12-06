@@ -1,5 +1,4 @@
 ![](./99.Temp/logo1.png)
-![](./99.Temp/logo2.png)
 * _https://github.com/IvanaXu/TianChiProj/projects_
 ---
 
