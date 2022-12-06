@@ -1,5 +1,10 @@
-![](./99.Temp/logo1.png)
-* _https://github.com/IvanaXu/TianChiProj/projects_
+
+<div align=center>
+<img src="99.Temp/logo1.png"/>
+
+https://github.com/IvanaXu/TianChiProj/projects
+</div>
+
 ---
 
 * Data
@@ -7,7 +12,7 @@
 > d0.Address Word List - 地址词汇表, https://tianchi.aliyun.com/dataset/dataDetail?dataId=61932
 >
 > d1.OPurchase_Redemption 资金流入流出预测-挑战Baseline
----
+
 
 * TianChiProj✨✨✨
 
