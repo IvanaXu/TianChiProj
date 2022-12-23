@@ -10,7 +10,7 @@ https://tianchi.aliyun.com
 
 * Data
 
-> d0.Address Word List - 地址词汇表, https://tianchi.aliyun.com/dataset/dataDetail?dataId=61932
+> d0.Address Word List - 地址词汇表, https://tianchi.aliyun.com/dataset/61932
 >
 > d1.OPurchase_Redemption 资金流入流出预测-挑战Baseline
 >
