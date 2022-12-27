@@ -21,7 +21,7 @@ https://tianchi.aliyun.com
 
 | 时间序号 | 项目名称 | 算法比赛 | 比赛链接 |
 | - | - | - | - |
-| 001 | EnergyUNiLAB | | https://tianchi.aliyun.com/competition/entrance/532022/introduction
+| 001 | EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测 | https://tianchi.aliyun.com/competition/entrance/532022/introduction |
 
 > 002.HOcean_Round1, https://tianchi.aliyun.com/competition/entrance/231768/introduction
 > 
