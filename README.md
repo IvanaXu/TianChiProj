@@ -26,7 +26,7 @@ https://tianchi.aliyun.com
 | 2020.04.UsedCarPrice | 零基础入门数据挖掘 - 二手车交易价格预测 | 正式赛Rank467 | https://tianchi.aliyun.com/competition/entrance/231784/introduction [🔥]https://tianchi.aliyun.com/notebook/102085|
 | 2020.05.LDocker |【入门】Docker练习场 | 第一期Rank1 | https://tianchi.aliyun.com/competition/entrance/231759/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=86421|
 | 2020.06.O2OCoupon | 天池新人实战赛o2o优惠券使用预测 | 长期赛Rank2743 | https://tianchi.aliyun.com/competition/entrance/231593/introduction [🔥]https://tianchi.aliyun.com/notebook/118077|
-| 2020.06.SCdata2020 | 2020首届数字四川创新大赛 | 复赛 | |
+| 2020.06.SCdata2020 | 2020首届数字四川创新大赛 | 复赛 | https://www.scdata.net.cn/kfds/pages/index.html |
 | 2020.09.SciDICup | 科学数据智能发现大赛（SciDI Cup）| 初赛Rank35、复赛Rank17、决赛优胜奖 | https://tianchi.aliyun.com/competition/entrance/531805/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=127514| 
 | 2020.09.SecurityAI_Round4 | CIKM2020 安全AI挑战者计划第四期：通用目标检测的对抗攻击 | 正式赛Rank16、长期赛Rank2 | https://tianchi.aliyun.com/competition/entrance/531806/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95346|
 | 2020.09.TestRisk | 零基础入门金融风控-贷款违约预测 | 正式赛Rank580 | https://tianchi.aliyun.com/competition/entrance/531830/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95347|
