@@ -10,13 +10,11 @@ https://tianchi.aliyun.com
 
 * Data
 
-> d0.Address Word List - 地址词汇表, https://tianchi.aliyun.com/dataset/61932
->
-> d1.OPurchase_Redemption 资金流入流出预测-挑战Baseline
->
-> d2.PDB Source-S, https://tianchi.aliyun.com/dataset/143369
->
-> d3.PDB Source-M, https://tianchi.aliyun.com/dataset/143449
+| 序号 | 数据名 | 数据链接 |
+| - | - | - |
+| d001 | Address Word List | https://tianchi.aliyun.com/dataset/61932 |
+| d002 | PDB Source-S | https://tianchi.aliyun.com/dataset/143369 |
+| d003 | PDB Source-M | https://tianchi.aliyun.com/dataset/143449 |
 
 
 * TianChiProj✨✨✨
