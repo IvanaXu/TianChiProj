@@ -25,11 +25,12 @@ https://tianchi.aliyun.com
 | 2020.05 | LDocker |【入门】Docker练习场 | 第一期Rank1 | https://tianchi.aliyun.com/competition/entrance/231759/introduction |
 | 2020.06 | O2OCoupon | 天池新人实战赛o2o优惠券使用预测 | 长期赛Rank2743 | https://tianchi.aliyun.com/competition/entrance/231593/introduction |
 | 2020.06 | SCdata2020 | 2020首届数字四川创新大赛 | 复赛 | |
+| 2020.09 | SciDICup | 科学数据智能发现大赛（SciDI Cup）| 初赛Rank35、复赛Rank17、决赛优胜奖 | https://tianchi.aliyun.com/competition/entrance/531805/introduction | 
 | 2020.11 | Pokemon | 【入门】精灵宝可梦数据集分析 | / | https://tianchi.aliyun.com/competition/entrance/531822/introduction https://tianchi.aliyun.com/notebook/126265 |
 | 2021.12 | ProteinStructureModeling | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | 初赛Rank2、复赛Rank5 | https://tianchi.aliyun.com/competition/entrance/531916/introduction |
 | 2022.11 | EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| 初赛Rank110 | https://tianchi.aliyun.com/competition/entrance/532022/introduction |
 
-> 008.SciDICup, https://tianchi.aliyun.com/competition/entrance/531805/introduction
+
 > 
 > 009.SecurityAI_Round4, https://tianchi.aliyun.com/competition/entrance/531806/introduction
 >
