@@ -33,9 +33,9 @@ https://tianchi.aliyun.com
 | 2020.11.Pokemon | 【入门】精灵宝可梦数据集分析 | / | https://tianchi.aliyun.com/competition/entrance/531822/introduction https://tianchi.aliyun.com/notebook/126265 |
 | 2020.11.SecurityAI_Round5 | 安全AI挑战者计划第五期：伪造图像的对抗攻击 | 赛季Rank64、赛季Rank36 | https://tianchi.aliyun.com/competition/entrance/531812/introduction |
 | 2021.12.ProteinStructureModeling | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | 初赛Rank2、复赛Rank5 | https://tianchi.aliyun.com/competition/entrance/531916/introduction |
-| 2022.09.iFutureCar |  2022年全球“未来汽车”智能场景创新挑战赛——智能算法赛 | 初赛 | https://tianchi.aliyun.com/competition/entrance/531995/introduction |
-| 2022.11.EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| 初赛Rank110 | https://tianchi.aliyun.com/competition/entrance/532022/introduction |
-| 2022.11.iDeepRec | 英特尔“创新大师杯”全球AI极客挑战赛——DeepRec CTR模型性能优化 | 初赛Rank19、复赛Rank17 | https://tianchi.aliyun.com/competition/entrance/532005/introduction | 
+| 2022.09.iFutureCar |  2022年全球“未来汽车”智能场景创新挑战赛——智能算法赛 | 初赛 | https://tianchi.aliyun.com/competition/entrance/531995/introduction https://github.com/IvanaXu/iFutureCar |
+| 2022.11.EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| 初赛Rank110 | https://tianchi.aliyun.com/competition/entrance/532022/introduction https://github.com/IvanaXu/iEnergyUNiLAB |
+| 2022.11.iDeepRec | 英特尔“创新大师杯”全球AI极客挑战赛——DeepRec CTR模型性能优化 | 初赛Rank19、复赛Rank17 | https://tianchi.aliyun.com/competition/entrance/532005/introduction https://github.com/IvanaXu/iDeepRec https://tianchi.aliyun.com/forum/postDetail?postId=442005 | 
 
 ---
 
