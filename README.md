@@ -19,9 +19,9 @@ https://tianchi.aliyun.com
 
 * TianChiProj✨✨✨
 
-| 序号 | 项目名称 | 算法比赛 | 比赛链接 |
-| - | - | - | - |
-| 2022.11 | EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测 | https://tianchi.aliyun.com/competition/entrance/532022/introduction |
+| 序号 | 项目名称 | 算法比赛 | 算法比赛 | 比赛链接 |
+| - | - | - | - | - |
+| 2022.11 | EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| 初赛Rank110 | https://tianchi.aliyun.com/competition/entrance/532022/introduction |
 
 > 002.HOcean_Round1, https://tianchi.aliyun.com/competition/entrance/231768/introduction
 > 
