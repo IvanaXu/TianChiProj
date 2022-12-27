@@ -8,7 +8,7 @@ https://tianchi.aliyun.com
 
 ---
 
-* Data
+### 🔥🔥🔥Data
 
 | 序号 | 数据名 | 数据链接 |
 | - | - | - |
@@ -16,8 +16,9 @@ https://tianchi.aliyun.com
 | d002 | PDB Source-S | https://tianchi.aliyun.com/dataset/143369 |
 | d003 | PDB Source-M | https://tianchi.aliyun.com/dataset/143449 |
 
+---
 
-* TianChiProj✨✨✨
+### ✨✨✨TianChiProj
 
 | 序号.项目名称 | 算法比赛 | 算法比赛 | 比赛链接/相关链接 |
 | - | - | - | - |
@@ -36,7 +37,12 @@ https://tianchi.aliyun.com
 | 2022.11.EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| 初赛Rank110 | https://tianchi.aliyun.com/competition/entrance/532022/introduction |
 | 2022.11.iDeepRec | 英特尔“创新大师杯”全球AI极客挑战赛——DeepRec CTR模型性能优化 | 初赛Rank19、复赛Rank17 | https://tianchi.aliyun.com/competition/entrance/532005/introduction | 
 
+---
 
-_😌 Coming Soon..._
+<div align=center>
+😌 Coming Soon...
 
-> https://github.com/IvanaXu/TianChiProj/projects
+https://github.com/IvanaXu/TianChiProj/projects
+</div>
+
+---
