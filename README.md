@@ -27,14 +27,13 @@ https://tianchi.aliyun.com
 | 2020.06.SCdata2020 | 2020首届数字四川创新大赛 | 复赛 | |
 | 2020.09.SciDICup | 科学数据智能发现大赛（SciDI Cup）| 初赛Rank35、复赛Rank17、决赛优胜奖 | https://tianchi.aliyun.com/competition/entrance/531805/introduction | 
 | 2020.09.SecurityAI_Round4 | CIKM2020 安全AI挑战者计划第四期：通用目标检测的对抗攻击 | 正式赛Rank16、长期赛Rank2 | https://tianchi.aliyun.com/competition/entrance/531806/introduction |
-| 2020.11.SecurityAI_Round5 | 安全AI挑战者计划第五期：伪造图像的对抗攻击 | 赛季Rank64、赛季Rank36 | https://tianchi.aliyun.com/competition/entrance/531812/introduction |
+| 2020.09.TestRisk | 零基础入门金融风控-贷款违约预测 | 正式赛Rank580 | https://tianchi.aliyun.com/competition/entrance/531830/introduction |
 | 2020.11.Pokemon | 【入门】精灵宝可梦数据集分析 | / | https://tianchi.aliyun.com/competition/entrance/531822/introduction https://tianchi.aliyun.com/notebook/126265 |
+| 2020.11.SecurityAI_Round5 | 安全AI挑战者计划第五期：伪造图像的对抗攻击 | 赛季Rank64、赛季Rank36 | https://tianchi.aliyun.com/competition/entrance/531812/introduction |
 | 2021.12.ProteinStructureModeling | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | 初赛Rank2、复赛Rank5 | https://tianchi.aliyun.com/competition/entrance/531916/introduction |
 | 2022.11.EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| 初赛Rank110 | https://tianchi.aliyun.com/competition/entrance/532022/introduction |
 
->
-> 011.TestRisk, https://tianchi.aliyun.com/competition/entrance/531830/introduction
->
+
 > 012.UsedCarPrice, https://tianchi.aliyun.com/competition/entrance/231784/introduction
 >  
 > 013.iFutureCar, https://tianchi.aliyun.com/competition/entrance/531995/introduction
