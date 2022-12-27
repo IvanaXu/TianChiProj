@@ -19,8 +19,10 @@ https://tianchi.aliyun.com
 
 * TianChiProj✨✨✨
 
-> 001.EnergyUNiLAB, https://tianchi.aliyun.com/competition/entrance/532022/introduction
->
+| 时间序号 | 项目名称 | 算法比赛 | 比赛链接 |
+| - | - | - | - |
+| 001 | EnergyUNiLAB | | https://tianchi.aliyun.com/competition/entrance/532022/introduction
+
 > 002.HOcean_Round1, https://tianchi.aliyun.com/competition/entrance/231768/introduction
 > 
 > 003.LDocker, https://tianchi.aliyun.com/competition/entrance/231759/introduction
