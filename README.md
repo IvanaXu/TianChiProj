@@ -43,6 +43,7 @@ https://tianchi.aliyun.com
 😌 Coming Soon...
 
 https://github.com/IvanaXu/TianChiProj/projects
-</div>
 
----
+https://tianchi.aliyun.com/home/science/scienceDetail?userId=1095279182618
+
+</div>
