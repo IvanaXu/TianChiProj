@@ -47,11 +47,3 @@ https://github.com/IvanaXu/TianChiProj/projects
 https://tianchi.aliyun.com/home/science/scienceDetail?userId=1095279182618
 
 </div>
-
-<iframe  
-height=850 
-width=90% 
-src="https://tianchi.aliyun.com/home/science/scienceDetail?userId=1095279182618"  
-frameborder=0  
-allowfullscreen>
-</iframe>
