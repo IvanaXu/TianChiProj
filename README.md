@@ -63,6 +63,8 @@ https://tianchi.aliyun.com
 | 2020.11[TODO] | 零基础入门推荐系统 - 新闻推荐 | | R361 | | | | https://tianchi.aliyun.com/competition/entrance/531842/introduction |
 | 2020.11-1.Pokemon | 【入门】精灵宝可梦数据集分析 | / | | | | | https://tianchi.aliyun.com/competition/entrance/531822/introduction [🔥]https://tianchi.aliyun.com/notebook/126265 |
 | 2020.11-2.SecurityAI_Round5 | 安全AI挑战者计划第五期：伪造图像的对抗攻击 | R36 | R64 | | | | https://tianchi.aliyun.com/competition/entrance/531812/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95348|
+| 2021.01[TODO] | 零基础入门强化学习-经典游戏挑战赛 | | R14 | | | | https://tianchi.aliyun.com/competition/entrance/531854/introduction |
+| 2021.04[TODO] | “新内容 新交互”全球视频云创新挑战赛--算法挑战赛道 | | R50 | | | | https://tianchi.aliyun.com/competition/entrance/531873/introduction |
 | 2021.12-1.ProteinStructureModeling | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | | R2 | R5 | 季军 | 🥉 | https://tianchi.aliyun.com/competition/entrance/531916/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95343 |
 | 2022.09-1.iFutureCar |  2022年全球“未来汽车”智能场景创新挑战赛——智能算法赛 | | | | | | https://tianchi.aliyun.com/competition/entrance/531995/introduction https://github.com/IvanaXu/iFutureCar |
 | 2022.11-1.EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| | R110 | | | | https://tianchi.aliyun.com/competition/entrance/532022/introduction https://github.com/IvanaXu/iEnergyUNiLAB |
