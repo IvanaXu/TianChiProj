@@ -54,9 +54,13 @@ https://tianchi.aliyun.com
 | 2020.07[TODO] | 零基础入门NLP - 新闻文本分类 | R319 | R114 | | | | https://tianchi.aliyun.com/competition/entrance/531810/introduction |
 | 2020.08[TODO] | “万创杯”中医药天池大数据竞赛——中药说明书实体识别挑战 | | R294 | | | | https://tianchi.aliyun.com/competition/entrance/531824/introduction |
 | 2020.08[TODO] | “万创杯”中医药天池大数据竞赛——中医文献问题生成挑战 | | R73 | R38 | | | https://tianchi.aliyun.com/competition/entrance/531826/introduction |
+| 2020.09[TODO] | 阿里云数智服务创新挑战赛——服务调度比赛 | | R66 | | | | https://tianchi.aliyun.com/competition/entrance/531831/introduction |
 | 2020.09-1.SciDICup | 科学数据智能发现大赛（SciDI Cup）| | R35 | R17 | 优胜奖 | 🥉 | https://tianchi.aliyun.com/competition/entrance/531805/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=127514| 
 | 2020.09-2.SecurityAI_Round4 | CIKM2020 安全AI挑战者计划第四期：通用目标检测的对抗攻击 | R2 | R16 | | | 🥈 | https://tianchi.aliyun.com/competition/entrance/531806/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95346|
 | 2020.09-3.TestRisk | 零基础入门金融风控-贷款违约预测 | | R580 | | | | https://tianchi.aliyun.com/competition/entrance/531830/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95347|
+| 2020.11[TODO] | 天猫复购预测之挑战Baseline | | R1676 | | | | https://tianchi.aliyun.com/competition/entrance/231576/introduction |
+| 2020.11[TODO] | NLP中文预训练模型泛化能力挑战赛 | | R176 | | | | https://tianchi.aliyun.com/competition/entrance/531841/introduction |
+| 2020.11[TODO] | 零基础入门推荐系统 - 新闻推荐 | | R361 | | | | https://tianchi.aliyun.com/competition/entrance/531842/introduction |
 | 2020.11-1.Pokemon | 【入门】精灵宝可梦数据集分析 | / | | | | | https://tianchi.aliyun.com/competition/entrance/531822/introduction [🔥]https://tianchi.aliyun.com/notebook/126265 |
 | 2020.11-2.SecurityAI_Round5 | 安全AI挑战者计划第五期：伪造图像的对抗攻击 | R36 | R64 | | | | https://tianchi.aliyun.com/competition/entrance/531812/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95348|
 | 2021.12-1.ProteinStructureModeling | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | | R2 | R5 | 季军 | 🥉 | https://tianchi.aliyun.com/competition/entrance/531916/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95343 |
