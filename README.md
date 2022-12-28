@@ -33,7 +33,9 @@ https://tianchi.aliyun.com
 | 2020.03[TODO] | 淘宝直播商品识别大赛 | 初赛Rank55、复赛Rank42 | | https://tianchi.aliyun.com/competition/entrance/231772/introduction |
 | 2020.03-1.HOcean_Round1 | 2020数字中国创新大赛—算法赛：智慧海洋建设 | 初赛Rank959 | | https://tianchi.aliyun.com/competition/entrance/231768/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95356|
 | 2020.04[TODO] | CVPR 2020 AliProducts Challenge: Large-scale Product Recognition | 正式赛Rank36、长期赛Rank14 | | https://tianchi.aliyun.com/competition/entrance/231780/introduction |
-| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Instance Segmentation | trackARank23、trackARank18 | | https://tianchi.aliyun.com/competition/entrance/231787/introduction |
+| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Instance Segmentation | trackARank23、trackBRank18 | | https://tianchi.aliyun.com/competition/entrance/231787/introduction |
+| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: 3D Object Reconstruction from A Single Image | trackARank20、trackBRank10 | | https://tianchi.aliyun.com/competition/entrance/231788/introduction |
+| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Image-based 3D Shape Retrieval | trackARank18、trackBRank8 | | https://tianchi.aliyun.com/competition/entrance/231789/introduction |
 | 2020.04-1.UsedCarPrice | 零基础入门数据挖掘 - 二手车交易价格预测 | 正式赛Rank467 | | https://tianchi.aliyun.com/competition/entrance/231784/introduction [🔥]https://tianchi.aliyun.com/notebook/102085|
 | 2020.05-1.LDocker |【入门】Docker练习场 | 第一期Rank1 | 🏆 | https://tianchi.aliyun.com/competition/entrance/231759/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=86421|
 | 2020.06-1.O2OCoupon | 天池新人实战赛o2o优惠券使用预测 | 长期赛Rank2743 | | https://tianchi.aliyun.com/competition/entrance/231593/introduction [🔥]https://tianchi.aliyun.com/notebook/118077|
