@@ -28,6 +28,7 @@ https://tianchi.aliyun.com
 | 2019.12[TODO] | 安全AI挑战者计划第二期 - ImageNet图像分类对抗攻击 | 正式赛Rank55、长期赛Rank3 | https://tianchi.aliyun.com/competition/entrance/231761/introduction |
 | 2020.01[TODO] | 资金流入流出预测-挑战Baseline | 长期赛Rank51 | https://tianchi.aliyun.com/competition/entrance/231573/introduction |
 | 2020.01[TODO] | 安全AI挑战者计划第三期 - 文本分类对抗攻击 | 正式赛Rank25、长期赛Rank1 | https://tianchi.aliyun.com/competition/entrance/231762/introduction |
+| 2020.01[TODO] | 新浪微博互动预测-挑战Baseline | 长期赛Rank4 | https://tianchi.aliyun.com/competition/entrance/231574/introduction |
 | 2020.03.HOcean_Round1 | 2020数字中国创新大赛—算法赛：智慧海洋建设 | 初赛Rank959 | https://tianchi.aliyun.com/competition/entrance/231768/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95356|
 | 2020.04.UsedCarPrice | 零基础入门数据挖掘 - 二手车交易价格预测 | 正式赛Rank467 | https://tianchi.aliyun.com/competition/entrance/231784/introduction [🔥]https://tianchi.aliyun.com/notebook/102085|
 | 2020.05.LDocker |【入门】Docker练习场 | 第一期Rank1 | https://tianchi.aliyun.com/competition/entrance/231759/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=86421|
