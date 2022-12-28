@@ -67,6 +67,7 @@ https://tianchi.aliyun.com
 | 2021.04[TODO] | “新内容 新交互”全球视频云创新挑战赛--算法挑战赛道 | | R50 | | | | https://tianchi.aliyun.com/competition/entrance/531873/introduction |
 | 2021.07[TODO] | 云上开发，高效智能--阿里云ECS Cloudbuild开发者大赛算法挑战赛道 | | R32 | R17 | | | https://tianchi.aliyun.com/competition/entrance/531906/introduction |
 | 2021.08[TODO] | 第三届 Apache Flink 极客挑战赛暨AAIG CUP——电商推荐“抱大腿”攻击识别 | | R86 | | | | https://tianchi.aliyun.com/competition/entrance/531925/introduction |
+| 2021.09[TODO] | 2021 亚太眼科学会大数据竞赛 | | R144 | | | | https://tianchi.aliyun.com/competition/entrance/531929/introduction |
 | 2021.12-1.ProteinStructureModeling | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | | R2 | R5 | 季军 | 🥉 | https://tianchi.aliyun.com/competition/entrance/531916/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95343 |
 | 2022.09-1.iFutureCar |  2022年全球“未来汽车”智能场景创新挑战赛——智能算法赛 | | | | | | https://tianchi.aliyun.com/competition/entrance/531995/introduction https://github.com/IvanaXu/iFutureCar |
 | 2022.11-1.EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| | R110 | | | | https://tianchi.aliyun.com/competition/entrance/532022/introduction https://github.com/IvanaXu/iEnergyUNiLAB |
