@@ -72,7 +72,12 @@ https://tianchi.aliyun.com
 | 2021.12-1.ProteinStructureModeling | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | | R2 | R5 | 季军 | 🥉 | https://tianchi.aliyun.com/competition/entrance/531916/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95343 |
 | 2022.02[TODO] | 零基础入门数据挖掘-心跳信号分类预测 | | R1250 | | | | https://tianchi.aliyun.com/competition/entrance/531883/introduction |
 | 2022.02[TODO] | 真实场景篡改图像检测挑战赛 | | R364 | | | | https://tianchi.aliyun.com/competition/entrance/531945/introduction |
-| 2022.03[TODO] | 第三届阿里云磐久智维算法大赛 | | R136 | R13 | R18 | | https://tianchi.aliyun.com/competition/entrance/531947/introduction |
+| 2022.03[TODO] | 第三届阿里云磐久智维算法大赛 | R136 | R13 | R18 | R23 | | https://tianchi.aliyun.com/competition/entrance/531947/introduction |
+| 2022.03[TODO] | “阿里灵杰”问天引擎电商搜索算法赛 | | R316 | | | | https://tianchi.aliyun.com/competition/entrance/531946/introduction |
+| 2022.05[TODO] | 2022江苏气象AI算法挑战赛-AI助力强对流天气预报 | | R120 | R40 | | | https://tianchi.aliyun.com/competition/entrance/531962/introduction |
+| 2022.06[TODO] | AETA地震预测AI算法大赛 | | R12 | R11 | ing | | https://tianchi.aliyun.com/competition/entrance/531972/introduction |
+| 2022.06[TODO] | | | | | | | |
+| 2022.06[TODO] | | | | | | | |
 | 2022.09-1.iFutureCar |  2022年全球“未来汽车”智能场景创新挑战赛——智能算法赛 | | | | | | https://tianchi.aliyun.com/competition/entrance/531995/introduction https://github.com/IvanaXu/iFutureCar |
 | 2022.11-1.EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| | R110 | | | | https://tianchi.aliyun.com/competition/entrance/532022/introduction https://github.com/IvanaXu/iEnergyUNiLAB |
 | 2022.11-2.iDeepRec | 英特尔“创新大师杯”全球AI极客挑战赛——DeepRec CTR模型性能优化 | | R19 | R17 | | | https://tianchi.aliyun.com/competition/entrance/532005/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=442005 https://github.com/IvanaXu/iDeepRec | 
