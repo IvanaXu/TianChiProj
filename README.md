@@ -80,6 +80,9 @@ https://tianchi.aliyun.com
 | 2022.06[TODO] | ECCV 2022 WCPA Challenge: From Face, Body and Fashion to 3D Virtual Avatars Ⅰ | | R12 | | | | https://tianchi.aliyun.com/competition/entrance/531958/introduction |
 | 2022.06[TODO] | ICDM 2022 : 大规模电商图上的风险商品检测 | | R208 | | | | https://tianchi.aliyun.com/competition/entrance/531976/introduction |
 | 2022.07[TODO] | CIKM 2022 AnalytiCup Competition: 联邦异质任务学习 | | R13 | | | | https://tianchi.aliyun.com/competition/entrance/532008/introduction |
+| 2022.08[TODO] | 2022 WAIC 黑客松九章云极赛道-因果学习和决策优化挑战赛 | | R39 | | | | https://tianchi.aliyun.com/competition/entrance/532019/introduction |
+| 2022.08[TODO] | 2022 WAIC 黑客松蚂蚁财富赛道：AntSQL大规模金融语义解析中文Text-to-SQL挑战赛 | | R47 | R32 | | | https://tianchi.aliyun.com/competition/entrance/532009/introduction |
+| 2022.08[TODO] | 2022 WAIC 黑客松蚂蚁财富赛道：行情波动下的金融问答挑战赛 | | R49 | | | | https://tianchi.aliyun.com/competition/entrance/532010/introduction |
 | 2022.09-1.iFutureCar |  2022年全球“未来汽车”智能场景创新挑战赛——智能算法赛 | | | | | | https://tianchi.aliyun.com/competition/entrance/531995/introduction https://github.com/IvanaXu/iFutureCar |
 | 2022.11-1.EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| | R110 | | | | https://tianchi.aliyun.com/competition/entrance/532022/introduction https://github.com/IvanaXu/iEnergyUNiLAB |
 | 2022.11-2.iDeepRec | 英特尔“创新大师杯”全球AI极客挑战赛——DeepRec CTR模型性能优化 | | R19 | R17 | | | https://tianchi.aliyun.com/competition/entrance/532005/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=442005 https://github.com/IvanaXu/iDeepRec | 
