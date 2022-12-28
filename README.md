@@ -49,6 +49,7 @@ https://tianchi.aliyun.com
 | 2020.06[TODO] | 淘宝穿衣搭配-挑战Baseline | 长期赛Rank40| | https://tianchi.aliyun.com/competition/entrance/231575/introduction |
 | 2020.06-1.O2OCoupon | 天池新人实战赛o2o优惠券使用预测 | 长期赛Rank2743 | | https://tianchi.aliyun.com/competition/entrance/231593/introduction [🔥]https://tianchi.aliyun.com/notebook/118077|
 | 2020.06-2.SCdata2020 | 2020首届数字四川创新大赛 | / | ✨ | https://www.scdata.net.cn/kfds/pages/index.html |
+| 2020.07[TODO] | 阿里巴巴高德地图AMAP-TECH算法大赛 - 基于车载视频图像的动态路况分析 | 初赛Rank97 | | https://tianchi.aliyun.com/competition/entrance/531809/introduction |
 | 2020.09-1.SciDICup | 科学数据智能发现大赛（SciDI Cup）| 初赛Rank35、复赛Rank17、决赛优胜奖 | 🥉 | https://tianchi.aliyun.com/competition/entrance/531805/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=127514| 
 | 2020.09-2.SecurityAI_Round4 | CIKM2020 安全AI挑战者计划第四期：通用目标检测的对抗攻击 | 正式赛Rank16、长期赛Rank2 | 🥈 | https://tianchi.aliyun.com/competition/entrance/531806/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95346|
 | 2020.09-3.TestRisk | 零基础入门金融风控-贷款违约预测 | 正式赛Rank580 | | https://tianchi.aliyun.com/competition/entrance/531830/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95347|
