@@ -37,6 +37,8 @@ https://tianchi.aliyun.com
 | 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: 3D Object Reconstruction from A Single Image | trackARank20、trackBRank10 | | https://tianchi.aliyun.com/competition/entrance/231788/introduction |
 | 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Image-based 3D Shape Retrieval | trackARank18、trackBRank8 | | https://tianchi.aliyun.com/competition/entrance/231789/introduction |
 | 2020.04-1.UsedCarPrice | 零基础入门数据挖掘 - 二手车交易价格预测 | 正式赛Rank467 | | https://tianchi.aliyun.com/competition/entrance/231784/introduction [🔥]https://tianchi.aliyun.com/notebook/102085|
+| 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Multimodalities Recall | trackBRank52 | | https://tianchi.aliyun.com/competition/entrance/231786/introduction |
+| 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Debiasing | trackBRank97 | | https://tianchi.aliyun.com/competition/entrance/231785/introduction |
 | 2020.05-1.LDocker |【入门】Docker练习场 | 第一期Rank1 | 🏆 | https://tianchi.aliyun.com/competition/entrance/231759/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=86421|
 | 2020.06-1.O2OCoupon | 天池新人实战赛o2o优惠券使用预测 | 长期赛Rank2743 | | https://tianchi.aliyun.com/competition/entrance/231593/introduction [🔥]https://tianchi.aliyun.com/notebook/118077|
 | 2020.06-2.SCdata2020 | 2020首届数字四川创新大赛 | / | ✨ | https://www.scdata.net.cn/kfds/pages/index.html |
