@@ -1,1 +1,1 @@
-git add -A && git commit -m "#15 $1k" && git push
+git add -A && git commit -m "#16 $1" && git push
