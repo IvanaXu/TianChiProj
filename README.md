@@ -50,7 +50,7 @@ https://tianchi.aliyun.com
 | 2020.06[TODO] | 淘宝穿衣搭配-挑战Baseline | R40 | | | | | https://tianchi.aliyun.com/competition/entrance/231575/introduction |
 | 2020.06-1.O2OCoupon | 天池新人实战赛o2o优惠券使用预测 | R2743 | | | | | https://tianchi.aliyun.com/competition/entrance/231593/introduction [🔥]https://tianchi.aliyun.com/notebook/118077|
 | 2020.06-2.SCdata2020 | 2020首届数字四川创新大赛 | / | | | | ✨ | https://www.scdata.net.cn/kfds/pages/index.html |
-| 2020.07[TODO] | 阿里巴巴高德地图AMAP-TECH算法大赛 - 基于车载视频图像的动态路况分析 | | R97 | | | | https://tianchi.aliyun.com/competition/entrance/531809/introduction |
+| 2020.07-1.Amap_Traffic | 阿里巴巴高德地图AMAP-TECH算法大赛 - 基于车载视频图像的动态路况分析 | | R97 | | | | https://tianchi.aliyun.com/competition/entrance/531809/introduction |
 | 2020.07[TODO] | 零基础入门NLP - 新闻文本分类 | R319 | R114 | | | | https://tianchi.aliyun.com/competition/entrance/531810/introduction |
 | 2020.08[TODO] | “万创杯”中医药天池大数据竞赛——中药说明书实体识别挑战 | | R294 | | | | https://tianchi.aliyun.com/competition/entrance/531824/introduction |
 | 2020.08[TODO] | “万创杯”中医药天池大数据竞赛——中医文献问题生成挑战 | | R73 | R38 | | | https://tianchi.aliyun.com/competition/entrance/531826/introduction |
