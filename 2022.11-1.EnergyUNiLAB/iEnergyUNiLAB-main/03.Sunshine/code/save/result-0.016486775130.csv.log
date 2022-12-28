@@ -1,0 +1,1 @@
+in_chunk_len: 9,out_chunk_len: 2,max_epochs: 900,imax_epochs: 20,batch_size: 32,rnn_type_or_module: SimpleRNN,

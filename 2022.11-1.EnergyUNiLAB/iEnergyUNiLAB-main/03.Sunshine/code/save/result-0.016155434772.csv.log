@@ -1,0 +1,1 @@
+in_chunk_len: 7,out_chunk_len: 2,max_epochs: 900,imax_epochs: 50,batch_size: 8,rnn_type_or_module: LSTM,
