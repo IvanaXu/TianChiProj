@@ -79,7 +79,7 @@ https://tianchi.aliyun.com
 | 2022.06[TODO] | CVPR 2022 AliProducts Challenge: Large-scale Cross-Modal Product Retrieval | | R27 | | | | https://tianchi.aliyun.com/competition/entrance/531951/introduction |
 | 2022.06[TODO] | ECCV 2022 WCPA Challenge: From Face, Body and Fashion to 3D Virtual Avatars Ⅰ | | R12 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/531958/introduction |
 | 2022.06[TODO] | ICDM 2022 : 大规模电商图上的风险商品检测 | | R208 | | | | https://tianchi.aliyun.com/competition/entrance/531976/introduction |
-| 2022.07[TODO] | CIKM 2022 AnalytiCup Competition: 联邦异质任务学习 | | R13 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/532008/introduction |
+| 2022.07-1.iFederatedScope | CIKM 2022 AnalytiCup Competition: 联邦异质任务学习 | | R13 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/532008/introduction |
 | 2022.08[TODO] | 2022 WAIC 黑客松九章云极赛道-因果学习和决策优化挑战赛 | | R39 | | | | https://tianchi.aliyun.com/competition/entrance/532019/introduction |
 | 2022.08[TODO] | 2022 WAIC 黑客松蚂蚁财富赛道：AntSQL大规模金融语义解析中文Text-to-SQL挑战赛 | | R47 | R32 | | | https://tianchi.aliyun.com/competition/entrance/532009/introduction |
 | 2022.08[TODO] | 2022 WAIC 黑客松蚂蚁财富赛道：行情波动下的金融问答挑战赛 | | R49 | | | | https://tianchi.aliyun.com/competition/entrance/532010/introduction |
