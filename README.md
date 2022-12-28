@@ -22,7 +22,8 @@ https://tianchi.aliyun.com
 
 | 序号.项目名称 | 算法比赛 | 算法比赛 | 比赛链接/相关链接 |
 | - | - | - | - |
-| 2020.03.HOcean_Round1 | 2020数字中国创新大赛—算法赛：智慧海洋建设| 初赛Rank959 | https://tianchi.aliyun.com/competition/entrance/231768/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95356|
+| 2020.01[TODO] | 资金流入流出预测-挑战Baseline | 长期赛Rank51 | https://tianchi.aliyun.com/competition/entrance/231573/introduction |
+| 2020.03.HOcean_Round1 | 2020数字中国创新大赛—算法赛：智慧海洋建设 | 初赛Rank959 | https://tianchi.aliyun.com/competition/entrance/231768/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95356|
 | 2020.04.UsedCarPrice | 零基础入门数据挖掘 - 二手车交易价格预测 | 正式赛Rank467 | https://tianchi.aliyun.com/competition/entrance/231784/introduction [🔥]https://tianchi.aliyun.com/notebook/102085|
 | 2020.05.LDocker |【入门】Docker练习场 | 第一期Rank1 | https://tianchi.aliyun.com/competition/entrance/231759/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=86421|
 | 2020.06.O2OCoupon | 天池新人实战赛o2o优惠券使用预测 | 长期赛Rank2743 | https://tianchi.aliyun.com/competition/entrance/231593/introduction [🔥]https://tianchi.aliyun.com/notebook/118077|
