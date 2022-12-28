@@ -41,8 +41,8 @@ https://tianchi.aliyun.com
 | 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Multimodalities Recall | | R52 | | | | https://tianchi.aliyun.com/competition/entrance/231786/introduction |
 | 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Debiasing | | R97 | | | | https://tianchi.aliyun.com/competition/entrance/231785/introduction |
 | 2020.05[TODO] | Spark“数字人体”AI挑战赛——脊柱疾病智能诊断大赛 | | R77 | | | | https://tianchi.aliyun.com/competition/entrance/531796/introduction |
-| 2020.05[TODO] | MEDIA AI阿里巴巴文娱算法挑战赛 - 高精度视频人物分割赛道 | | R85 | | | | https://tianchi.aliyun.com/competition/entrance/531797/introduction |
-| 2020.05[TODO] | MEDIA AI阿里巴巴文娱算法挑战赛 - 视频时序事件检测赛道 | | R48 | | | | https://tianchi.aliyun.com/competition/entrance/531798/introduction |
+| 2020.05[TODO] | MEDIA AI阿里巴巴文娱算法挑战赛 - 高精度视频人物分割赛道 | | R85 | | | | https://tianchi.aliyun.com/competition/entrance/531797/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95349|
+| 2020.05[TODO] | MEDIA AI阿里巴巴文娱算法挑战赛 - 视频时序事件检测赛道 | | R48 | | | | https://tianchi.aliyun.com/competition/entrance/531798/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95353|
 | 2020.05[TODO] | 太阳风暴识别和预警人工智能挑战赛——赛道一：太阳黑子类型智能分类 | | R103 | | | | https://tianchi.aliyun.com/competition/entrance/531803/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95350 |
 | 2020.05[TODO] | 太阳风暴识别和预警人工智能挑战赛——赛道二：太阳风暴智能预警 | | R64 | | | | https://tianchi.aliyun.com/competition/entrance/531804/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95351 |
 | 2020.05[TODO] | 零基础入门CV - 街景字符编码识别 | R850 | R296 | | | | https://tianchi.aliyun.com/competition/entrance/531795/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95354|
