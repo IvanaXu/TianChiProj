@@ -8,7 +8,7 @@ https://tianchi.aliyun.com
 
 ---
 
-### ✨✨✨ Data
+### 🤔🤔🤔 Data
 
 | 序号 | 数据名 | 数据链接 |
 | - | - | - |
@@ -33,10 +33,10 @@ https://tianchi.aliyun.com
 | 2020.02[TODO] | PAKDD2020 阿里巴巴智能运维算法大赛 | | R116 | R60 | | | https://tianchi.aliyun.com/competition/entrance/231775/introduction |
 | 2020.03[TODO] | 淘宝直播商品识别大赛 | | R55 | R42 | | | https://tianchi.aliyun.com/competition/entrance/231772/introduction |
 | 2020.03-1.HOcean_Round1 | 2020数字中国创新大赛—算法赛：智慧海洋建设 | | R959 | | | | https://tianchi.aliyun.com/competition/entrance/231768/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95356|
-| 2020.04[TODO] | CVPR 2020 AliProducts Challenge: Large-scale Product Recognition | R14 | R36 | | | | https://tianchi.aliyun.com/competition/entrance/231780/introduction |
-| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Instance Segmentation | | R23 | R18 | | | https://tianchi.aliyun.com/competition/entrance/231787/introduction |
-| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: 3D Object Reconstruction from A Single Image | | R20 | R10 | |  | https://tianchi.aliyun.com/competition/entrance/231788/introduction |
-| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Image-based 3D Shape Retrieval | | R18 | R8 | | | https://tianchi.aliyun.com/competition/entrance/231789/introduction |
+| 2020.04[TODO] | CVPR 2020 AliProducts Challenge: Large-scale Product Recognition | R14 | R36 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/231780/introduction |
+| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Instance Segmentation | | R23 | R18 | | ✨ | https://tianchi.aliyun.com/competition/entrance/231787/introduction |
+| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: 3D Object Reconstruction from A Single Image | | R20 | R10 | | ✨ | https://tianchi.aliyun.com/competition/entrance/231788/introduction |
+| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Image-based 3D Shape Retrieval | | R18 | R8 | | ✨ | https://tianchi.aliyun.com/competition/entrance/231789/introduction |
 | 2020.04-1.UsedCarPrice | 零基础入门数据挖掘 - 二手车交易价格预测 | | R467 | | | | https://tianchi.aliyun.com/competition/entrance/231784/introduction [🔥]https://tianchi.aliyun.com/notebook/102085|
 | 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Multimodalities Recall | | R52 | | | | https://tianchi.aliyun.com/competition/entrance/231786/introduction |
 | 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Debiasing | | R97 | | | | https://tianchi.aliyun.com/competition/entrance/231785/introduction |
@@ -63,23 +63,23 @@ https://tianchi.aliyun.com
 | 2020.11[TODO] | 零基础入门推荐系统 - 新闻推荐 | | R361 | | | | https://tianchi.aliyun.com/competition/entrance/531842/introduction |
 | 2020.11-1.Pokemon | 【入门】精灵宝可梦数据集分析 | / | | | | | https://tianchi.aliyun.com/competition/entrance/531822/introduction [🔥]https://tianchi.aliyun.com/notebook/126265 |
 | 2020.11-2.SecurityAI_Round5 | 安全AI挑战者计划第五期：伪造图像的对抗攻击 | R36 | R64 | | | | https://tianchi.aliyun.com/competition/entrance/531812/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95348|
-| 2021.01[TODO] | 零基础入门强化学习-经典游戏挑战赛 | | R14 | | | | https://tianchi.aliyun.com/competition/entrance/531854/introduction |
+| 2021.01[TODO] | 零基础入门强化学习-经典游戏挑战赛 | | R14 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/531854/introduction |
 | 2021.04[TODO] | “新内容 新交互”全球视频云创新挑战赛--算法挑战赛道 | | R50 | | | | https://tianchi.aliyun.com/competition/entrance/531873/introduction |
-| 2021.07[TODO] | 云上开发，高效智能--阿里云ECS Cloudbuild开发者大赛算法挑战赛道 | | R32 | R17 | | | https://tianchi.aliyun.com/competition/entrance/531906/introduction |
+| 2021.07[TODO] | 云上开发，高效智能--阿里云ECS Cloudbuild开发者大赛算法挑战赛道 | | R32 | R17 | | ✨ | https://tianchi.aliyun.com/competition/entrance/531906/introduction |
 | 2021.08[TODO] | 第三届 Apache Flink 极客挑战赛暨AAIG CUP——电商推荐“抱大腿”攻击识别 | | R86 | | | | https://tianchi.aliyun.com/competition/entrance/531925/introduction |
 | 2021.09[TODO] | 2021 亚太眼科学会大数据竞赛 | | R144 | | | | https://tianchi.aliyun.com/competition/entrance/531929/introduction |
 | 2021.11[TODO] | AAAI-2022 安全AI挑战者计划第八期：以数据为中心的鲁棒机器学习 | | R356 | | | | https://tianchi.aliyun.com/competition/entrance/531939/introduction |
 | 2021.12-1.ProteinStructureModeling | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | | R2 | R5 | 季军 | 🥉 | https://tianchi.aliyun.com/competition/entrance/531916/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95343 |
 | 2022.02[TODO] | 零基础入门数据挖掘-心跳信号分类预测 | | R1250 | | | | https://tianchi.aliyun.com/competition/entrance/531883/introduction |
 | 2022.02[TODO] | 真实场景篡改图像检测挑战赛 | | R364 | | | | https://tianchi.aliyun.com/competition/entrance/531945/introduction |
-| 2022.03[TODO] | 第三届阿里云磐久智维算法大赛 | R136 | R13 | R18 | R23 | | https://tianchi.aliyun.com/competition/entrance/531947/introduction |
+| 2022.03[TODO] | 第三届阿里云磐久智维算法大赛 | R136 | R13 | R18 | R23 | ✨ | https://tianchi.aliyun.com/competition/entrance/531947/introduction |
 | 2022.03[TODO] | “阿里灵杰”问天引擎电商搜索算法赛 | | R316 | | | | https://tianchi.aliyun.com/competition/entrance/531946/introduction |
 | 2022.05[TODO] | 2022江苏气象AI算法挑战赛-AI助力强对流天气预报 | | R120 | R40 | | | https://tianchi.aliyun.com/competition/entrance/531962/introduction |
-| 2022.06[TODO] | AETA地震预测AI算法大赛 | | R12 | R11 | ing | | https://tianchi.aliyun.com/competition/entrance/531972/introduction |
+| 2022.06[TODO] | AETA地震预测AI算法大赛 | | R12 | R11 | ing | ✨ | https://tianchi.aliyun.com/competition/entrance/531972/introduction |
 | 2022.06[TODO] | CVPR 2022 AliProducts Challenge: Large-scale Cross-Modal Product Retrieval | | R27 | | | | https://tianchi.aliyun.com/competition/entrance/531951/introduction |
-| 2022.06[TODO] | ECCV 2022 WCPA Challenge: From Face, Body and Fashion to 3D Virtual Avatars Ⅰ | | R12 | | | | https://tianchi.aliyun.com/competition/entrance/531958/introduction |
+| 2022.06[TODO] | ECCV 2022 WCPA Challenge: From Face, Body and Fashion to 3D Virtual Avatars Ⅰ | | R12 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/531958/introduction |
 | 2022.06[TODO] | ICDM 2022 : 大规模电商图上的风险商品检测 | | R208 | | | | https://tianchi.aliyun.com/competition/entrance/531976/introduction |
-| 2022.07[TODO] | CIKM 2022 AnalytiCup Competition: 联邦异质任务学习 | | R13 | | | | https://tianchi.aliyun.com/competition/entrance/532008/introduction |
+| 2022.07[TODO] | CIKM 2022 AnalytiCup Competition: 联邦异质任务学习 | | R13 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/532008/introduction |
 | 2022.08[TODO] | 2022 WAIC 黑客松九章云极赛道-因果学习和决策优化挑战赛 | | R39 | | | | https://tianchi.aliyun.com/competition/entrance/532019/introduction |
 | 2022.08[TODO] | 2022 WAIC 黑客松蚂蚁财富赛道：AntSQL大规模金融语义解析中文Text-to-SQL挑战赛 | | R47 | R32 | | | https://tianchi.aliyun.com/competition/entrance/532009/introduction |
 | 2022.08[TODO] | 2022 WAIC 黑客松蚂蚁财富赛道：行情波动下的金融问答挑战赛 | | R49 | | | | https://tianchi.aliyun.com/competition/entrance/532010/introduction |
@@ -87,8 +87,8 @@ https://tianchi.aliyun.com
 | 2022.09-1.iFutureCar |  2022年全球“未来汽车”智能场景创新挑战赛——智能算法赛 | | | | | | https://tianchi.aliyun.com/competition/entrance/531995/introduction https://github.com/IvanaXu/iFutureCar |
 | 2022.10[TODO] | AMWD 2022：阿里云安全WEBSHELL文本检测 | | R32 | | | | https://tianchi.aliyun.com/competition/entrance/532035/introduction |
 | 2022.11-1.EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| | R110 | | | | https://tianchi.aliyun.com/competition/entrance/532022/introduction https://github.com/IvanaXu/iEnergyUNiLAB |
-| 2022.11-2.iDeepRec | 英特尔“创新大师杯”全球AI极客挑战赛——DeepRec CTR模型性能优化 | | R19 | R17 | | | https://tianchi.aliyun.com/competition/entrance/532005/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=442005 https://github.com/IvanaXu/iDeepRec | 
-| 2022.12[TODO] | “云上进化”2022全球AI生物智药大赛：赛道一“基于AI算法的SARS-CoV-2广谱中和抗体药物设计” | | R14 | R10 | | | https://tianchi.aliyun.com/competition/entrance/532028/introduction |
+| 2022.11-2.iDeepRec | 英特尔“创新大师杯”全球AI极客挑战赛——DeepRec CTR模型性能优化 | | R19 | R17 | | ✨ | https://tianchi.aliyun.com/competition/entrance/532005/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=442005 https://github.com/IvanaXu/iDeepRec | 
+| 2022.12[TODO] | “云上进化”2022全球AI生物智药大赛：赛道一“基于AI算法的SARS-CoV-2广谱中和抗体药物设计” | | R14 | R10 | | ✨ | https://tianchi.aliyun.com/competition/entrance/532028/introduction |
 | 2022.12[TODO] | “云上进化”2022全球AI生物智药大赛：赛道二“抗原抗体结合Epitope和Paratope精准确定” | | R15 | R1 | | 🏆 | https://tianchi.aliyun.com/competition/entrance/532029/introduction |
 
 ---
