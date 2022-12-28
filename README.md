@@ -76,8 +76,8 @@ https://tianchi.aliyun.com
 | 2022.03[TODO] | “阿里灵杰”问天引擎电商搜索算法赛 | | R316 | | | | https://tianchi.aliyun.com/competition/entrance/531946/introduction |
 | 2022.05[TODO] | 2022江苏气象AI算法挑战赛-AI助力强对流天气预报 | | R120 | R40 | | | https://tianchi.aliyun.com/competition/entrance/531962/introduction |
 | 2022.06[TODO] | AETA地震预测AI算法大赛 | | R12 | R11 | ing | | https://tianchi.aliyun.com/competition/entrance/531972/introduction |
-| 2022.06[TODO] | | | | | | | |
-| 2022.06[TODO] | | | | | | | |
+| 2022.06[TODO] | CVPR 2022 AliProducts Challenge: Large-scale Cross-Modal Product Retrieval | | R27 | | | | https://tianchi.aliyun.com/competition/entrance/531951/introduction |
+| 2022.06[TODO] | ECCV 2022 WCPA Challenge: From Face, Body and Fashion to 3D Virtual Avatars Ⅰ | | R12 | | | | https://tianchi.aliyun.com/competition/entrance/531958/introduction |
 | 2022.09-1.iFutureCar |  2022年全球“未来汽车”智能场景创新挑战赛——智能算法赛 | | | | | | https://tianchi.aliyun.com/competition/entrance/531995/introduction https://github.com/IvanaXu/iFutureCar |
 | 2022.11-1.EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| | R110 | | | | https://tianchi.aliyun.com/competition/entrance/532022/introduction https://github.com/IvanaXu/iEnergyUNiLAB |
 | 2022.11-2.iDeepRec | 英特尔“创新大师杯”全球AI极客挑战赛——DeepRec CTR模型性能优化 | | R19 | R17 | | | https://tianchi.aliyun.com/competition/entrance/532005/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=442005 https://github.com/IvanaXu/iDeepRec | 
