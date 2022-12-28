@@ -19,20 +19,22 @@ https://tianchi.aliyun.com
 ---
 
 ### 🏆🥈🥉 TianChiProj
+* R for RANK
+
 | 时间-序号.项目名称 | 算法比赛 | 长期 | 初赛 | 复赛 | 决赛 | | 相关链接 |
 | - | - | - | - | - | - | - | - |
-| 2019.08[TODO] | 【追风少年】台风图像时间序列预测 | 长期赛Rank3 | | | | 🥉 | https://tianchi.aliyun.com/competition/entrance/231729/introduction |
-| 2019.08[TODO] | 安全AI挑战者计划第一期 - 人脸识别对抗 | 长期赛Rank94 | | | |  | https://tianchi.aliyun.com/competition/entrance/231745/introduction |
-| 2019.11[TODO] | “数字人体”视觉挑战赛——宫颈癌风险智能诊断 | 初赛Rank208 | | | | | https://tianchi.aliyun.com/competition/entrance/231757/introduction |
-| 2019.12[TODO] | 安全AI挑战者计划第二期 - ImageNet图像分类对抗攻击 | 正式赛Rank55、长期赛Rank3 | | | | 🥉 | https://tianchi.aliyun.com/competition/entrance/231761/introduction |
-| 2020.01[TODO] | 资金流入流出预测-挑战Baseline | 长期赛Rank51 | | | | | https://tianchi.aliyun.com/competition/entrance/231573/introduction |
-| 2020.01[TODO] | 安全AI挑战者计划第三期 - 文本分类对抗攻击 | 正式赛Rank25、长期赛Rank1 | | | | 🏆 | https://tianchi.aliyun.com/competition/entrance/231762/introduction |
-| 2020.01[TODO] | 新浪微博互动预测-挑战Baseline | 长期赛Rank4 | | | | ✨ | https://tianchi.aliyun.com/competition/entrance/231574/introduction |
-| 2020.02[TODO] | PAKDD2020 阿里巴巴智能运维算法大赛 | 初赛Rank116、复赛Rank60 | | | | | https://tianchi.aliyun.com/competition/entrance/231775/introduction |
-| 2020.03[TODO] | 淘宝直播商品识别大赛 | 初赛Rank55、复赛Rank42 | | | | | https://tianchi.aliyun.com/competition/entrance/231772/introduction |
-| 2020.03-1.HOcean_Round1 | 2020数字中国创新大赛—算法赛：智慧海洋建设 | 初赛Rank959 | | | | | https://tianchi.aliyun.com/competition/entrance/231768/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95356|
-| 2020.04[TODO] | CVPR 2020 AliProducts Challenge: Large-scale Product Recognition | 正式赛Rank36、长期赛Rank14 | | | | | https://tianchi.aliyun.com/competition/entrance/231780/introduction |
-| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Instance Segmentation | trackARank23、trackBRank18 | | | | | https://tianchi.aliyun.com/competition/entrance/231787/introduction |
+| 2019.08[TODO] | 【追风少年】台风图像时间序列预测 | R3 | | | | 🥉 | https://tianchi.aliyun.com/competition/entrance/231729/introduction |
+| 2019.08[TODO] | 安全AI挑战者计划第一期 - 人脸识别对抗 | R94 | | | |  | https://tianchi.aliyun.com/competition/entrance/231745/introduction |
+| 2019.11[TODO] | “数字人体”视觉挑战赛——宫颈癌风险智能诊断 | | R208 | | | | https://tianchi.aliyun.com/competition/entrance/231757/introduction |
+| 2019.12[TODO] | 安全AI挑战者计划第二期 - ImageNet图像分类对抗攻击 | R3 | R55 | | | 🥉 | https://tianchi.aliyun.com/competition/entrance/231761/introduction |
+| 2020.01[TODO] | 资金流入流出预测-挑战Baseline | R51 | | | | | https://tianchi.aliyun.com/competition/entrance/231573/introduction |
+| 2020.01[TODO] | 安全AI挑战者计划第三期 - 文本分类对抗攻击 | R1 | R25 | | | 🏆 | https://tianchi.aliyun.com/competition/entrance/231762/introduction |
+| 2020.01[TODO] | 新浪微博互动预测-挑战Baseline | R4 | | | | ✨ | https://tianchi.aliyun.com/competition/entrance/231574/introduction |
+| 2020.02[TODO] | PAKDD2020 阿里巴巴智能运维算法大赛 | | R116 | R60 | | | https://tianchi.aliyun.com/competition/entrance/231775/introduction |
+| 2020.03[TODO] | 淘宝直播商品识别大赛 | | R55 | R42 | | | https://tianchi.aliyun.com/competition/entrance/231772/introduction |
+| 2020.03-1.HOcean_Round1 | 2020数字中国创新大赛—算法赛：智慧海洋建设 | | R959 | | | | https://tianchi.aliyun.com/competition/entrance/231768/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95356|
+| 2020.04[TODO] | CVPR 2020 AliProducts Challenge: Large-scale Product Recognition | R14 | R36 | | | | https://tianchi.aliyun.com/competition/entrance/231780/introduction |
+| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Instance Segmentation | | R23 | R18 | | | https://tianchi.aliyun.com/competition/entrance/231787/introduction |
 | 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: 3D Object Reconstruction from A Single Image | trackARank20、trackBRank10 || | |  | https://tianchi.aliyun.com/competition/entrance/231788/introduction |
 | 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Image-based 3D Shape Retrieval | trackARank18、trackBRank8 | | | | | https://tianchi.aliyun.com/competition/entrance/231789/introduction |
 | 2020.04-1.UsedCarPrice | 零基础入门数据挖掘 - 二手车交易价格预测 | 正式赛Rank467 | | | | | https://tianchi.aliyun.com/competition/entrance/231784/introduction [🔥]https://tianchi.aliyun.com/notebook/102085|
