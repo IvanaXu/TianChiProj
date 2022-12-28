@@ -35,11 +35,11 @@ https://tianchi.aliyun.com
 | 2020.03-1.HOcean_Round1 | 2020数字中国创新大赛—算法赛：智慧海洋建设 | | R959 | | | | https://tianchi.aliyun.com/competition/entrance/231768/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95356|
 | 2020.04[TODO] | CVPR 2020 AliProducts Challenge: Large-scale Product Recognition | R14 | R36 | | | | https://tianchi.aliyun.com/competition/entrance/231780/introduction |
 | 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Instance Segmentation | | R23 | R18 | | | https://tianchi.aliyun.com/competition/entrance/231787/introduction |
-| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: 3D Object Reconstruction from A Single Image | trackARank20、trackBRank10 || | |  | https://tianchi.aliyun.com/competition/entrance/231788/introduction |
-| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Image-based 3D Shape Retrieval | trackARank18、trackBRank8 | | | | | https://tianchi.aliyun.com/competition/entrance/231789/introduction |
-| 2020.04-1.UsedCarPrice | 零基础入门数据挖掘 - 二手车交易价格预测 | 正式赛Rank467 | | | | | https://tianchi.aliyun.com/competition/entrance/231784/introduction [🔥]https://tianchi.aliyun.com/notebook/102085|
-| 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Multimodalities Recall | trackBRank52 | | | | | https://tianchi.aliyun.com/competition/entrance/231786/introduction |
-| 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Debiasing | trackBRank97 | | | | | https://tianchi.aliyun.com/competition/entrance/231785/introduction |
+| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: 3D Object Reconstruction from A Single Image | | R20 | R10 | |  | https://tianchi.aliyun.com/competition/entrance/231788/introduction |
+| 2020.04[TODO] | IJCAI-PRICAI 2020 3D AI Challenge: Image-based 3D Shape Retrieval | | R18 | R8 | | | https://tianchi.aliyun.com/competition/entrance/231789/introduction |
+| 2020.04-1.UsedCarPrice | 零基础入门数据挖掘 - 二手车交易价格预测 | | R467 | | | | https://tianchi.aliyun.com/competition/entrance/231784/introduction [🔥]https://tianchi.aliyun.com/notebook/102085|
+| 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Multimodalities Recall | | R52 | | | | https://tianchi.aliyun.com/competition/entrance/231786/introduction |
+| 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Debiasing | | R97 | | | | https://tianchi.aliyun.com/competition/entrance/231785/introduction |
 | 2020.05[TODO] | Spark“数字人体”AI挑战赛——脊柱疾病智能诊断大赛 | 初赛Rank77 | | | | | https://tianchi.aliyun.com/competition/entrance/531796/introduction |
 | 2020.05[TODO] | MEDIA AI阿里巴巴文娱算法挑战赛 - 高精度视频人物分割赛道 | 初赛Rank85、复赛 | | | | | https://tianchi.aliyun.com/competition/entrance/531797/introduction |
 | 2020.05[TODO] | MEDIA AI阿里巴巴文娱算法挑战赛 - 视频时序事件检测赛道 | 初赛Rank48 | | | | | https://tianchi.aliyun.com/competition/entrance/531798/introduction |
