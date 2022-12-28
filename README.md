@@ -39,6 +39,12 @@ https://tianchi.aliyun.com
 | 2020.04-1.UsedCarPrice | 零基础入门数据挖掘 - 二手车交易价格预测 | 正式赛Rank467 | | https://tianchi.aliyun.com/competition/entrance/231784/introduction [🔥]https://tianchi.aliyun.com/notebook/102085|
 | 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Multimodalities Recall | trackBRank52 | | https://tianchi.aliyun.com/competition/entrance/231786/introduction |
 | 2020.05[TODO] | KDD Cup 2020 Challenges for Modern E-Commerce Platform: Debiasing | trackBRank97 | | https://tianchi.aliyun.com/competition/entrance/231785/introduction |
+| 2020.05[TODO] | Spark“数字人体”AI挑战赛——脊柱疾病智能诊断大赛 | 初赛Rank77 | | https://tianchi.aliyun.com/competition/entrance/531796/introduction |
+| 2020.05[TODO] | MEDIA AI阿里巴巴文娱算法挑战赛 - 高精度视频人物分割赛道 | 初赛Rank85、复赛 | | https://tianchi.aliyun.com/competition/entrance/531797/introduction |
+| 2020.05[TODO] | MEDIA AI阿里巴巴文娱算法挑战赛 - 视频时序事件检测赛道 | 初赛Rank48 | | https://tianchi.aliyun.com/competition/entrance/531798/introduction |
+| 2020.05[TODO] | | | | |
+| 2020.05[TODO] | | | | |
+| 2020.05[TODO] | | | | |
 | 2020.05-1.LDocker |【入门】Docker练习场 | 第一期Rank1 | 🏆 | https://tianchi.aliyun.com/competition/entrance/231759/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=86421|
 | 2020.06-1.O2OCoupon | 天池新人实战赛o2o优惠券使用预测 | 长期赛Rank2743 | | https://tianchi.aliyun.com/competition/entrance/231593/introduction [🔥]https://tianchi.aliyun.com/notebook/118077|
 | 2020.06-2.SCdata2020 | 2020首届数字四川创新大赛 | / | ✨ | https://www.scdata.net.cn/kfds/pages/index.html |
