@@ -17,10 +17,13 @@ https://tianchi.aliyun.com
 | d003 | PDB Source-M | https://tianchi.aliyun.com/dataset/143449 |
 
 ---
+| 时间-序号.项目名称 | 算法比赛 | 初赛 | 长期 | 复赛 | 决赛 | | 相关链接 |
+| - | - | - | - | - | - | - | - |
+| 2019.08[TODO] | 【追风少年】台风图像时间序列预测 | Rank3 | Rank3 | Rank3 | Rank3 | 🥉 | https://tianchi.aliyun.com/competition/entrance/231729/introduction |
+
 
 ### 🏆🥈🥉 TianChiProj
-
-| 时间-序号.项目名称 | 算法比赛 | 算法比赛 | | 相关链接 |
+| 时间-序号.项目名称 | 算法比赛 | 初 | | 相关链接 |
 | - | - | - | - | - |
 | 2019.08[TODO] | 【追风少年】台风图像时间序列预测 | 长期赛Rank3 | 🥉 | https://tianchi.aliyun.com/competition/entrance/231729/introduction |
 | 2019.08[TODO] | 安全AI挑战者计划第一期 - 人脸识别对抗 | 长期赛Rank94 | | https://tianchi.aliyun.com/competition/entrance/231745/introduction |
