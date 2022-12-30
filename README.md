@@ -50,7 +50,10 @@ https://tianchi.aliyun.com
 | 2020.05-2CVmchar | 零基础入门CV - 街景字符编码识别 | R850 | R296 | | | | https://tianchi.aliyun.com/competition/entrance/531795/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95354|
 | 2020.06[TODO] | 淘宝穿衣搭配-挑战Baseline | R40 | | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/231575/introduction |
 | 2020.06-1.O2OCoupon | 天池新人实战赛o2o优惠券使用预测 | R2743 | | | | | https://tianchi.aliyun.com/competition/entrance/231593/introduction [🔥]https://tianchi.aliyun.com/notebook/118077|
-| 2020.06-2.SCdata2020 | 2020首届数字四川创新大赛 | | R37 | / | | 🚩 | https://www.scdata.net.cn/kfds/pages/index.html |
+| 2020.06-2.SCdata2020/SCAirMoni | 2020首届数字四川创新大赛/空气质量预测 | | R74 | 复 | | | https://www.scdata.net.cn/kfds/pages/index.html |
+| 2020.06-2.SCdata2020/SCAutiFraud | 2020首届数字四川创新大赛/诈骗电话识别 | | R117 | 复 | | | https://www.scdata.net.cn/kfds/pages/index.html |
+| 2020.06-2.SCdata2020/SCData | 2020首届数字四川创新大赛/创新应用赛 | | | | | | https://www.scdata.net.cn/kfds/pages/index.html |
+| 2020.06-2.SCdata2020/SCLocalInfo | 2020首届数字四川创新大赛/位置信息识别 | | R37 | 复 | | 🚩 | https://www.scdata.net.cn/kfds/pages/index.html |
 | 2020.07-1.Amap_Traffic | 阿里巴巴高德地图AMAP-TECH算法大赛 - 基于车载视频图像的动态路况分析 | | R97 | | | | https://tianchi.aliyun.com/competition/entrance/531809/introduction |
 | 2020.07[TODO] | 零基础入门NLP - 新闻文本分类 | R319 | R114 | | | | https://tianchi.aliyun.com/competition/entrance/531810/introduction |
 | 2020.08[TODO] | “万创杯”中医药天池大数据竞赛——中药说明书实体识别挑战 | | R294 | | | | https://tianchi.aliyun.com/competition/entrance/531824/introduction |
