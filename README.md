@@ -8,7 +8,7 @@ https://tianchi.aliyun.com
 
 ---
 
-### 🤔🤔🤔 Data
+### Data
 
 | 序号 | 数据名 | 数据链接 |
 | - | - | - |
@@ -18,8 +18,9 @@ https://tianchi.aliyun.com
 
 ---
 
-### 🏆🥈🥉 TianChiProj
-* R for RANK, by TEAM paipai
+### TianChiProj
+* R for RANK 🏆/🥈/🥉/✨
+* By TEAM paipai
 
 | 时间-序号.项目名称 | 算法比赛 | 长期 | 初赛 | 复赛 | 决赛 | | 相关链接 |
 | - | - | - | - | - | - | - | - |
