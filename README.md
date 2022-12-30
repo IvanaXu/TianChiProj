@@ -50,7 +50,7 @@ https://tianchi.aliyun.com
 | 2020.05-2CVmchar | 零基础入门CV - 街景字符编码识别 | R850 | R296 | | | | https://tianchi.aliyun.com/competition/entrance/531795/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95354|
 | 2020.06[TODO] | 淘宝穿衣搭配-挑战Baseline | R40 | | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/231575/introduction |
 | 2020.06-1.O2OCoupon | 天池新人实战赛o2o优惠券使用预测 | R2743 | | | | | https://tianchi.aliyun.com/competition/entrance/231593/introduction [🔥]https://tianchi.aliyun.com/notebook/118077|
-| 2020.06-2.SCdata2020 | 2020首届数字四川创新大赛 | / | | | | ✨ | https://www.scdata.net.cn/kfds/pages/index.html |
+| 2020.06-2.SCdata2020 | 2020首届数字四川创新大赛 | | R37 | / | | 🚩 | https://www.scdata.net.cn/kfds/pages/index.html |
 | 2020.07-1.Amap_Traffic | 阿里巴巴高德地图AMAP-TECH算法大赛 - 基于车载视频图像的动态路况分析 | | R97 | | | | https://tianchi.aliyun.com/competition/entrance/531809/introduction |
 | 2020.07[TODO] | 零基础入门NLP - 新闻文本分类 | R319 | R114 | | | | https://tianchi.aliyun.com/competition/entrance/531810/introduction |
 | 2020.08[TODO] | “万创杯”中医药天池大数据竞赛——中药说明书实体识别挑战 | | R294 | | | | https://tianchi.aliyun.com/competition/entrance/531824/introduction |
@@ -90,7 +90,7 @@ https://tianchi.aliyun.com
 | 2022.11-1.EnergyUNiLAB | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| | R110 | | | | https://tianchi.aliyun.com/competition/entrance/532022/introduction https://github.com/IvanaXu/iEnergyUNiLAB |
 | 2022.11-2.iDeepRec | 英特尔“创新大师杯”全球AI极客挑战赛——DeepRec CTR模型性能优化 | | R19 | R17 | | ✨ | https://tianchi.aliyun.com/competition/entrance/532005/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=442005 https://github.com/IvanaXu/iDeepRec | 
 | 2022.12[TODO] | “云上进化”2022全球AI生物智药大赛：赛道一“基于AI算法的SARS-CoV-2广谱中和抗体药物设计” | | R14 | R10 | | ✨ | https://tianchi.aliyun.com/competition/entrance/532028/introduction |
-| 2022.12[TODO] | “云上进化”2022全球AI生物智药大赛：赛道二“抗原抗体结合Epitope和Paratope精准确定” | | R15 | R1 | | 🏆 | https://tianchi.aliyun.com/competition/entrance/532029/introduction |
+| 2022.12[TODO] | “云上进化”2022全球AI生物智药大赛：赛道二“抗原抗体结合Epitope和Paratope精准确定” | | R15 | R1 | ing | 🏆 | https://tianchi.aliyun.com/competition/entrance/532029/introduction |
 
 ---
 
