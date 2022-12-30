@@ -19,7 +19,8 @@ https://tianchi.aliyun.com
 ---
 
 ### TianChiProj
-* R for RANK：🏆/1、🥈/2、🥉/3、✨/Top20、🚩/Top50、💤/Top100, By TEAM paipai
+* By TEAM paipai
+* R for RANK：🏆/1、🥈/2、🥉/3、✨/Top20、🚩/Top50、💤/Top100
 
 | 时间-序号.项目名称 | 算法比赛 | 长期 | 初赛 | 复赛 | 决赛 | | 相关链接 |
 | - | - | - | - | - | - | - | - |
