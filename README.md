@@ -12,9 +12,9 @@ https://tianchi.aliyun.com
 
 | 序号 | 数据名 | 数据链接 |
 | - | - | - |
-| d001 | Address Word List | https://tianchi.aliyun.com/dataset/61932 |
-| d002 | PDB Source-S | https://tianchi.aliyun.com/dataset/143369 |
-| d003 | PDB Source-M | https://tianchi.aliyun.com/dataset/143449 |
+| 001 | Address Word List | https://tianchi.aliyun.com/dataset/61932 |
+| 002 | PDB Source-S | https://tianchi.aliyun.com/dataset/143369 |
+| 003 | PDB Source-M | https://tianchi.aliyun.com/dataset/143449 |
 
 ---
 
@@ -24,7 +24,7 @@ https://tianchi.aliyun.com
 
 | 时间-序号.项目名称 | 算法比赛 | 长期 | 初赛 | 复赛 | 决赛 | | 相关链接 |
 | - | - | - | - | - | - | - | - |
-| 2019.08[TODO] | 【追风少年】台风图像时间序列预测 | R3 | | | | 🥉 | https://tianchi.aliyun.com/competition/entrance/231729/introduction |
+| 2019.08[TODO] | 【追风少年】台风图像时间序列预测 | R2 | | | | 🥈 | https://tianchi.aliyun.com/competition/entrance/231729/introduction |
 | [2019.08-1.SecurityAI_Round1](./2019.08-1.SecurityAI_Round1) | 安全AI挑战者计划第一期 - 人脸识别对抗 | R94 | | | | 💤 | https://tianchi.aliyun.com/competition/entrance/231745/introduction |
 | 2019.11[TODO] | “数字人体”视觉挑战赛——宫颈癌风险智能诊断 | | R208 | | | | https://tianchi.aliyun.com/competition/entrance/231757/introduction |
 | 2019.12[TODO] | 安全AI挑战者计划第二期 - ImageNet图像分类对抗攻击 | R3 | R55 | | | 🥉 | https://tianchi.aliyun.com/competition/entrance/231761/introduction |
