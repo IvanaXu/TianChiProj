@@ -1,0 +1,10 @@
+# python 3.7.0
+pandas==0.23.4
+tqdm==4.26.0
+numpy==1.17.4
+sklearn==0.19.2
+xgboost==1.0.1
+h5py==2.8.0
+
+
+

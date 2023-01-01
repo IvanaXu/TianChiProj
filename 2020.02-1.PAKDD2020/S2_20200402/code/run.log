@@ -1,0 +1,40 @@
+
+INFO 2020-03-20 21:53:46
+Error from server (BadRequest): container "231775-559-305436-1009101" in pod "231775-559-305436-1009101-jrvrm" is waiting to start: trying and failing to pull image
+
+INFO 2020-03-20 22:02:14
+% Total % Received % Xferd Average Speed Time Time Time Current
+Dload Upload Total Spent Left Speed
+100 145 100 45 100 100 2 6 0:00:22 0:00:15 0:00:07 0
+Traceback (most recent call last):
+File "main.py", line 10, in <module>
+import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+run.sh: 4: run.sh: zip: not found
+{"code":"SUCCESS","data":{"returnCode":true}}
+
+INFO 2020-03-20 22:12:11
+% Total % Received % Xferd Average Speed Time Time Time Current
+Dload Upload Total Spent Left Speed
+100 145 100 45 100 100 2 6 0:00:22 0:00:15 0:00:07 0
+Traceback (most recent call last):
+File "main.py", line 25, in <module>
+d_smart_dl = pd.read_hdf(f"mdl/d_smart_dl.h5", key="data")
+File "/usr/local/lib/python3.7/site-packages/pandas/io/pytables.py", line 397, in read_hdf
+store = HDFStore(path_or_buf, mode=mode, errors=errors, **kwargs)
+File "/usr/local/lib/python3.7/site-packages/pandas/io/pytables.py", line 518, in __init__
+tables = import_optional_dependency("tables")
+File "/usr/local/lib/python3.7/site-packages/pandas/compat/_optional.py", line 92, in import_optional_dependency
+raise ImportError(msg) from None
+ImportError: Missing optional dependency 'tables'. Use pip or conda to install tables.
+{"code":"SUCCESS","data":{"returnCode":true}}
+
+INFO 2020-03-24 14:57:32
+% Total % Received % Xferd Average Speed Time Time Time Current
+Dload Upload Total Spent Left Speed
+0 0 0 0 0 0 0 0 --:--:-- 0:00:19 --:--:-- 0curl: (6) Could not resolve host: tianchi.aliyun.com
+
+INFO
+
+
+

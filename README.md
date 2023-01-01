@@ -31,7 +31,7 @@ https://tianchi.aliyun.com
 | 2020.01[TODO] | 资金流入流出预测-挑战Baseline | R51 | | | | 💤 | https://tianchi.aliyun.com/competition/entrance/231573/introduction |
 | 2020.01[TODO] | 安全AI挑战者计划第三期 - 文本分类对抗攻击 | R1 | R25 | | | 🏆 | https://tianchi.aliyun.com/competition/entrance/231762/introduction |
 | 2020.01[TODO] | 新浪微博互动预测-挑战Baseline | R4 | | | | ✨ | https://tianchi.aliyun.com/competition/entrance/231574/introduction |
-| 2020.02[TODO] | PAKDD2020 阿里巴巴智能运维算法大赛 | | R116 | R60 | | 💤 | https://tianchi.aliyun.com/competition/entrance/231775/introduction |
+| [2020.02-1.PAKDD2020](./2020.02-1.PAKDD2020) | PAKDD2020 阿里巴巴智能运维算法大赛 | | R116 | R60 | | 💤 | https://tianchi.aliyun.com/competition/entrance/231775/introduction |
 | 2020.03[TODO] | 淘宝直播商品识别大赛 | | R55 | R42 | | 🚩 | https://tianchi.aliyun.com/competition/entrance/231772/introduction |
 | [2020.03-1.HOcean_Round1](./2020.03-1.HOcean_Round1) | 2020数字中国创新大赛—算法赛：智慧海洋建设 | | R959 | | | | https://tianchi.aliyun.com/competition/entrance/231768/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95356|
 | 2020.04[TODO] | CVPR 2020 AliProducts Challenge: Large-scale Product Recognition | R14 | R36 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/231780/introduction |
