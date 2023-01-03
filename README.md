@@ -22,12 +22,17 @@ https://tianchi.aliyun.com
 * By TEAM paipai
 * R for RANK：🏆/1、🥈/2、🥉/3、✨/Top20、🚩/Top50、💤/Top100
 
+#### 2019
 | 时间-序号.项目名称 | 算法比赛 | 长期 | 初赛 | 复赛 | 决赛 | | 相关链接 |
 | - | - | - | - | - | - | - | - |
 | 2019.08[TODO] | 【追风少年】台风图像时间序列预测 | R2 | | | | 🥈 | https://tianchi.aliyun.com/competition/entrance/231729/introduction |
 | [2019.08-1.SecurityAI_Round1](./2019.08-1.SecurityAI_Round1) | 安全AI挑战者计划第一期 - 人脸识别对抗 | R94 | | | | 💤 | https://tianchi.aliyun.com/competition/entrance/231745/introduction |
 | 2019.11[TODO] | “数字人体”视觉挑战赛——宫颈癌风险智能诊断 | | R208 | | | | https://tianchi.aliyun.com/competition/entrance/231757/introduction |
 | [2019.12-1.SecurityAI_Round2](./2019.12-1.SecurityAI_Round2) | 安全AI挑战者计划第二期 - ImageNet图像分类对抗攻击 | R3 | R55 | | | 🥉 | https://tianchi.aliyun.com/competition/entrance/231761/introduction |
+
+#### 2020
+| 时间-序号.项目名称 | 算法比赛 | 长期 | 初赛 | 复赛 | 决赛 | | 相关链接 |
+| - | - | - | - | - | - | - | - |
 | 2020.01[TODO] | 资金流入流出预测-挑战Baseline | R51 | | | | 💤 | https://tianchi.aliyun.com/competition/entrance/231573/introduction |
 | 2020.01[TODO] | 安全AI挑战者计划第三期 - 文本分类对抗攻击 | R1 | R25 | | | 🏆 | https://tianchi.aliyun.com/competition/entrance/231762/introduction |
 | 2020.01[TODO] | 新浪微博互动预测-挑战Baseline | R4 | | | | ✨ | https://tianchi.aliyun.com/competition/entrance/231574/introduction |
@@ -67,6 +72,10 @@ https://tianchi.aliyun.com
 | 2020.11[TODO] | 零基础入门推荐系统 - 新闻推荐 | | R361 | | | | https://tianchi.aliyun.com/competition/entrance/531842/introduction |
 | [2020.11-1.Pokemon](./2020.11-1.Pokemon) | 【入门】精灵宝可梦数据集分析 | / | | | | | https://tianchi.aliyun.com/competition/entrance/531822/introduction [🔥]https://tianchi.aliyun.com/notebook/126265 |
 | [2020.11-2.SecurityAI_Round5](./2020.11-2.SecurityAI_Round5) | 安全AI挑战者计划第五期：伪造图像的对抗攻击 | R36 | R64 | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/531812/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95348|
+
+#### 2021
+| 时间-序号.项目名称 | 算法比赛 | 长期 | 初赛 | 复赛 | 决赛 | | 相关链接 |
+| - | - | - | - | - | - | - | - |
 | 2021.01[TODO] | 零基础入门强化学习-经典游戏挑战赛 | | R14 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/531854/introduction |
 | 2021.04[TODO] | “新内容 新交互”全球视频云创新挑战赛--算法挑战赛道 | | R50 | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/531873/introduction |
 | 2021.07[TODO] | 云上开发，高效智能--阿里云ECS Cloudbuild开发者大赛算法挑战赛道 | | R32 | R17 | | ✨ | https://tianchi.aliyun.com/competition/entrance/531906/introduction |
@@ -74,6 +83,10 @@ https://tianchi.aliyun.com
 | 2021.09[TODO] | 2021 亚太眼科学会大数据竞赛 | | R144 | | | | https://tianchi.aliyun.com/competition/entrance/531929/introduction |
 | 2021.11[TODO] | AAAI-2022 安全AI挑战者计划第八期：以数据为中心的鲁棒机器学习 | | R356 | | | | https://tianchi.aliyun.com/competition/entrance/531939/introduction |
 | [2021.12-1.ProteinStructureModeling](./2021.12-1.ProteinStructureModeling) | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | | R2 | R5 | 季军 | 🥉 | https://tianchi.aliyun.com/competition/entrance/531916/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95343 |
+
+#### 2022
+| 时间-序号.项目名称 | 算法比赛 | 长期 | 初赛 | 复赛 | 决赛 | | 相关链接 |
+| - | - | - | - | - | - | - | - |
 | 2022.02[TODO] | 零基础入门数据挖掘-心跳信号分类预测 | | R1250 | | | | https://tianchi.aliyun.com/competition/entrance/531883/introduction |
 | 2022.02[TODO] | 真实场景篡改图像检测挑战赛 | | R364 | | | | https://tianchi.aliyun.com/competition/entrance/531945/introduction |
 | 2022.03[TODO] | 第三届阿里云磐久智维算法大赛 | R136 | R13 | R18 | R23 | ✨ | https://tianchi.aliyun.com/competition/entrance/531947/introduction |
