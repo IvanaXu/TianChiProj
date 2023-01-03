@@ -78,6 +78,7 @@ https://tianchi.aliyun.com
 | 2022.02[TODO] | 真实场景篡改图像检测挑战赛 | | R364 | | | | https://tianchi.aliyun.com/competition/entrance/531945/introduction |
 | 2022.03[TODO] | 第三届阿里云磐久智维算法大赛 | R136 | R13 | R18 | R23 | ✨ | https://tianchi.aliyun.com/competition/entrance/531947/introduction |
 | [2022.03-1.LingJie](./2022.03-1.LingJie) | “阿里灵杰”问天引擎电商搜索算法赛 | | R316 | | | | https://tianchi.aliyun.com/competition/entrance/531946/introduction |
+| 2022.04[TODO] | 黑盒优化Benchmark——RABBO | R1 | | | | 🏆 | https://tianchi.aliyun.com/dataset/111953 |
 | 2022.05[TODO] | 2022江苏气象AI算法挑战赛-AI助力强对流天气预报 | | R120 | R40 | | 🚩 | https://tianchi.aliyun.com/competition/entrance/531962/introduction |
 | 2022.06[TODO] | AETA地震预测AI算法大赛 | | R12 | R11 | ing | ✨ | https://tianchi.aliyun.com/competition/entrance/531972/introduction |
 | 2022.06[TODO] | CVPR 2022 AliProducts Challenge: Large-scale Cross-Modal Product Retrieval | | R27 | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/531951/introduction |
