@@ -84,10 +84,10 @@ https://tianchi.aliyun.com
 | [2022.03-1.LingJie](./2022.03-1.LingJie) | “阿里灵杰”问天引擎电商搜索算法赛 | | R316 | | | | https://tianchi.aliyun.com/competition/entrance/531946/introduction |
 | 2022.04[TODO] | 黑盒优化Benchmark——RABBO | R1 | | | | 🏆 | https://tianchi.aliyun.com/dataset/111953 |
 | 2022.05[TODO] | 2022江苏气象AI算法挑战赛-AI助力强对流天气预报 | | R120 | R40 | | 🚩 | https://tianchi.aliyun.com/competition/entrance/531962/introduction |
-| 2022.06[TODO] | AETA地震预测AI算法大赛 | | R12 | R11 | ing | ✨ | https://tianchi.aliyun.com/competition/entrance/531972/introduction |
 | 2022.06[TODO] | CVPR 2022 AliProducts Challenge: Large-scale Cross-Modal Product Retrieval | | R27 | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/531951/introduction |
 | 2022.06[TODO] | ECCV 2022 WCPA Challenge: From Face, Body and Fashion to 3D Virtual Avatars Ⅰ | | R12 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/531958/introduction |
 | 2022.06[TODO] | ICDM 2022 : 大规模电商图上的风险商品检测 | | R208 | | | | https://tianchi.aliyun.com/competition/entrance/531976/introduction |
+| [2022.06-1.iAETA](./2022.06-1.iAETA) | AETA地震预测AI算法大赛 | | R12 | R11 | ing | ✨ | https://tianchi.aliyun.com/competition/entrance/531972/introduction [🔥]https://tianchi.aliyun.com/forum/post/461585|
 | [2022.07-1.iFederatedScope](./2022.07-1.iFederatedScope) | CIKM 2022 AnalytiCup Competition: 联邦异质任务学习 | | R13 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/532008/introduction https://github.com/IvanaXu/iFederatedScope|
 | 2022.08[TODO] | 2022 WAIC 黑客松九章云极赛道-因果学习和决策优化挑战赛 | | R39 | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/532019/introduction |
 | 2022.08[TODO] | 2022 WAIC 黑客松蚂蚁财富赛道：AntSQL大规模金融语义解析中文Text-to-SQL挑战赛 | | R47 | R32 | | 🚩 | https://tianchi.aliyun.com/competition/entrance/532009/introduction |
