@@ -1,0 +1,6 @@
+# python 3.10
+pandas==1.5.0
+numpy==1.23.3
+tqdm==4.64.1
+scikit-learn==1.1.2
+gensim==4.2.0
