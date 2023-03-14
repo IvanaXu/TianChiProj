@@ -94,8 +94,7 @@ https://tianchi.aliyun.com
 | 2022.08[TODO] | 2022 WAIC 黑客松蚂蚁财富赛道：行情波动下的金融问答挑战赛 | | R49 | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/532010/introduction |
 | 2022.09[TODO] | 电商多模态图文检索挑战赛 | | R56 | | | 💤 | https://tianchi.aliyun.com/competition/entrance/532031/introduction |
 | [2022.09-1.iFutureCar](./2022.09-1.iFutureCar) |  2022年全球“未来汽车”智能场景创新挑战赛——智能算法赛 | | | | | | https://tianchi.aliyun.com/competition/entrance/531995/introduction https://github.com/IvanaXu/iFutureCar |
-| [2022.09-2.IEEEUV2022](./2022.09-2.IEEEUV2022) | IEEE UV 2022 “Vision Meets Algae” Object Detection Challenge
- | | R81 | | | 💤 | https://tianchi.aliyun.com/competition/entrance/532036/introduction |
+| [2022.09-2.IEEEUV2022](./2022.09-2.IEEEUV2022) | IEEE UV 2022 “Vision Meets Algae” Object Detection Challenge| | R81 | | | 💤 | https://tianchi.aliyun.com/competition/entrance/532036/introduction |
 | 2022.10[TODO] | AMWD 2022：阿里云安全WEBSHELL文本检测 | | R32 | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/532035/introduction |
 | 2022.10[TODO] | 2022年iFLYTEK A.I.开发者大赛-中文对话文本匹配挑战赛 | | | | R1 | 🏆 | https://challenge.xfyun.cn/topic/info?type=text-match&option=ssgy |
 | [2022.11-1.EnergyUNiLAB](./2022.11-1.EnergyUNiLAB) | UNiLAB智慧能源系统大数据分析赛 赛道3:支撑分布式储能系统优化部署的新能源产量预测| | R110 | | | | https://tianchi.aliyun.com/competition/entrance/532022/introduction https://github.com/IvanaXu/iEnergyUNiLAB |
