@@ -103,6 +103,7 @@ https://tianchi.aliyun.com
 | [2022.12-2.iAIBiomedical2](./2022.12-2.iAIBiomedical2) | “云上进化”2022全球AI生物智药大赛：赛道二“抗原抗体结合Epitope和Paratope精准确定” | | R15 | R1 | R1 | 🏆 | https://tianchi.aliyun.com/competition/entrance/532029/introduction [🔥]https://tianchi.aliyun.com/forum/post/470288 https://github.com/IvanaXu/TestPaddleA100|
 | 2023.01[TODO] | 跨领域迁移的文本语义匹配 | R17 | | | | ✨ | http://contest.aicubes.cn/#/detail?topicId=23 [🔥] |
 | [2023.02-1.IndustrialProductionReactionDevice](./2023.02-1.IndustrialProductionReactionDevice) | 第六届全国工业互联网数据创新应用大赛：工业生产反应装置的建模预测| | | R54 | | 💤 | https://tianchi.aliyun.com/competition/entrance/532046/introduction|
+| [2023.04-1.CFSP_CFN](./2023.04-1.CFSP_CFN) | CCL2023-Eval 汉语框架语义解析评测 | | | | | | https://tianchi.aliyun.com/competition/entrance/532083/introduction |
 
 ---
 
