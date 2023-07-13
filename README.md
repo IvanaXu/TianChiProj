@@ -11,9 +11,11 @@ https://tianchi.aliyun.com
 
 ### （1）Sponsor
 <div align=center>
+
 赞助本项目
 
-<img src="9999.Temp/sponsor1.jpg" height=300/>
+<img src="9999.Temp/sponsor1.png" height=300/>
+<img src="9999.Temp/sponsor2.png" height=300/>
 
 更多内容，欢迎[Issues](https://github.com/IvanaXu/TianChiProj/issues)。
 
