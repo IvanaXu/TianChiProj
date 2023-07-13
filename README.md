@@ -12,7 +12,7 @@ https://tianchi.aliyun.com
 ### （1）Sponsor
 <div align=center>
 
-赞助本项目
+整理需时，赞助本项目 加加速！
 
 <img src="9999.Temp/sponsor1.png" height=300/>
 <img src="9999.Temp/sponsor2.png" height=300/>
@@ -114,9 +114,14 @@ https://tianchi.aliyun.com
 | [2022.11-2.iDeepRec](./2022.11-2.iDeepRec) | 英特尔“创新大师杯”全球AI极客挑战赛——DeepRec CTR模型性能优化 | | R19 | R17 | | ✨ | https://tianchi.aliyun.com/competition/entrance/532005/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=442005 https://github.com/IvanaXu/iDeepRec | 
 | [2022.12-1.iAIBiomedical1](./2022.12-1.iAIBiomedical1) | “云上进化”2022全球AI生物智药大赛：赛道一“基于AI算法的SARS-CoV-2广谱中和抗体药物设计” | | R14 | R10 | | ✨ | https://tianchi.aliyun.com/competition/entrance/532028/introduction [🔥]https://tianchi.aliyun.com/forum/post/470258|
 | [2022.12-2.iAIBiomedical2](./2022.12-2.iAIBiomedical2) | “云上进化”2022全球AI生物智药大赛：赛道二“抗原抗体结合Epitope和Paratope精准确定” | | R15 | R1 | R1 | 🏆 | https://tianchi.aliyun.com/competition/entrance/532029/introduction [🔥]https://tianchi.aliyun.com/forum/post/470288 https://github.com/IvanaXu/TestPaddleA100|
+| 2023 | | | | | | | |
 | 2023.01 > [CQMC](https://github.com/IvanaXu/CQMC) | 跨领域迁移的文本语义匹配 | R17 | | | | ✨ | http://contest.aicubes.cn/#/detail?topicId=23 |
 | [2023.02-1.IndustrialProductionReactionDevice](./2023.02-1.IndustrialProductionReactionDevice) | 第六届全国工业互联网数据创新应用大赛：工业生产反应装置的建模预测| | | R54 | | 💤 | https://tianchi.aliyun.com/competition/entrance/532046/introduction|
 | [2023.04-1.CFSP_CFN](./2023.04-1.CFSP_CFN) | CCL2023-Eval 汉语框架语义解析评测 | | | | | | https://tianchi.aliyun.com/competition/entrance/532083/introduction |
+| 2023.07-1.CCKS2023_1[TODO] | CCKS2023 开放环境下的知识图谱构建与补全评测任务一：指令驱动的自适应知识图谱构建 | | R89 | | | ing | https://tianchi.aliyun.com/competition/entrance/532080/introduction |
+| 2023.07-2.CCKS2023_2[TODO] | CCKS2023 开放环境下知识图谱构建与补全评测任务二：归纳式知识图谱关系推理 | | R28 | | | ing | https://tianchi.aliyun.com/competition/entrance/532081/introduction |
+| 2023.07-3.CCKS2023_PromptCBLUE_1[TODO] | CCKS2023-PromptCBLUE中文医疗大模型评测基准—开源赛道 | | R61 | | | ing | https://tianchi.aliyun.com/competition/entrance/532084/introduction |
+| 2023.07-4.CCKS2023_PromptCBLUE_2[TODO] | CCKS2023-PromptCBLUE中文医疗大模型评测基准—通用赛道 | | R48 | | | ing | https://tianchi.aliyun.com/competition/entrance/532085/introduction |
 
 ---
 
