@@ -11,7 +11,6 @@ https://tianchi.aliyun.com
 
 ### （1）Sponsor
 <div align=center>
-
 赞助本项目
 
 <img src="9999.Temp/sponsor1.jpg" height=300/>
