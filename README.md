@@ -122,8 +122,8 @@ https://tianchi.aliyun.com
 | 2023.07-2.CCKS2023_2[TODO] | CCKS2023 开放环境下知识图谱构建与补全评测任务二：归纳式知识图谱关系推理 | | R28 | | | ing | https://tianchi.aliyun.com/competition/entrance/532081/introduction |
 | 2023.07-3.CCKS2023_3[TODO] | CCKS2023-面向上市公司主营业务的实体链接评测 | | R26 | | | ing | https://tianchi.aliyun.com/competition/entrance/532097/introduction |
 | 2023.07-4.CCKS2023_4[TODO] | CCKS2023-面向金融领域的主体事件检测 | | R53 | | | ing | https://tianchi.aliyun.com/competition/entrance/532098/introduction |
-| 2023.07-5.CCKS2023_PromptCBLUE_1[TODO] | CCKS2023-PromptCBLUE中文医疗大模型评测基准—开源赛道 | | R61 | | | ing | https://tianchi.aliyun.com/competition/entrance/532084/introduction |
-| 2023.07-5.CCKS2023_PromptCBLUE_2[TODO] | CCKS2023-PromptCBLUE中文医疗大模型评测基准—通用赛道 | | R48 | | | ing | https://tianchi.aliyun.com/competition/entrance/532085/introduction |
+| 2023.07-5.CCKS2023_PromptCBLUE_1[TODO] | CCKS2023-PromptCBLUE中文医疗大模型评测基准—开源赛道 | | R61 | R22 | | 🚩 | https://tianchi.aliyun.com/competition/entrance/532084/introduction |
+| 2023.07-5.CCKS2023_PromptCBLUE_2[TODO] | CCKS2023-PromptCBLUE中文医疗大模型评测基准—通用赛道 | | R48 | R16 | | ✨ | https://tianchi.aliyun.com/competition/entrance/532085/introduction |
 
 ---
 
