@@ -129,11 +129,9 @@ https://tianchi.aliyun.com
 
 
 <div align=center>
-😌 Coming Soon...
+😌 [Coming Soon](https://tianchi.aliyun.com/home/science/scienceDetail?userId=1095279182618)...
 
 https://github.com/IvanaXu/TianChiProj/projects
-
-https://tianchi.aliyun.com/home/science/scienceDetail?userId=1095279182618
 
 </div>
 
