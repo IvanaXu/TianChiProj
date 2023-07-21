@@ -1,0 +1,40 @@
+data_name: DuEE # [ACE, DuEE]
+model_name_or_path:  /newdisk1/msy/models/bert-base-chinese # [bert-base-uncased, bert-base-chinese] english for ace, chinese for duee
+task_name: trigger # [trigger, role]
+model_type: bertcrf
+do_train: True
+do_eval: True
+do_predict: False # True for ACE, False for DuEE
+labels: ""
+config_name: ""
+tokenizer_name: ""
+cache_dir: ""
+evaluate_during_training: True
+do_lower_case: True
+weight_decay: 0.0
+learning_rate: 5e-5
+adam_epsilon: 1e-8
+per_gpu_train_batch_size: 16
+per_gpu_eval_batch_size: 16
+gradient_accumulation_steps: 1
+max_seq_length: 256
+max_grad_norm: 1.0
+num_train_epochs: 5
+max_steps: 500
+warmup_steps: 0
+logging_steps: 500
+save_steps: 500
+eval_all_checkpoints: False
+no_cuda: False
+n_gpu: 0
+overwrite_output_dir: True
+overwrite_cache: True
+seed: 42
+fp16: False
+fp16_opt_level: "01"
+local_rank: -1
+data_dir: "" # parsing in run.py
+tag_path: "" # parsing in run.py
+output_dir: "" # parsing in run.py
+dev_trigger_pred_file: null
+test_trigger_pred_file: null

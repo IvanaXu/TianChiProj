@@ -1,0 +1,3 @@
+defaults:
+  - override hydra/output: custom
+  - train
