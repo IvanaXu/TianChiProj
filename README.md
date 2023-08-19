@@ -88,13 +88,13 @@ https://tianchi.aliyun.com
 | 2021.07[TODO] | 云上开发，高效智能--阿里云ECS Cloudbuild开发者大赛算法挑战赛道 | | R32 | R17 | | ✨ | https://tianchi.aliyun.com/competition/entrance/531906/introduction |
 | [2021.08-1.AAIG_CUP](./2021.08-1.AAIG_CUP) | 第三届 Apache Flink 极客挑战赛暨AAIG CUP——电商推荐“抱大腿”攻击识别 | | R86 | | | 💤 | https://tianchi.aliyun.com/competition/entrance/531925/introduction |
 | 2021.09[TODO] | 2021 亚太眼科学会大数据竞赛 | | R144 | | | | https://tianchi.aliyun.com/competition/entrance/531929/introduction |
-| 2021.11[TODO] | AAAI-2022 安全AI挑战者计划第八期：以数据为中心的鲁棒机器学习 | | R356 | | | | https://tianchi.aliyun.com/competition/entrance/531939/introduction |
+| 2021.11[TODO] | AAAI-2022 安全AI挑战者计划第八期：以数据为中心的鲁棒机器学习 | | R356 | | | | https://tianchi.aliyun.com/competition/entrance/531939/introduction [🔥]https://aistudio.baidu.com/projectdetail/3352973|
 | [2021.12-1.ProteinStructureModeling](./2021.12-1.ProteinStructureModeling) | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | | R2 | R5 | 季军 | 🥉 | https://tianchi.aliyun.com/competition/entrance/531916/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95343 |
 | 2022 | | | | | | | |
 | 2022.02[TODO] | 零基础入门数据挖掘-心跳信号分类预测 | | R1250 | | | | https://tianchi.aliyun.com/competition/entrance/531883/introduction |
 | 2022.02[TODO] | 真实场景篡改图像检测挑战赛 | | R364 | | | | https://tianchi.aliyun.com/competition/entrance/531945/introduction |
 | 2022.03[TODO] | 第三届阿里云磐久智维算法大赛 | R136 | R13 | R18 | R23 | ✨ | https://tianchi.aliyun.com/competition/entrance/531947/introduction |
-| [2022.03-1.LingJie](./2022.03-1.LingJie) | “阿里灵杰”问天引擎电商搜索算法赛 | | R316 | | | | https://tianchi.aliyun.com/competition/entrance/531946/introduction |
+| [2022.03-1.LingJie](./2022.03-1.LingJie) | “阿里灵杰”问天引擎电商搜索算法赛 | | R316 | | | | https://tianchi.aliyun.com/competition/entrance/531946/introduction [🔥]https://aistudio.baidu.com/projectdetail/3707410|
 | 2022.04[TODO] | 黑盒优化Benchmark——RABBO | R1 | | | | 🏆 | https://tianchi.aliyun.com/dataset/111953 |
 | 2022.05[TODO] | 2022江苏气象AI算法挑战赛-AI助力强对流天气预报 | | R120 | R40 | | 🚩 | https://tianchi.aliyun.com/competition/entrance/531962/introduction |
 | 2022.06[TODO] | CVPR 2022 AliProducts Challenge: Large-scale Cross-Modal Product Retrieval | | R27 | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/531951/introduction |
