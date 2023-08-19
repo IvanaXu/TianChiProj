@@ -88,7 +88,7 @@ https://tianchi.aliyun.com
 | 2021.07[TODO] | 云上开发，高效智能--阿里云ECS Cloudbuild开发者大赛算法挑战赛道 | | R32 | R17 | | ✨ | https://tianchi.aliyun.com/competition/entrance/531906/introduction |
 | [2021.08-1.AAIG_CUP](./2021.08-1.AAIG_CUP) | 第三届 Apache Flink 极客挑战赛暨AAIG CUP——电商推荐“抱大腿”攻击识别 | | R86 | | | 💤 | https://tianchi.aliyun.com/competition/entrance/531925/introduction |
 | 2021.09[TODO] | 2021 亚太眼科学会大数据竞赛 | | R144 | | | | https://tianchi.aliyun.com/competition/entrance/531929/introduction |
-| 2021.11[TODO] | AAAI-2022 安全AI挑战者计划第八期：以数据为中心的鲁棒机器学习 | | R356 | | | | https://tianchi.aliyun.com/competition/entrance/531939/introduction [🔥]https://aistudio.baidu.com/projectdetail/3352973|
+| [2021.11-1.SecurityAI_Round8](./2021.11-1.SecurityAI_Round8) | AAAI-2022 安全AI挑战者计划第八期：以数据为中心的鲁棒机器学习 | | R356 | | | | https://tianchi.aliyun.com/competition/entrance/531939/introduction [🔥]https://aistudio.baidu.com/projectdetail/3352973|
 | [2021.12-1.ProteinStructureModeling](./2021.12-1.ProteinStructureModeling) | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | | R2 | R5 | 季军 | 🥉 | https://tianchi.aliyun.com/competition/entrance/531916/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95343 |
 | 2022 | | | | | | | |
 | 2022.02[TODO] | 零基础入门数据挖掘-心跳信号分类预测 | | R1250 | | | | https://tianchi.aliyun.com/competition/entrance/531883/introduction |
