@@ -124,7 +124,7 @@ https://tianchi.aliyun.com
 | 2023.07-4.CCKS2023_4[TODO] | CCKS2023-面向金融领域的主体事件检测 | | R53 | R26 | | 🚩 | https://tianchi.aliyun.com/competition/entrance/532098/introduction |
 | [2023.07-5.CCKS2023_PromptCBLUE_1](./2023.07-5.CCKS2023_PromptCBLUE_12) | CCKS2023-PromptCBLUE中文医疗大模型评测基准—开源赛道 | | R61 | R22 | | 🚩 | https://tianchi.aliyun.com/competition/entrance/532084/introduction |
 | [2023.07-5.CCKS2023_PromptCBLUE_2](./2023.07-5.CCKS2023_PromptCBLUE_12) | CCKS2023-PromptCBLUE中文医疗大模型评测基准—通用赛道 | | R48 | R16 | | ✨ | https://tianchi.aliyun.com/competition/entrance/532085/introduction |
-| 2023.08 > [PaddleHelix_dev2308](https://github.com/paipai-Studio/PaddleHelix_dev2308) | AIStudio 首届全球AI药物研发算法大赛 | | R63/R40 | R43/R10 | | ing | https://aistudio.baidu.com/competition/detail/1012/0/introduction |
+| 2023.08 > [PaddleHelix_dev2308](https://github.com/paipai-Studio/PaddleHelix_dev2308) | AIStudio 首届全球AI药物研发算法大赛 | | R63/R40 | R43/R10 | 三等奖 | 🥉 | https://aistudio.baidu.com/competition/detail/1012/0/introduction |
 
 ---
 
