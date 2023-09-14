@@ -1,0 +1,16 @@
+rdkit_l: 5
+rdkit_s: 512
+use_rdkit: True
+mfp_l: 3
+mfp_s: 1024
+use_mfp: False
+fraction_training: 0.7
+num_epochs: 1000
+learning_rate: 1e-3
+lr_power_t: 0.5
+nn_layers: 3
+nn_act: 0
+nn_base_dim: 100
+nn_dim_ratio: 0.7
+nn_patience: 10
+nn_l2: 0.01
