@@ -1,0 +1,14 @@
+seed: 777
+device: 0
+
+energy_and_force: True
+batch_size: 32
+vt_batch_size: 32
+lr: 0.0005
+epochs: 300
+
+save_dir: "./log/"
+
+# other parameters
+cutoff: 5.0
+n_layers: 4
