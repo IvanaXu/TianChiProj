@@ -130,7 +130,7 @@ https://tianchi.aliyun.com
 | [2023.09-1.P3](./2023.09-1.P3) | 首届世界科学智能大赛：生命科学赛道——生物学年龄评价与年龄相关疾病风险预测  | | | | | | https://tianchi.aliyun.com/competition/entrance/532114/information |
 | [2023.09-1.P4](./2023.09-1.P4) | 首届世界科学智能大赛：材料科学赛道——金属有机框架材料的预测合成          | | | | | | https://tianchi.aliyun.com/competition/entrance/532116/information |
 | [2023.09-2.WSAI](./2023.09-2.WSAI) | 首届世界科学智能大赛：量子化学赛道——分子属性预测A赛道 | | R37 | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/532109/introduction |
-| [2023.09-2.WSAI](./2023.09-2.WSAI) | 首届世界科学智能大赛：量子化学赛道——分子属性预测B赛道 | | R25/R13 | | | ing| https://tianchi.aliyun.com/competition/entrance/532115/introduction |
+| [2023.09-2.WSAI](./2023.09-2.WSAI) | 首届世界科学智能大赛：量子化学赛道——分子属性预测B赛道 | | R25/R13 | 复赛 | | ing| https://tianchi.aliyun.com/competition/entrance/532115/introduction |
 
 ---
 
