@@ -130,6 +130,7 @@ https://tianchi.aliyun.com
 | [2023.11-1.APTOS2023](./2023.11-1.APTOS2023) | 2023年亚太眼科学会大数据竞赛 | | R3 | R2 | | 🥈 | https://tianchi.aliyun.com/competition/entrance/532160 |
 | 2023.12[TODO] | 北京市市场监管数据应用创新竞赛 | | R31 | | | 🚩 | https://www.heywhale.com/home/competition/651409f54dd8eb309a996da5/ |
 | 2023.12[TODO] | 飞桨 x 文心大模型 x Founder Park AGI Hackathon 大模型黑客松 | | R30 | | | 🚩 | https://aistudio.baidu.com/competition/detail/1103/0/introduction |
+| 2023.12[TODO] | 首届明厨亮灶AI算法大赛 | | R82 | | | 💤 | https://tianchi.aliyun.com/competition/entrance/532165/introduction |
 
 ---
 
