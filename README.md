@@ -132,6 +132,7 @@ https://tianchi.aliyun.com
 | 2023.12[TODO] | 飞桨 x 文心大模型 x Founder Park AGI Hackathon 大模型黑客松 | | R30 | | | 🚩 | https://aistudio.baidu.com/competition/detail/1103/0/introduction |
 | 2023.12[TODO] | 首届明厨亮灶AI算法大赛 | | R82 | | | 💤 | https://tianchi.aliyun.com/competition/entrance/532165/introduction |
 | [2023.12-1.MFTCoder](./2023.12-1.MFTCoder) | 通义千问AI挑战赛 - Code Qwen能力算法赛道 | | | | | | https://tianchi.aliyun.com/competition/entrance/532169/introduction |
+| 2024.01[TODO] | IEEE Cybermatics第二届国际 “Vision Meets Algae”挑战赛和研讨会 | | R17 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/532171/introduction |
 
 ---
 
