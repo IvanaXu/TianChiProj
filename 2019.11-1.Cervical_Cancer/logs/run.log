@@ -1,0 +1,1368 @@
+ivan@IvanXuMacBookPro code % ./run.sh
+---------------------------------------------------------------------------------------------------- 2.0.0 02003002
+01.Read 12000
+2019-11-18 18:17:29.841965: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-11-18 18:17:29.859622: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7ff001499580 executing computations on platform Host. Devices:
+2019-11-18 18:17:29.859643: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From trun.py:93: shuffle_and_repeat (from tensorflow.python.data.experimental.ops.shuffle_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.shuffle(buffer_size, seed)` followed by `tf.data.Dataset.repeat(count)`. Static tf.data optimizations will take care of using the fused implementation.
+03.Read(ds)
+<PrefetchDataset shapes: ((None, 600, 600, 3), (None,)), types: (tf.float32, tf.int64)>
+2019-11-18 18:17:40.375648: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 901 of 12000
+2019-11-18 18:17:50.370397: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1917 of 12000
+2019-11-18 18:18:00.371156: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2933 of 12000
+2019-11-18 18:18:10.369607: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3967 of 12000
+2019-11-18 18:18:20.369123: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4928 of 12000
+2019-11-18 18:18:30.368945: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5857 of 12000
+2019-11-18 18:18:40.369265: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 6797 of 12000
+2019-11-18 18:18:50.391083: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 7742 of 12000
+2019-11-18 18:19:00.385141: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 8686 of 12000
+2019-11-18 18:19:10.379196: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 9608 of 12000
+2019-11-18 18:19:20.375554: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 10515 of 12000
+2019-11-18 18:19:30.383556: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 11429 of 12000
+2019-11-18 18:19:36.541588: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+............................................................................
+751.0 batches: 338.0912787914276 s
+71.08140 Images/s
+Total time: 464.7952539920807s
+04.Model
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 600, 600, 16)      448       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 300, 300, 16)      0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 300, 300, 32)      4640      
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 150, 150, 32)      0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 150, 150, 64)      18496     
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 75, 75, 64)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 360000)            0         
+_________________________________________________________________
+dense (Dense)                (None, 512)               184320512 
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 513       
+=================================================================
+Total params: 184,344,609
+Trainable params: 184,344,609
+Non-trainable params: 0
+_________________________________________________________________
+None
+Train for 3 steps
+Epoch 1/10
+2019-11-18 18:25:27.457359: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1703 of 12000
+2019-11-18 18:25:37.455246: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3446 of 12000
+2019-11-18 18:25:47.519093: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5096 of 12000
+2019-11-18 18:25:57.457311: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 6553 of 12000
+2019-11-18 18:26:07.460407: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 7865 of 12000
+2019-11-18 18:26:17.456501: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 9098 of 12000
+2019-11-18 18:26:27.455513: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 10553 of 12000
+2019-11-18 18:26:37.452034: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 95s 32s/step - loss: 8988.3286 - accuracy: 0.5104
+Epoch 2/10
+3/3 [==============================] - 10s 3s/step - loss: 913.4117 - accuracy: 0.5312
+Epoch 3/10
+3/3 [==============================] - 10s 3s/step - loss: 94.7075 - accuracy: 0.5000
+Epoch 4/10
+3/3 [==============================] - 10s 3s/step - loss: 18.1134 - accuracy: 0.5625
+Epoch 5/10
+3/3 [==============================] - 10s 3s/step - loss: 5.9686 - accuracy: 0.6562
+Epoch 6/10
+3/3 [==============================] - 10s 3s/step - loss: 3.3402 - accuracy: 0.7188
+Epoch 7/10
+3/3 [==============================] - 10s 3s/step - loss: 11.0459 - accuracy: 0.5521
+Epoch 8/10
+3/3 [==============================] - 10s 3s/step - loss: 2.1489 - accuracy: 0.7188
+Epoch 9/10
+3/3 [==============================] - 10s 3s/step - loss: 4.1858 - accuracy: 0.7500
+Epoch 10/10
+3/3 [==============================] - 10s 3s/step - loss: 2.9981 - accuracy: 0.6458
+
+
+
+
+ivan@IvanXuMacBookPro code % ./run.sh
+---------------------------------------------------------------------------------------------------- 2.0.0 20191119173324-131533
+01.Read 12000
+2019-11-19 17:34:45.419858: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-11-19 17:34:45.440296: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f9d68981b20 executing computations on platform Host. Devices:
+2019-11-19 17:34:45.440322: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From trunt.py:94: shuffle_and_repeat (from tensorflow.python.data.experimental.ops.shuffle_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.shuffle(buffer_size, seed)` followed by `tf.data.Dataset.repeat(count)`. Static tf.data optimizations will take care of using the fused implementation.
+03.Read(ds)
+04.Model
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 600, 600, 16)      448       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 300, 300, 16)      0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 300, 300, 32)      4640      
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 150, 150, 32)      0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 150, 150, 64)      18496     
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 75, 75, 64)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 360000)            0         
+_________________________________________________________________
+dense (Dense)                (None, 512)               184320512 
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 513       
+=================================================================
+Total params: 184,344,609
+Trainable params: 184,344,609
+Non-trainable params: 0
+_________________________________________________________________
+None
+Train for 3 steps
+Epoch 1/100
+2019-11-19 17:34:57.245225: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1009 of 12000
+2019-11-19 17:35:07.234826: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2024 of 12000
+2019-11-19 17:35:17.237469: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3006 of 12000
+2019-11-19 17:35:27.250089: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3939 of 12000
+2019-11-19 17:35:37.263411: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4917 of 12000
+2019-11-19 17:35:47.233364: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5828 of 12000
+2019-11-19 17:35:57.250696: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 6679 of 12000
+2019-11-19 17:36:07.240606: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 7414 of 12000
+2019-11-19 17:36:17.238124: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 8217 of 12000
+2019-11-19 17:36:27.234367: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 9125 of 12000
+2019-11-19 17:36:37.234558: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 10037 of 12000
+2019-11-19 17:36:47.242250: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 10968 of 12000
+2019-11-19 17:36:57.240398: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 11878 of 12000
+2019-11-19 17:36:58.548397: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 147s 49s/step - loss: 6610.3401 - accuracy: 0.3958
+Epoch 2/100
+3/3 [==============================] - 10s 3s/step - loss: 1475.3352 - accuracy: 0.4479
+Epoch 3/100
+3/3 [==============================] - 10s 3s/step - loss: 177.4887 - accuracy: 0.5729
+Epoch 4/100
+3/3 [==============================] - 10s 3s/step - loss: 75.2563 - accuracy: 0.4062
+Epoch 5/100
+3/3 [==============================] - 10s 3s/step - loss: 73.5767 - accuracy: 0.6146
+Epoch 6/100
+3/3 [==============================] - 11s 4s/step - loss: 63.2991 - accuracy: 0.5417
+Epoch 7/100
+3/3 [==============================] - 11s 4s/step - loss: 17.5148 - accuracy: 0.6875
+Epoch 8/100
+3/3 [==============================] - 10s 3s/step - loss: 68.6593 - accuracy: 0.4167
+Epoch 9/100
+3/3 [==============================] - 10s 3s/step - loss: 76.9729 - accuracy: 0.5625
+Epoch 10/100
+3/3 [==============================] - 10s 3s/step - loss: 43.9770 - accuracy: 0.5521
+Epoch 11/100
+3/3 [==============================] - 10s 3s/step - loss: 14.8308 - accuracy: 0.6042
+Epoch 12/100
+3/3 [==============================] - 11s 4s/step - loss: 21.5815 - accuracy: 0.6667
+Epoch 13/100
+3/3 [==============================] - 10s 3s/step - loss: 11.4912 - accuracy: 0.7083
+Epoch 14/100
+3/3 [==============================] - 10s 3s/step - loss: 6.2846 - accuracy: 0.6146
+Epoch 15/100
+3/3 [==============================] - 10s 3s/step - loss: 3.1745 - accuracy: 0.7812
+Epoch 16/100
+3/3 [==============================] - 11s 4s/step - loss: 4.0343 - accuracy: 0.8229
+Epoch 17/100
+3/3 [==============================] - 10s 3s/step - loss: 3.8016 - accuracy: 0.7917
+Epoch 18/100
+3/3 [==============================] - 9s 3s/step - loss: 11.3617 - accuracy: 0.7396
+Epoch 19/100
+3/3 [==============================] - 9s 3s/step - loss: 12.1650 - accuracy: 0.6667
+Epoch 20/100
+3/3 [==============================] - 9s 3s/step - loss: 10.7296 - accuracy: 0.6979
+Epoch 21/100
+3/3 [==============================] - 9s 3s/step - loss: 18.1820 - accuracy: 0.6042
+Epoch 22/100
+3/3 [==============================] - 9s 3s/step - loss: 10.0505 - accuracy: 0.6458
+Epoch 23/100
+3/3 [==============================] - 9s 3s/step - loss: 6.7935 - accuracy: 0.7188
+Epoch 24/100
+3/3 [==============================] - 9s 3s/step - loss: 4.7647 - accuracy: 0.8125
+Epoch 25/100
+3/3 [==============================] - 9s 3s/step - loss: 2.5795 - accuracy: 0.8750
+Epoch 26/100
+3/3 [==============================] - 9s 3s/step - loss: 5.0043 - accuracy: 0.7917
+Epoch 27/100
+3/3 [==============================] - 9s 3s/step - loss: 1.0667 - accuracy: 0.9271
+Epoch 28/100
+3/3 [==============================] - 10s 3s/step - loss: 2.2967 - accuracy: 0.8854
+Epoch 29/100
+3/3 [==============================] - 9s 3s/step - loss: 2.8645 - accuracy: 0.7917
+Epoch 30/100
+3/3 [==============================] - 9s 3s/step - loss: 1.3465 - accuracy: 0.9062
+Epoch 31/100
+3/3 [==============================] - 9s 3s/step - loss: 1.3360 - accuracy: 0.9062
+Epoch 32/100
+3/3 [==============================] - 9s 3s/step - loss: 0.8579 - accuracy: 0.9479
+Epoch 33/100
+3/3 [==============================] - 9s 3s/step - loss: 2.3943 - accuracy: 0.8646
+Epoch 34/100
+3/3 [==============================] - 9s 3s/step - loss: 1.3756 - accuracy: 0.9583
+Epoch 35/100
+3/3 [==============================] - 10s 3s/step - loss: 0.5889 - accuracy: 0.9479
+Epoch 36/100
+3/3 [==============================] - 11s 4s/step - loss: 1.5739 - accuracy: 0.8958
+Epoch 37/100
+3/3 [==============================] - 9s 3s/step - loss: 0.7429 - accuracy: 0.8958
+Epoch 38/100
+3/3 [==============================] - 9s 3s/step - loss: 0.4690 - accuracy: 0.9062
+Epoch 39/100
+3/3 [==============================] - 11s 4s/step - loss: 1.9199 - accuracy: 0.8438
+Epoch 40/100
+3/3 [==============================] - 13s 4s/step - loss: 0.9994 - accuracy: 0.9375
+Epoch 41/100
+3/3 [==============================] - 10s 3s/step - loss: 1.5700 - accuracy: 0.9583
+Epoch 42/100
+3/3 [==============================] - 10s 3s/step - loss: 0.6216 - accuracy: 0.9479
+Epoch 43/100
+3/3 [==============================] - 10s 3s/step - loss: 0.8060 - accuracy: 0.9375
+Epoch 44/100
+3/3 [==============================] - 9s 3s/step - loss: 0.1435 - accuracy: 0.9375
+Epoch 45/100
+3/3 [==============================] - 9s 3s/step - loss: 3.6841 - accuracy: 0.8438
+Epoch 46/100
+3/3 [==============================] - 9s 3s/step - loss: 2.3337 - accuracy: 0.8229
+Epoch 47/100
+3/3 [==============================] - 10s 3s/step - loss: 1.1176 - accuracy: 0.9271
+Epoch 48/100
+3/3 [==============================] - 10s 3s/step - loss: 1.2287 - accuracy: 0.8854
+Epoch 49/100
+3/3 [==============================] - 9s 3s/step - loss: 0.1853 - accuracy: 0.9375
+Epoch 50/100
+3/3 [==============================] - 9s 3s/step - loss: 0.3246 - accuracy: 0.9479
+Epoch 51/100
+3/3 [==============================] - 9s 3s/step - loss: 2.6818 - accuracy: 0.8438
+Epoch 52/100
+3/3 [==============================] - 9s 3s/step - loss: 0.9535 - accuracy: 0.9792
+Epoch 53/100
+3/3 [==============================] - 9s 3s/step - loss: 0.2752 - accuracy: 0.9479
+Epoch 54/100
+3/3 [==============================] - 9s 3s/step - loss: 0.1602 - accuracy: 0.9583
+Epoch 55/100
+3/3 [==============================] - 9s 3s/step - loss: 0.2027 - accuracy: 0.9375
+Epoch 56/100
+3/3 [==============================] - 9s 3s/step - loss: 0.3469 - accuracy: 0.9688 
+Epoch 57/100
+3/3 [==============================] - 11s 4s/step - loss: 0.1649 - accuracy: 0.9688
+Epoch 58/100
+3/3 [==============================] - 11s 4s/step - loss: 1.2455 - accuracy: 0.8854
+Epoch 59/100
+3/3 [==============================] - 11s 4s/step - loss: 0.3247 - accuracy: 0.9271
+Epoch 60/100
+3/3 [==============================] - 10s 3s/step - loss: 0.4379 - accuracy: 0.9479
+Epoch 61/100
+3/3 [==============================] - 10s 3s/step - loss: 0.8728 - accuracy: 0.8958
+Epoch 62/100
+3/3 [==============================] - 10s 3s/step - loss: 0.1236 - accuracy: 0.9688
+Epoch 63/100
+3/3 [==============================] - 10s 3s/step - loss: 0.6601 - accuracy: 0.9792
+Epoch 64/100
+3/3 [==============================] - 10s 3s/step - loss: 0.2290 - accuracy: 0.9375
+Epoch 65/100
+3/3 [==============================] - 10s 3s/step - loss: 0.1832 - accuracy: 0.9688
+Epoch 66/100
+3/3 [==============================] - 10s 3s/step - loss: 0.5118 - accuracy: 0.8750
+Epoch 67/100
+3/3 [==============================] - 10s 3s/step - loss: 1.0016 - accuracy: 0.9271
+Epoch 68/100
+3/3 [==============================] - 10s 3s/step - loss: 0.2134 - accuracy: 0.9375
+Epoch 69/100
+3/3 [==============================] - 10s 3s/step - loss: 0.2243 - accuracy: 0.9583
+Epoch 70/100
+3/3 [==============================] - 10s 3s/step - loss: 0.3887 - accuracy: 0.9167
+Epoch 71/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0884 - accuracy: 0.9792
+Epoch 72/100
+3/3 [==============================] - 10s 3s/step - loss: 0.2662 - accuracy: 0.9375
+Epoch 73/100
+3/3 [==============================] - 10s 3s/step - loss: 0.3664 - accuracy: 0.9479
+Epoch 74/100
+3/3 [==============================] - 10s 3s/step - loss: 0.2396 - accuracy: 0.9792
+Epoch 75/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0326 - accuracy: 0.9896
+Epoch 76/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0341 - accuracy: 0.9896
+Epoch 77/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0819 - accuracy: 0.9896
+Epoch 78/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0596 - accuracy: 0.9896
+Epoch 79/100
+3/3 [==============================] - 10s 3s/step - loss: 0.7666 - accuracy: 0.9688
+Epoch 80/100
+3/3 [==============================] - 10s 3s/step - loss: 0.2056 - accuracy: 0.9271
+Epoch 81/100
+3/3 [==============================] - 10s 3s/step - loss: 0.3934 - accuracy: 0.9479
+Epoch 82/100
+3/3 [==============================] - 10s 3s/step - loss: 0.4363 - accuracy: 0.8646
+Epoch 83/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0151 - accuracy: 0.9896
+Epoch 84/100
+3/3 [==============================] - 10s 3s/step - loss: 0.1036 - accuracy: 0.9688
+Epoch 85/100
+3/3 [==============================] - 10s 3s/step - loss: 0.1248 - accuracy: 0.9688
+Epoch 86/100
+3/3 [==============================] - 10s 3s/step - loss: 0.1266 - accuracy: 0.9583
+Epoch 87/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0067 - accuracy: 1.0000
+Epoch 88/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0640 - accuracy: 0.9792
+Epoch 89/100
+3/3 [==============================] - 10s 3s/step - loss: 0.2412 - accuracy: 0.9688
+Epoch 90/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0173 - accuracy: 0.9896
+Epoch 91/100
+3/3 [==============================] - 10s 3s/step - loss: 0.1261 - accuracy: 0.9896
+Epoch 92/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0041 - accuracy: 1.0000
+Epoch 93/100
+3/3 [==============================] - 10s 3s/step - loss: 0.2035 - accuracy: 0.9792
+Epoch 94/100
+3/3 [==============================] - 10s 3s/step - loss: 0.2362 - accuracy: 0.9792
+Epoch 95/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0230 - accuracy: 0.9896
+Epoch 96/100
+3/3 [==============================] - 10s 3s/step - loss: 0.0088 - accuracy: 0.9896
+Epoch 97/100
+3/3 [==============================] - 10s 3s/step - loss: 8.5989e-04 - accuracy: 1.0000
+Epoch 98/100
+3/3 [==============================] - 10s 3s/step - loss: 2.7398 - accuracy: 0.8021
+Epoch 99/100
+3/3 [==============================] - 10s 3s/step - loss: 0.2432 - accuracy: 0.9375
+Epoch 100/100
+3/3 [==============================] - 10s 3s/step - loss: 1.0938 - accuracy: 0.8438
+2019-11-19 17:53:39.067430: W tensorflow/python/util/util.cc:299] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:From /Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1781: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+
+
+
+
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 1781.7818 - accuracy: 0.5521
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 588.6558 - accuracy: 0.5417
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 705.2351 - accuracy: 0.4792
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 108.0490 - accuracy: 0.5833
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 22.8235 - accuracy: 0.6771
+2019-11-20 00:13:30.385934: W tensorflow/python/util/util.cc:299] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:From /Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1781: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+.................................................................................................... 1
+Train for 3 steps
+Epoch 1/6
+3/3 [==============================] - 9s 3s/step - loss: 16.0964 - accuracy: 0.8125
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 80.0091 - accuracy: 0.5521
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 34.5537 - accuracy: 0.6562
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 20.2722 - accuracy: 0.6875
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 3.9618 - accuracy: 0.7708
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 2.1652 - accuracy: 0.7500
+.................................................................................................... 2
+Train for 3 steps
+Epoch 1/6
+3/3 [==============================] - 10s 3s/step - loss: 2.1476 - accuracy: 0.6042
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.4684 - accuracy: 0.8021
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2900 - accuracy: 0.8542
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1878 - accuracy: 0.9062
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1491 - accuracy: 0.9271
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0997 - accuracy: 0.9688
+.................................................................................................... 3
+Train for 3 steps
+Epoch 1/6
+3/3 [==============================] - 10s 3s/step - loss: 8.1590 - accuracy: 0.7708
+Epoch 2/6
+3/3 [==============================] - 11s 4s/step - loss: 0.5284 - accuracy: 0.7812
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2511 - accuracy: 0.8750
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1339 - accuracy: 0.9271
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1760 - accuracy: 0.9062
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1631 - accuracy: 0.9271
+.................................................................................................... 4
+Train for 3 steps
+Epoch 1/6
+3/3 [==============================] - 10s 3s/step - loss: 4.3659 - accuracy: 0.6771
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.9328 - accuracy: 0.8542
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2711 - accuracy: 0.9271
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2029 - accuracy: 0.9479
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1570 - accuracy: 0.9896
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1189 - accuracy: 0.9792
+ivan@IvanXuMacBookPro code % ./run.sh
+---------------------------------------------------------------------------------------------------- 2.0.0 20191119213324-625791
+2019-11-20 00:19:52.204791: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-11-20 00:19:52.216164: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fc828fb9500 executing computations on platform Host. Devices:
+2019-11-20 00:19:52.216182: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 600, 600, 16)      448       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 300, 300, 16)      0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 300, 300, 32)      4640      
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 150, 150, 32)      0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 150, 150, 64)      18496     
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 75, 75, 64)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 360000)            0         
+_________________________________________________________________
+dense (Dense)                (None, 512)               184320512 
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 513       
+=================================================================
+Total params: 184,344,609
+Trainable params: 184,344,609
+Non-trainable params: 0
+_________________________________________________________________
+None
+.................................................................................................... 0
+WARNING:tensorflow:From trunt_more.py:111: shuffle_and_repeat (from tensorflow.python.data.experimental.ops.shuffle_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.shuffle(buffer_size, seed)` followed by `tf.data.Dataset.repeat(count)`. Static tf.data optimizations will take care of using the fused implementation.
+Train for 127.0 steps
+Epoch 1/6
+2019-11-20 00:20:04.779339: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1153 of 2000
+2019-11-20 00:20:12.949566: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+  9/127 [=>............................] - ETA: 10:15 - loss: 7896.4243 - accuracy: 0.4896^C^C^C^C
+
+
+
+ 10/127 [=>............................] - ETA: 9:45 - loss: 7896.4243 - accuracy: 0.4896 Traceback (most recent call last):
+  File "trunt_more.py", line 115, in <module>
+    history = model.fit(ds, epochs=Epochs, steps_per_epoch=default_timeit_steps)
+  File "/Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training.py", line 728, in fit
+    use_multiprocessing=use_multiprocessing)
+  File "/Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 324, in fit
+    total_epochs=epochs)
+  File "/Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 123, in run_one_epoch
+    batch_outs = execution_function(iterator)
+  File "/Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/keras/engine/training_v2_utils.py", line 86, in execution_function
+    distributed_function(input_fn))
+  File "/Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/eager/def_function.py", line 457, in __call__
+    result = self._call(*args, **kwds)
+  File "/Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/eager/def_function.py", line 487, in _call
+    return self._stateless_fn(*args, **kwds)  # pylint: disable=not-callable
+  File "/Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/eager/function.py", line 1823, in __call__
+    return graph_function._filtered_call(args, kwargs)  # pylint: disable=protected-access
+  File "/Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/eager/function.py", line 1141, in _filtered_call
+    self.captured_inputs)
+  File "/Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/eager/function.py", line 1224, in _call_flat
+    ctx, args, cancellation_manager=cancellation_manager)
+  File "/Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/eager/function.py", line 511, in call
+    ctx=ctx)
+  File "/Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/eager/execute.py", line 61, in quick_execute
+    num_outputs)
+KeyboardInterrupt
+^C^C
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % ./run.sh
+---------------------------------------------------------------------------------------------------- 2.0.0 20191119213324-625791
+2019-11-20 00:21:10.615492: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-11-20 00:21:10.628748: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f805890b1b0 executing computations on platform Host. Devices:
+2019-11-20 00:21:10.628768: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 600, 600, 16)      448       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 300, 300, 16)      0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 300, 300, 32)      4640      
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 150, 150, 32)      0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 150, 150, 64)      18496     
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 75, 75, 64)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 360000)            0         
+_________________________________________________________________
+dense (Dense)                (None, 512)               184320512 
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 513       
+=================================================================
+Total params: 184,344,609
+Trainable params: 184,344,609
+Non-trainable params: 0
+_________________________________________________________________
+None
+.................................................................................................... 0
+WARNING:tensorflow:From trunt_more.py:111: shuffle_and_repeat (from tensorflow.python.data.experimental.ops.shuffle_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.shuffle(buffer_size, seed)` followed by `tf.data.Dataset.repeat(count)`. Static tf.data optimizations will take care of using the fused implementation.
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:21:23.320492: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1079 of 4000
+2019-11-20 00:21:33.320255: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2156 of 4000
+2019-11-20 00:21:43.316846: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3216 of 4000
+2019-11-20 00:21:51.211508: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 50s 17s/step - loss: 7438.8069 - accuracy: 0.5312
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 1953.9248 - accuracy: 0.4479
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 373.4184 - accuracy: 0.4792
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 34.8550 - accuracy: 0.4479
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 35.7927 - accuracy: 0.5729
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 39.2306 - accuracy: 0.5104
+2019-11-20 00:22:50.668778: W tensorflow/python/util/util.cc:299] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:From /Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1781: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+.................................................................................................... 1
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:23:04.955504: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1103 of 4000
+2019-11-20 00:23:14.965879: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2217 of 4000
+2019-11-20 00:23:24.954377: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3309 of 4000
+2019-11-20 00:23:31.650560: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 49s 16s/step - loss: 29.4394 - accuracy: 0.4479
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 20.1246 - accuracy: 0.6042
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 7.2535 - accuracy: 0.6875
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 4.4382 - accuracy: 0.7812
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 4.8149 - accuracy: 0.7396
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 2.9153 - accuracy: 0.7604
+.................................................................................................... 2
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:24:51.276828: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1099 of 4000
+2019-11-20 00:25:01.279147: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2194 of 4000
+2019-11-20 00:25:11.276966: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3315 of 4000
+2019-11-20 00:25:17.656997: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 48s 16s/step - loss: 1.1067 - accuracy: 0.8646
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 2.6789 - accuracy: 0.8438
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.4899 - accuracy: 0.8646
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.5941 - accuracy: 0.9062
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 1.2003 - accuracy: 0.9167
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1056 - accuracy: 0.9479
+.................................................................................................... 3
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:26:31.835460: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1148 of 4000
+2019-11-20 00:26:41.830253: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2221 of 4000
+2019-11-20 00:26:51.833141: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3323 of 4000
+2019-11-20 00:26:58.106155: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 48s 16s/step - loss: 0.2335 - accuracy: 0.9688
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1700 - accuracy: 0.9479
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1381 - accuracy: 0.9271
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.3246 - accuracy: 0.9062
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.6609 - accuracy: 0.9375
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 1.6611 - accuracy: 0.9167
+.................................................................................................... 4
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:28:16.830014: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1217 of 4000
+2019-11-20 00:28:26.822906: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2329 of 4000
+2019-11-20 00:28:36.820749: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3419 of 4000
+2019-11-20 00:28:42.248420: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 47s 16s/step - loss: 0.2808 - accuracy: 0.9896
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.5810 - accuracy: 0.9688
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0782 - accuracy: 0.9792
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0144 - accuracy: 1.0000
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.3050 - accuracy: 0.9271
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 1.0084 - accuracy: 0.9062
+.................................................................................................... 5
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:29:55.898133: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1135 of 4000
+2019-11-20 00:30:05.891571: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2235 of 4000
+2019-11-20 00:30:15.890403: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3339 of 4000
+2019-11-20 00:30:22.079662: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 47s 16s/step - loss: 0.0981 - accuracy: 0.9375
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0319 - accuracy: 0.9896
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.4267 - accuracy: 0.8958
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1270 - accuracy: 0.9167
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2512 - accuracy: 0.9479
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.9683 - accuracy: 0.9583
+.................................................................................................... 6
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:31:40.359661: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1170 of 4000
+2019-11-20 00:31:50.372172: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2280 of 4000
+2019-11-20 00:32:00.361380: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3355 of 4000
+2019-11-20 00:32:06.232343: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 46s 15s/step - loss: 0.4685 - accuracy: 0.8646
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 1.4373 - accuracy: 0.8438
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 1.5789 - accuracy: 0.8646
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.6653 - accuracy: 0.8646
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.8696 - accuracy: 0.7917
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.4082 - accuracy: 0.8750
+.................................................................................................... 7
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:33:18.879680: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1161 of 4000
+2019-11-20 00:33:28.874983: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2257 of 4000
+2019-11-20 00:33:38.877972: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3347 of 4000
+2019-11-20 00:33:45.104390: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 47s 16s/step - loss: 1.4127 - accuracy: 0.8333
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.8840 - accuracy: 0.8021
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.4994 - accuracy: 0.9062
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.6347 - accuracy: 0.9375
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1376 - accuracy: 0.9688
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1779 - accuracy: 0.9583
+.................................................................................................... 8
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:35:02.836648: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1161 of 4000
+2019-11-20 00:35:12.841502: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2255 of 4000
+2019-11-20 00:35:22.838850: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3327 of 4000
+2019-11-20 00:35:28.953446: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 47s 16s/step - loss: 2.2007 - accuracy: 0.8438
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0988 - accuracy: 0.9583
+Epoch 3/6
+3/3 [==============================] - 10s 3s/step - loss: 0.0664 - accuracy: 0.9583
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1696 - accuracy: 0.9167
+Epoch 5/6
+3/3 [==============================] - 10s 3s/step - loss: 0.0659 - accuracy: 0.9896
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0878 - accuracy: 0.9688
+.................................................................................................... 9
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:36:43.748333: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1099 of 4000
+2019-11-20 00:36:53.735269: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2146 of 4000
+2019-11-20 00:37:03.731376: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3207 of 4000
+2019-11-20 00:37:11.127346: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 48s 16s/step - loss: 0.1100 - accuracy: 0.9688
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1730 - accuracy: 0.9375
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.4022 - accuracy: 0.8542
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.6042 - accuracy: 0.8646
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0438 - accuracy: 0.9688
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 1.0983 - accuracy: 0.8854
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % 
+ivan@IvanXuMacBookPro code % ./run.sh
+---------------------------------------------------------------------------------------------------- 2.0.0 20191119213324-625791
+2019-11-20 00:39:40.525462: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-11-20 00:39:40.540292: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f82eec1a500 executing computations on platform Host. Devices:
+2019-11-20 00:39:40.540312: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 600, 600, 16)      448       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 300, 300, 16)      0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 300, 300, 32)      4640      
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 150, 150, 32)      0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 150, 150, 64)      18496     
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 75, 75, 64)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 360000)            0         
+_________________________________________________________________
+dense (Dense)                (None, 512)               184320512 
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 513       
+=================================================================
+Total params: 184,344,609
+Trainable params: 184,344,609
+Non-trainable params: 0
+_________________________________________________________________
+None
+.................................................................................................... 0
+WARNING:tensorflow:From trunt_more.py:111: shuffle_and_repeat (from tensorflow.python.data.experimental.ops.shuffle_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.shuffle(buffer_size, seed)` followed by `tf.data.Dataset.repeat(count)`. Static tf.data optimizations will take care of using the fused implementation.
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:39:53.282293: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1097 of 6000
+2019-11-20 00:40:03.275790: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2175 of 6000
+2019-11-20 00:40:13.280035: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3309 of 6000
+2019-11-20 00:40:23.281490: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4335 of 6000
+2019-11-20 00:40:33.279936: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5279 of 6000
+2019-11-20 00:40:40.474164: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 69s 23s/step - loss: 1944.1670 - accuracy: 0.5104
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 384.7269 - accuracy: 0.4688
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 24.7054 - accuracy: 0.5312
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 1.7756 - accuracy: 0.6979
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 5.9303 - accuracy: 0.6250
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.4932 - accuracy: 0.8542
+2019-11-20 00:41:39.959687: W tensorflow/python/util/util.cc:299] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:From /Users/ivan/Desktop/ALL/Soft/python3/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1781: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+.................................................................................................... 1
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:41:54.272710: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1074 of 6000
+2019-11-20 00:42:04.276782: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2160 of 6000
+2019-11-20 00:42:14.268312: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3237 of 6000
+2019-11-20 00:42:24.268286: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4282 of 6000
+2019-11-20 00:42:34.272515: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5329 of 6000
+2019-11-20 00:42:41.159129: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 70s 23s/step - loss: 5.8797 - accuracy: 0.5833
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 1.9197 - accuracy: 0.5938
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.8107 - accuracy: 0.5833
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.4030 - accuracy: 0.7917
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2590 - accuracy: 0.9271
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.6808 - accuracy: 0.9479
+.................................................................................................... 2
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:44:02.866873: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1132 of 6000
+2019-11-20 00:44:12.858708: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2238 of 6000
+2019-11-20 00:44:22.858401: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3344 of 6000
+2019-11-20 00:44:32.860537: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4394 of 6000
+2019-11-20 00:44:42.863289: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5374 of 6000
+2019-11-20 00:44:49.613457: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 69s 23s/step - loss: 0.5784 - accuracy: 0.9375
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2026 - accuracy: 0.9375
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1455 - accuracy: 0.9688
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1087 - accuracy: 0.9792
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2401 - accuracy: 0.8958
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1910 - accuracy: 0.8438
+.................................................................................................... 3
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:46:05.465185: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1074 of 6000
+2019-11-20 00:46:15.470495: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2181 of 6000
+2019-11-20 00:46:25.461398: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3259 of 6000
+2019-11-20 00:46:35.485724: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4304 of 6000
+2019-11-20 00:46:45.466259: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5287 of 6000
+2019-11-20 00:46:53.242761: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 69s 23s/step - loss: 0.2846 - accuracy: 0.9167
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1427 - accuracy: 0.9375
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.5068 - accuracy: 0.8646
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1841 - accuracy: 0.9583
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.3435 - accuracy: 0.8854
+Epoch 6/6
+3/3 [==============================] - 10s 3s/step - loss: 0.2686 - accuracy: 0.8438
+.................................................................................................... 4
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:48:13.045520: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1120 of 6000
+2019-11-20 00:48:23.041840: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2182 of 6000
+2019-11-20 00:48:33.043089: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3219 of 6000
+2019-11-20 00:48:43.053528: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4284 of 6000
+2019-11-20 00:48:53.046438: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5257 of 6000
+2019-11-20 00:49:00.392377: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 69s 23s/step - loss: 0.4417 - accuracy: 0.8958
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.5086 - accuracy: 0.8229
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.3925 - accuracy: 0.8438
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.4057 - accuracy: 0.8542
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.3629 - accuracy: 0.8542
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.3206 - accuracy: 0.8438
+.................................................................................................... 5
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:50:14.822179: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1162 of 6000
+2019-11-20 00:50:24.853810: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2257 of 6000
+2019-11-20 00:50:34.822455: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3310 of 6000
+2019-11-20 00:50:44.829022: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4388 of 6000
+2019-11-20 00:50:54.821539: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5387 of 6000
+2019-11-20 00:51:01.314657: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 68s 23s/step - loss: 0.2769 - accuracy: 0.9271
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2847 - accuracy: 0.8958
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1839 - accuracy: 0.9167
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2607 - accuracy: 0.9167
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2493 - accuracy: 0.9479
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2496 - accuracy: 0.9896
+.................................................................................................... 6
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:52:21.079953: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1105 of 6000
+2019-11-20 00:52:31.082635: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2177 of 6000
+2019-11-20 00:52:41.078662: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3226 of 6000
+2019-11-20 00:52:51.078338: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4320 of 6000
+2019-11-20 00:53:01.080079: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5319 of 6000
+2019-11-20 00:53:08.459664: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 69s 23s/step - loss: 0.3599 - accuracy: 0.9792
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1900 - accuracy: 0.9479
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1295 - accuracy: 0.9583
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1457 - accuracy: 0.9792
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2944 - accuracy: 0.9479
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0941 - accuracy: 0.9792
+.................................................................................................... 7
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:54:22.988935: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1122 of 6000
+2019-11-20 00:54:32.996367: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2176 of 6000
+2019-11-20 00:54:42.995596: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3244 of 6000
+2019-11-20 00:54:52.990238: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4307 of 6000
+2019-11-20 00:55:02.987448: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5262 of 6000
+2019-11-20 00:55:10.754818: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 70s 23s/step - loss: 0.0437 - accuracy: 0.9792
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0313 - accuracy: 1.0000
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0801 - accuracy: 0.9792
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1565 - accuracy: 0.9792
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1970 - accuracy: 0.9479
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0932 - accuracy: 0.9792
+.................................................................................................... 8
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:56:30.736388: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1164 of 6000
+2019-11-20 00:56:40.741294: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2231 of 6000
+2019-11-20 00:56:50.749940: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3343 of 6000
+2019-11-20 00:57:00.738001: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4352 of 6000
+2019-11-20 00:57:10.740505: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5348 of 6000
+2019-11-20 00:57:17.719423: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 69s 23s/step - loss: 0.0511 - accuracy: 0.9896
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0268 - accuracy: 0.9896
+Epoch 3/6
+3/3 [==============================] - 10s 3s/step - loss: 0.0723 - accuracy: 0.9583
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0355 - accuracy: 0.9896
+Epoch 5/6
+3/3 [==============================] - 10s 3s/step - loss: 0.1077 - accuracy: 0.9896
+Epoch 6/6
+3/3 [==============================] - 10s 3s/step - loss: 0.0373 - accuracy: 0.9896
+.................................................................................................... 9
+Train for 3 steps
+Epoch 1/6
+2019-11-20 00:58:33.602859: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1146 of 6000
+2019-11-20 00:58:43.614931: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2249 of 6000
+2019-11-20 00:58:53.606782: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3310 of 6000
+2019-11-20 00:59:03.607069: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4357 of 6000
+2019-11-20 00:59:13.606838: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5332 of 6000
+2019-11-20 00:59:20.792950: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 68s 23s/step - loss: 0.0528 - accuracy: 0.9792
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0365 - accuracy: 0.9896
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0544 - accuracy: 0.9792
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0117 - accuracy: 1.0000
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1828 - accuracy: 0.9688
+Epoch 6/6
+3/3 [==============================] - 10s 3s/step - loss: 0.0207 - accuracy: 0.9896
+.................................................................................................... 10
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:00:40.516538: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1109 of 6000
+2019-11-20 01:00:50.499157: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2176 of 6000
+2019-11-20 01:01:00.501487: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3251 of 6000
+2019-11-20 01:01:10.499127: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4286 of 6000
+2019-11-20 01:01:20.505252: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5288 of 6000
+2019-11-20 01:01:27.747498: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 69s 23s/step - loss: 0.0205 - accuracy: 1.0000
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0150 - accuracy: 1.0000
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0474 - accuracy: 0.9792
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2747 - accuracy: 0.9896 
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1083 - accuracy: 0.9896
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1092 - accuracy: 0.9896
+.................................................................................................... 11
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:02:41.399689: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1131 of 6000
+2019-11-20 01:02:51.412830: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2211 of 6000
+2019-11-20 01:03:01.396659: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3292 of 6000
+2019-11-20 01:03:11.420557: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4379 of 6000
+2019-11-20 01:03:21.397217: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5355 of 6000
+2019-11-20 01:03:28.285312: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 68s 23s/step - loss: 0.0986 - accuracy: 0.9792
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0540 - accuracy: 0.9688
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2614 - accuracy: 0.9479
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0754 - accuracy: 0.9792
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1253 - accuracy: 0.9688
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0456 - accuracy: 0.9688
+.................................................................................................... 12
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:04:47.478611: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1157 of 6000
+2019-11-20 01:04:57.480094: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2242 of 6000
+2019-11-20 01:05:07.480101: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3330 of 6000
+2019-11-20 01:05:17.502315: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4418 of 6000
+2019-11-20 01:05:27.474523: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5409 of 6000
+2019-11-20 01:05:33.831185: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 68s 23s/step - loss: 0.0238 - accuracy: 0.9896
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.3453 - accuracy: 0.8646
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2081 - accuracy: 0.9583
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2791 - accuracy: 0.8958
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2277 - accuracy: 0.9375
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1613 - accuracy: 0.9688
+.................................................................................................... 13
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:06:47.869345: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1165 of 6000
+2019-11-20 01:06:57.869739: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2265 of 6000
+2019-11-20 01:07:07.866167: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3354 of 6000
+2019-11-20 01:07:17.875828: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4410 of 6000
+2019-11-20 01:07:27.870151: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5367 of 6000
+2019-11-20 01:07:34.484855: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 68s 23s/step - loss: 2.1025 - accuracy: 0.8438
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2524 - accuracy: 0.9167
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1605 - accuracy: 0.9896
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1913 - accuracy: 0.9375
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2311 - accuracy: 0.8750
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2156 - accuracy: 0.9583
+.................................................................................................... 14
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:08:54.137246: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1181 of 6000
+2019-11-20 01:09:04.140673: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2272 of 6000
+2019-11-20 01:09:14.150460: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3352 of 6000
+2019-11-20 01:09:24.127444: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4438 of 6000
+2019-11-20 01:09:34.131250: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5466 of 6000
+2019-11-20 01:09:39.696866: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 67s 22s/step - loss: 0.1738 - accuracy: 0.9583
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1839 - accuracy: 0.9688
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0932 - accuracy: 0.9792
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1056 - accuracy: 0.9792
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2951 - accuracy: 0.9583
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0587 - accuracy: 0.9896
+.................................................................................................... 15
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:10:53.983081: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1203 of 6000
+2019-11-20 01:11:03.998969: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2403 of 6000
+2019-11-20 01:11:13.972879: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3492 of 6000
+2019-11-20 01:11:23.981264: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4610 of 6000
+2019-11-20 01:11:33.978111: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5637 of 6000
+2019-11-20 01:11:37.609937: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 65s 22s/step - loss: 0.0487 - accuracy: 0.9792
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0820 - accuracy: 0.9688
+Epoch 3/6
+3/3 [==============================] - 10s 3s/step - loss: 0.4555 - accuracy: 0.9792
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2266 - accuracy: 0.9688
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1316 - accuracy: 0.9792
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1767 - accuracy: 0.9479
+.................................................................................................... 16
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:12:57.715808: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1108 of 6000
+2019-11-20 01:13:07.702376: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2246 of 6000
+2019-11-20 01:13:17.692153: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3275 of 6000
+2019-11-20 01:13:27.695061: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4369 of 6000
+2019-11-20 01:13:37.699100: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5345 of 6000
+2019-11-20 01:13:44.437542: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 68s 23s/step - loss: 0.1367 - accuracy: 0.9583
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1009 - accuracy: 0.9583
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 5.9964 - accuracy: 0.8333
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2254 - accuracy: 0.9583
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1825 - accuracy: 0.9896
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0657 - accuracy: 0.9792
+.................................................................................................... 17
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:14:58.109391: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1098 of 6000
+2019-11-20 01:15:08.096925: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2241 of 6000
+2019-11-20 01:15:18.101304: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3336 of 6000
+2019-11-20 01:15:28.098948: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4419 of 6000
+2019-11-20 01:15:38.125787: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5435 of 6000
+2019-11-20 01:15:43.809170: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 67s 22s/step - loss: 0.0897 - accuracy: 0.9375
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1067 - accuracy: 0.9375
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0249 - accuracy: 1.0000
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2608 - accuracy: 0.9583
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0818 - accuracy: 0.9792
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2471 - accuracy: 0.9792
+.................................................................................................... 18
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:17:02.541942: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1139 of 6000
+2019-11-20 01:17:12.539394: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2302 of 6000
+2019-11-20 01:17:22.537507: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3377 of 6000
+2019-11-20 01:17:32.552047: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4448 of 6000
+2019-11-20 01:17:42.543494: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5452 of 6000
+2019-11-20 01:17:48.101805: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 67s 22s/step - loss: 0.1515 - accuracy: 0.9688
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0927 - accuracy: 0.9896
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0473 - accuracy: 0.9688
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0973 - accuracy: 0.9479
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1402 - accuracy: 0.9688
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0229 - accuracy: 1.0000
+.................................................................................................... 19
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:19:02.042351: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1142 of 6000
+2019-11-20 01:19:12.051069: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2294 of 6000
+2019-11-20 01:19:22.041495: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3362 of 6000
+2019-11-20 01:19:32.037354: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4420 of 6000
+2019-11-20 01:19:42.043264: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5428 of 6000
+2019-11-20 01:19:48.057532: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 68s 23s/step - loss: 0.0487 - accuracy: 0.9896
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0550 - accuracy: 0.9792
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1238 - accuracy: 0.9583
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1294 - accuracy: 0.9688
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0219 - accuracy: 1.0000
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0526 - accuracy: 0.9792
+.................................................................................................... 20
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:21:07.450607: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1164 of 6000
+2019-11-20 01:21:17.448885: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2357 of 6000
+2019-11-20 01:21:27.452013: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3438 of 6000
+2019-11-20 01:21:37.449420: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4453 of 6000
+2019-11-20 01:21:47.453072: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5469 of 6000
+2019-11-20 01:21:52.739261: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 67s 22s/step - loss: 0.1578 - accuracy: 0.9792
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2669 - accuracy: 0.8750
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2733 - accuracy: 0.8854
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.3442 - accuracy: 0.8958
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.4076 - accuracy: 0.9167
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2519 - accuracy: 0.9583
+.................................................................................................... 21
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:23:07.040886: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1127 of 6000
+2019-11-20 01:23:17.042515: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2287 of 6000
+2019-11-20 01:23:27.067298: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3379 of 6000
+2019-11-20 01:23:37.040288: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4495 of 6000
+2019-11-20 01:23:47.051192: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5433 of 6000
+2019-11-20 01:23:52.936777: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 67s 22s/step - loss: 0.2889 - accuracy: 0.9167
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2885 - accuracy: 0.9375
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2566 - accuracy: 0.8750
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2472 - accuracy: 0.9271
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2087 - accuracy: 0.9375
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.4308 - accuracy: 0.8750
+.................................................................................................... 22
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:25:11.976558: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1160 of 6000
+2019-11-20 01:25:21.985800: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2288 of 6000
+2019-11-20 01:25:31.980000: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3408 of 6000
+2019-11-20 01:25:41.977073: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4500 of 6000
+2019-11-20 01:25:51.982012: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5492 of 6000
+2019-11-20 01:25:57.264855: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 67s 22s/step - loss: 0.1856 - accuracy: 0.9688
+Epoch 2/6
+3/3 [==============================] - 10s 3s/step - loss: 0.3062 - accuracy: 0.8333
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1442 - accuracy: 0.9583
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1533 - accuracy: 0.9792
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1463 - accuracy: 0.9896
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1236 - accuracy: 0.9583
+.................................................................................................... 23
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:27:11.528768: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1162 of 6000
+2019-11-20 01:27:21.538127: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2266 of 6000
+2019-11-20 01:27:31.553916: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3229 of 6000
+2019-11-20 01:27:41.527937: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4327 of 6000
+2019-11-20 01:27:51.544921: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5334 of 6000
+2019-11-20 01:27:58.750786: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 69s 23s/step - loss: 0.2535 - accuracy: 0.9583
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0858 - accuracy: 0.9688
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1049 - accuracy: 0.9792
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0909 - accuracy: 0.9583
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0661 - accuracy: 0.9792
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0788 - accuracy: 0.9688
+.................................................................................................... 24
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:29:18.673115: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1165 of 6000
+2019-11-20 01:29:28.660252: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2347 of 6000
+2019-11-20 01:29:38.659961: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3429 of 6000
+2019-11-20 01:29:48.655949: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4509 of 6000
+2019-11-20 01:29:58.688509: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5499 of 6000
+2019-11-20 01:30:03.939668: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 67s 22s/step - loss: 0.1085 - accuracy: 0.9583
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0476 - accuracy: 0.9688
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0168 - accuracy: 1.0000
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0708 - accuracy: 0.9792
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0604 - accuracy: 0.9792
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0863 - accuracy: 0.9896
+.................................................................................................... 25
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:31:17.790540: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1168 of 6000
+2019-11-20 01:31:27.804933: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2322 of 6000
+2019-11-20 01:31:37.796194: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3426 of 6000
+2019-11-20 01:31:47.797787: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4482 of 6000
+2019-11-20 01:31:57.801147: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5440 of 6000
+2019-11-20 01:32:03.404503: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 67s 22s/step - loss: 0.0028 - accuracy: 1.0000
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0519 - accuracy: 0.9792
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0060 - accuracy: 1.0000 
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.2114 - accuracy: 0.9688
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1493 - accuracy: 0.9583
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0773 - accuracy: 0.9896
+.................................................................................................... 26
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:33:22.291367: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1115 of 6000
+2019-11-20 01:33:32.267274: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2259 of 6000
+2019-11-20 01:33:42.290521: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3362 of 6000
+2019-11-20 01:33:52.281447: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4399 of 6000
+2019-11-20 01:34:02.264481: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5444 of 6000
+2019-11-20 01:34:07.849000: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 67s 22s/step - loss: 0.0266 - accuracy: 1.0000
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1353 - accuracy: 0.9792
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0773 - accuracy: 0.9896
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1451 - accuracy: 0.9583
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0201 - accuracy: 0.9896
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1402 - accuracy: 0.9583
+.................................................................................................... 27
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:35:22.408680: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1137 of 6000
+2019-11-20 01:35:32.427258: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2280 of 6000
+2019-11-20 01:35:42.420800: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3415 of 6000
+2019-11-20 01:35:52.432686: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4475 of 6000
+2019-11-20 01:36:02.418208: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5503 of 6000
+2019-11-20 01:36:07.505235: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 67s 22s/step - loss: 0.0120 - accuracy: 1.0000
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0798 - accuracy: 0.9896
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0824 - accuracy: 0.9792
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.1287 - accuracy: 0.9583
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0578 - accuracy: 0.9583
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0537 - accuracy: 0.9896
+.................................................................................................... 28
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:37:26.484970: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1132 of 6000
+2019-11-20 01:37:36.512121: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2270 of 6000
+2019-11-20 01:37:46.479468: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3371 of 6000
+2019-11-20 01:37:56.477640: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4477 of 6000
+2019-11-20 01:38:06.494673: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5461 of 6000
+2019-11-20 01:38:12.556829: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 68s 23s/step - loss: 0.0625 - accuracy: 0.9792
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0790 - accuracy: 0.9896
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0904 - accuracy: 0.9479
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0312 - accuracy: 0.9896
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0488 - accuracy: 0.9896
+Epoch 6/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0292 - accuracy: 0.9896
+.................................................................................................... 29
+Train for 3 steps
+Epoch 1/6
+2019-11-20 01:39:26.566284: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 1121 of 6000
+2019-11-20 01:39:36.569619: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 2236 of 6000
+2019-11-20 01:39:46.593430: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 3336 of 6000
+2019-11-20 01:39:56.600241: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 4411 of 6000
+2019-11-20 01:40:06.566973: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:143] Filling up shuffle buffer (this may take a while): 5421 of 6000
+2019-11-20 01:40:12.469730: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:193] Shuffle buffer filled.
+3/3 [==============================] - 68s 23s/step - loss: 0.0751 - accuracy: 0.9896
+Epoch 2/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0124 - accuracy: 1.0000
+Epoch 3/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0290 - accuracy: 0.9896
+Epoch 4/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0048 - accuracy: 1.0000
+Epoch 5/6
+3/3 [==============================] - 9s 3s/step - loss: 0.0992 - accuracy: 0.9896
+Epoch 6/6
+3/3 [==============================] - 10s 3s/step - loss: 0.0175 - accuracy: 0.9896
+ivan@IvanXuMacBookPro code % 

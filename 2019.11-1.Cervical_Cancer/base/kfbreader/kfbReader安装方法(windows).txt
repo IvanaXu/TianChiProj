@@ -1,0 +1,4 @@
+1，操作步骤：
+直接解压Kfbreader-win10-python.zip或Kfbreader-win10-cpp.zip
+将解压出来的库（dll，pyd）和调用接口（python版本kfbReader.py，cpp版本kfbreader_Dll.h）包含到使用路径
+import或include接口，调用接口函数

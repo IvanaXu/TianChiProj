@@ -1,0 +1,13 @@
+1，操作步骤：
+tar  xvzf  kfbreader.tar.gz
+ln  -s  libhzzt.so  libhzzt.so.1
+ln  -s  libopencv_world.so.3.4.5    libopencv_world.so.3.4
+
+2，验证是否可以在python环境下import  kfbReader
+python  -c  "import  kfbReader"
+
+注：如果link不成功(通过ldd  _kfbreader.so查看)，需要在环境变量中加入当前路径：
+vim  ~/.bashrc
+加入一行：export  PYTHONPATH=your_kfb_path/kfbreader:$PYTHONPATH  其中，your_kfb_path需要修改为自己的路径
+加入一行：export LD_LIBRARY_PATH=your_anaconda_path/anaconda3/lib:your_kfb_path/kfbreader:$LD_LIBRARY_PATH  其中，your_anaconda_path和your_kfb_path需要修改为自己的路径
+source  ~/.bashrc
