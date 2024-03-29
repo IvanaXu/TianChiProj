@@ -33,7 +33,7 @@ https://tianchi.aliyun.com
 
 ### （3）TianChiProj
 * By TEAM paipai
-* R for RANK：🏆/1、🥈/2、🥉/3、✨/Top20、🚩/Top50、💤/Top100
+* R for RANK：🏆/1、🥈/2、🥉/3、✨/Top20、🚩/Top50、💤/Top100、❌/Miss
 
 | 时间-序号.项目名称 | 算法比赛 | 长期 | 初赛 | 复赛 | 决赛 | | 相关链接 |
 | - | - | - | - | - | - | - | - |
@@ -131,13 +131,13 @@ https://tianchi.aliyun.com
 | 2023.12[TODO] | 北京市市场监管数据应用创新竞赛 | | R31 | | | 🚩 | https://www.heywhale.com/home/competition/651409f54dd8eb309a996da5/ |
 | 2023.12[TODO] | 飞桨 x 文心大模型 x Founder Park AGI Hackathon 大模型黑客松 | | R30 | | | 🚩 | https://aistudio.baidu.com/competition/detail/1103/0/introduction |
 | 2023.12[TODO] | 首届明厨亮灶AI算法大赛 | | R82 | | | 💤 | https://tianchi.aliyun.com/competition/entrance/532165/introduction |
-| [2023.12-1.MFTCoder](./2023.12-1.MFTCoder) | 通义千问AI挑战赛 - Code Qwen能力算法赛道 | | | | | | https://tianchi.aliyun.com/competition/entrance/532169/introduction |
+| [2023.12-1.MFTCoder](./2023.12-1.MFTCoder) | 通义千问AI挑战赛 - Code Qwen能力算法赛道 | | | | | ❌ | https://tianchi.aliyun.com/competition/entrance/532169/introduction |
+| 2024 | | | | | | | |
 | 2024.01[TODO] | IEEE Cybermatics第二届国际 “Vision Meets Algae”挑战赛和研讨会 | | R17 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/532171/introduction |
-| 2024.02[TODO] | AICAS 2024大挑战：通用算力大模型推理性能软硬协同优化挑战赛 | | R5/R28 | | | ING | https://tianchi.aliyun.com/competition/entrance/532170/introduction |
 | [2024.03-1.PaddleOCR](./2024.03-1.PaddleOCR) | PaddleOCR 算法模型挑战赛 - 赛题一：OCR 端到端识别任务 | | | | | ❌ | https://aistudio.baidu.com/competition/detail/1131/0/introduction |
 | [2024.03-1.PaddleOCR](./2024.03-1.PaddleOCR) | PaddleOCR 算法模型挑战赛 - 赛题二：通用表格识别任务 | | | | | ❌ | https://aistudio.baidu.com/competition/detail/1138/0/introduction |
 | [2024.03-2.Biomedical](./2024.03-2.Biomedical) | 2023上海国际计算生物学创新大赛—药物筛选AI算法“凌越”挑战赛 | | | | | ❌ | https://competition.huaweicloud.com/information/1000042002/introduction |
-
+| 2024.02[TODO] | AICAS 2024大挑战：通用算力大模型推理性能软硬协同优化挑战赛 | | R5/R28 | | | ING | https://tianchi.aliyun.com/competition/entrance/532170/introduction |
 ---
 
 
@@ -147,4 +147,6 @@ https://tianchi.aliyun.com
 https://github.com/IvanaXu/TianChiProj/projects
 
 </div>
+
+
 
