@@ -145,7 +145,9 @@ https://tianchi.aliyun.com
 
 [Coming Soon...](https://tianchi.aliyun.com/home/science/scienceDetail?userId=1095279182618)
 
-https://github.com/IvanaXu/TianChiProj/projects
+[![IvanaXu/TianChiProj](https://gitee.com/IvanaXu/TianChiProj/widgets/widget_card.svg?colors=4183c4,ffffff,ffffff,e3e9ed,666666,9b9b9b)](https://gitee.com/IvanaXu/TianChiProj)
+
+https://github.com/IvanaXu/TianChiProj
 
 </div>
 
