@@ -134,8 +134,9 @@ https://tianchi.aliyun.com
 | [2023.12-1.MFTCoder](./2023.12-1.MFTCoder) | 通义千问AI挑战赛 - Code Qwen能力算法赛道 | | | | | | https://tianchi.aliyun.com/competition/entrance/532169/introduction |
 | 2024.01[TODO] | IEEE Cybermatics第二届国际 “Vision Meets Algae”挑战赛和研讨会 | | R17 | | | ✨ | https://tianchi.aliyun.com/competition/entrance/532171/introduction |
 | 2024.02[TODO] | AICAS 2024大挑战：通用算力大模型推理性能软硬协同优化挑战赛 | | R5/R28 | | | ING | https://tianchi.aliyun.com/competition/entrance/532170/introduction |
-| [2024.03-1.PaddleOCR](./2024.03-1.PaddleOCR) | PaddleOCR 算法模型挑战赛 - 赛题一：OCR 端到端识别任务 | | | | | | https://aistudio.baidu.com/competition/detail/1131/0/introduction |
-| [2024.03-1.PaddleOCR](./2024.03-1.PaddleOCR) | PaddleOCR 算法模型挑战赛 - 赛题二：通用表格识别任务 | | | | | | https://aistudio.baidu.com/competition/detail/1138/0/introduction |
+| [2024.03-1.PaddleOCR](./2024.03-1.PaddleOCR) | PaddleOCR 算法模型挑战赛 - 赛题一：OCR 端到端识别任务 | | | | | ❌ | https://aistudio.baidu.com/competition/detail/1131/0/introduction |
+| [2024.03-1.PaddleOCR](./2024.03-1.PaddleOCR) | PaddleOCR 算法模型挑战赛 - 赛题二：通用表格识别任务 | | | | | ❌ | https://aistudio.baidu.com/competition/detail/1138/0/introduction |
+| [2024.03-2.Biomedical](./2024.03-2.Biomedical) | 2023上海国际计算生物学创新大赛—药物筛选AI算法“凌越”挑战赛 | | | | | ❌ | https://competition.huaweicloud.com/information/1000042002/introduction |
 
 ---
 
