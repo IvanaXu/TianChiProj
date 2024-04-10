@@ -42,6 +42,7 @@ https://tianchi.aliyun.com
 | [2019.08-1.SecurityAI_Round1](./2019.08-1.SecurityAI_Round1) | 安全AI挑战者计划第一期 - 人脸识别对抗 | R94 | | | | 💤 | https://tianchi.aliyun.com/competition/entrance/231745/introduction |
 | [2019.11-1.Cervical_Cancer](./2019.11-1.Cervical_Cancer) | “数字人体”视觉挑战赛——宫颈癌风险智能诊断 | | R208 | | | | https://tianchi.aliyun.com/competition/entrance/231757/introduction |
 | [2019.12-1.SecurityAI_Round2](./2019.12-1.SecurityAI_Round2) | 安全AI挑战者计划第二期 - ImageNet图像分类对抗攻击 | R3 | R55 | | | 🥉 | https://tianchi.aliyun.com/competition/entrance/231761/introduction |
+| [2019.12-2.APTOS2019](http://eda.tangjt.cn/) | APTOS 2019 Blindness Detection | 0.769 | | | | | https://www.kaggle.com/competitions/aptos2019-blindness-detection |
 | 2020 | | | | | | | |
 | 2020.01[TODO] | 资金流入流出预测-挑战Baseline | R51 | | | | 💤 | https://tianchi.aliyun.com/competition/entrance/231573/introduction |
 | 2020.01[TODO] | 安全AI挑战者计划第三期 - 文本分类对抗攻击 | R1 | R25 | | | 🏆 | https://tianchi.aliyun.com/competition/entrance/231762/introduction |
@@ -87,7 +88,7 @@ https://tianchi.aliyun.com
 | 2021.04[TODO] | “新内容 新交互”全球视频云创新挑战赛--算法挑战赛道 | | R50 | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/531873/introduction |
 | 2021.07[TODO] | 云上开发，高效智能--阿里云ECS Cloudbuild开发者大赛算法挑战赛道 | | R32 | R17 | | ✨ | https://tianchi.aliyun.com/competition/entrance/531906/introduction |
 | [2021.08-1.AAIG_CUP](./2021.08-1.AAIG_CUP) | 第三届 Apache Flink 极客挑战赛暨AAIG CUP——电商推荐“抱大腿”攻击识别 | | R86 | | | 💤 | https://tianchi.aliyun.com/competition/entrance/531925/introduction |
-| 2021.09[TODO] | 2021 亚太眼科学会大数据竞赛 | | R144 | | | | https://tianchi.aliyun.com/competition/entrance/531929/introduction |
+| [2021.09-1.APTOS2021](http://eda.tangjt.cn/) | 2021 亚太眼科学会大数据竞赛 | | R144 | | | | https://tianchi.aliyun.com/competition/entrance/531929/introduction |
 | [2021.11-1.SecurityAI_Round8](./2021.11-1.SecurityAI_Round8) | AAAI-2022 安全AI挑战者计划第八期：以数据为中心的鲁棒机器学习 | | R356 | | | | https://tianchi.aliyun.com/competition/entrance/531939/introduction [🔥]https://aistudio.baidu.com/projectdetail/3352973|
 | [2021.12-1.ProteinStructureModeling](./2021.12-1.ProteinStructureModeling) | “创新大师杯”冷冻电镜蛋白质结构建模大赛 | | R2 | R5 | 季军 | 🥉 | https://tianchi.aliyun.com/competition/entrance/531916/introduction [🔥]https://tianchi.aliyun.com/forum/postDetail?postId=95343 |
 | 2022 | | | | | | | |
@@ -127,7 +128,7 @@ https://tianchi.aliyun.com
 | [2023.08-1.iAIBiomedical3](./2023.08-1.iAIBiomedical3) > [PaddleHelix_dev2308](https://github.com/paipai-Studio/PaddleHelix_dev2308) | AIStudio 首届全球AI药物研发算法大赛 | | R63/R40 | R43/R10 | 三等奖 | 🥉 | https://aistudio.baidu.com/competition/detail/1012/0/introduction [🔥]https://aistudio.baidu.com/projectdetail/6685523|
 | [2023.09-2.WSAI](./2023.09-2.WSAI) | 首届世界科学智能大赛：量子化学赛道——分子属性预测A赛道 | | R37 | | | 🚩 | https://tianchi.aliyun.com/competition/entrance/532109/introduction |
 | [2023.09-2.WSAI](./2023.09-2.WSAI) | 首届世界科学智能大赛：量子化学赛道——分子属性预测B赛道 | | R25/R13 | R16/ | | ✨ | https://tianchi.aliyun.com/competition/entrance/532115/introduction |
-| [2023.11-1.APTOS2023](./2023.11-1.APTOS2023) | 2023年亚太眼科学会大数据竞赛 | | R3 | R2 | | 🥈 | https://tianchi.aliyun.com/competition/entrance/532160 |
+| [2023.11-1.APTOS2023](http://eda.tangjt.cn/) | 2023年亚太眼科学会大数据竞赛 | | R3 | R2 | | 🥈 | https://tianchi.aliyun.com/competition/entrance/532160 |
 | 2023.12[TODO] | 北京市市场监管数据应用创新竞赛 | | R31 | | | 🚩 | https://www.heywhale.com/home/competition/651409f54dd8eb309a996da5/ |
 | 2023.12[TODO] | 飞桨 x 文心大模型 x Founder Park AGI Hackathon 大模型黑客松 | | R30 | | | 🚩 | https://aistudio.baidu.com/competition/detail/1103/0/introduction |
 | 2023.12[TODO] | 首届明厨亮灶AI算法大赛 | | R82 | | | 💤 | https://tianchi.aliyun.com/competition/entrance/532165/introduction |
@@ -137,7 +138,8 @@ https://tianchi.aliyun.com
 | [2024.03-1.PaddleOCR](./2024.03-1.PaddleOCR) | PaddleOCR 算法模型挑战赛 - 赛题一：OCR 端到端识别任务 | | | | | ❌ | https://aistudio.baidu.com/competition/detail/1131/0/introduction |
 | [2024.03-1.PaddleOCR](./2024.03-1.PaddleOCR) | PaddleOCR 算法模型挑战赛 - 赛题二：通用表格识别任务 | | | | | ❌ | https://aistudio.baidu.com/competition/detail/1138/0/introduction |
 | [2024.03-2.Biomedical](./2024.03-2.Biomedical) | 2023上海国际计算生物学创新大赛—药物筛选AI算法“凌越”挑战赛 | | | | | ❌ | https://competition.huaweicloud.com/information/1000042002/introduction |
-| 2024.02[TODO] | AICAS 2024大挑战：通用算力大模型推理性能软硬协同优化挑战赛 | | R5/R28 | | | ING | https://tianchi.aliyun.com/competition/entrance/532170/introduction |
+| [2024.04-1.APTOSBenchmark](http://eda.tangjt.cn/) | APTOS Cross-Country Datasets Benchmark | R4 | | | | ✨ | https://tianchi.aliyun.com/dataset/127971 |
+| 2024.04[TODO] | AICAS 2024大挑战：通用算力大模型推理性能软硬协同优化挑战赛 | | R5/R28 | | | ING | https://tianchi.aliyun.com/competition/entrance/532170/introduction |
 ---
 
 
