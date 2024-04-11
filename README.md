@@ -139,8 +139,10 @@ https://tianchi.aliyun.com
 | [2024.03-1.PaddleOCR](./2024.03-1.PaddleOCR) | PaddleOCR 算法模型挑战赛 - 赛题二：通用表格识别任务 | | | | | ❌ | https://aistudio.baidu.com/competition/detail/1138/0/introduction |
 | [2024.03-2.Biomedical](./2024.03-2.Biomedical) | 2023上海国际计算生物学创新大赛—药物筛选AI算法“凌越”挑战赛 | | | | | ❌ | https://competition.huaweicloud.com/information/1000042002/introduction |
 | [2024.04-1.APTOSBenchmark](http://eda.tangjt.cn/) | APTOS Cross-Country Datasets Benchmark | R4 | | | | ✨ | https://tianchi.aliyun.com/dataset/127971 |
-| 2024.04[TODO] | AICAS 2024大挑战：通用算力大模型推理性能软硬协同优化挑战赛 | | R5/R28 | R1/R12 | | ✨ | https://tianchi.aliyun.com/competition/entrance/532170/introduction |
+| 2024.04-2.AICAS2024[TODO] | AICAS 2024大挑战：通用算力大模型推理性能软硬协同优化挑战赛 | | R5/R28 | R1/R12 | R16 | ✨ | https://tianchi.aliyun.com/competition/entrance/532170/introduction |
 ---
+
+
 
 
 <div align=center>
