@@ -42,7 +42,7 @@ https://tianchi.aliyun.com
 | [2019.08-1.SecurityAI_Round1](./2019.08-1.SecurityAI_Round1) | 安全AI挑战者计划第一期 - 人脸识别对抗 | R94 | | | | 💤 | https://tianchi.aliyun.com/competition/entrance/231745/introduction |
 | [2019.11-1.Cervical_Cancer](./2019.11-1.Cervical_Cancer) | “数字人体”视觉挑战赛——宫颈癌风险智能诊断 | | R208 | | | | https://tianchi.aliyun.com/competition/entrance/231757/introduction |
 | [2019.12-1.SecurityAI_Round2](./2019.12-1.SecurityAI_Round2) | 安全AI挑战者计划第二期 - ImageNet图像分类对抗攻击 | R3 | R55 | | | 🥉 | https://tianchi.aliyun.com/competition/entrance/231761/introduction |
-| [2019.12-2.APTOS2019](http://eda.tangjt.cn/) | APTOS 2019 Blindness Detection | 0.802 | | | | | https://www.kaggle.com/competitions/aptos2019-blindness-detection |
+| [2019.12-2.APTOS2019](http://eda.tangjt.cn/) | APTOS 2019 Blindness Detection | 0.809 | | | | | https://www.kaggle.com/competitions/aptos2019-blindness-detection |
 | 2020 | | | | | | | |
 | 2020.01[TODO] | 资金流入流出预测-挑战Baseline | R51 | | | | 💤 | https://tianchi.aliyun.com/competition/entrance/231573/introduction |
 | 2020.01[TODO] | 安全AI挑战者计划第三期 - 文本分类对抗攻击 | R1 | R25 | | | 🏆 | https://tianchi.aliyun.com/competition/entrance/231762/introduction |
@@ -138,7 +138,7 @@ https://tianchi.aliyun.com
 | [2024.03-1.PaddleOCR](./2024.03-1.PaddleOCR) | PaddleOCR 算法模型挑战赛 - 赛题一：OCR 端到端识别任务 | | | | | ❌ | https://aistudio.baidu.com/competition/detail/1131/0/introduction |
 | [2024.03-1.PaddleOCR](./2024.03-1.PaddleOCR) | PaddleOCR 算法模型挑战赛 - 赛题二：通用表格识别任务 | | | | | ❌ | https://aistudio.baidu.com/competition/detail/1138/0/introduction |
 | [2024.03-2.Biomedical](./2024.03-2.Biomedical) | 2023上海国际计算生物学创新大赛—药物筛选AI算法“凌越”挑战赛 | | | | | ❌ | https://competition.huaweicloud.com/information/1000042002/introduction |
-| [2024.04-1.APTOSBenchmark](http://eda.tangjt.cn/) | APTOS Cross-Country Datasets Benchmark | R4 | | | | ✨ | https://tianchi.aliyun.com/dataset/127971 |
+| [2024.04-1.APTOSBenchmark](http://eda.tangjt.cn/) | APTOS Cross-Country Datasets Benchmark | R3 | | | | ✨ | https://tianchi.aliyun.com/dataset/127971 |
 | [2024.04-2.AICAS2024](./2024.04-2.AICAS2024) | AICAS 2024大挑战：通用算力大模型推理性能软硬协同优化挑战赛 | | R5/R28 | R1/R12 | R16 | ✨ | https://tianchi.aliyun.com/competition/entrance/532170/introduction |
 ---
 
