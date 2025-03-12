@@ -2,7 +2,7 @@
 # https://www.python.org/ftp/python/3.7.4/python-3.7.4-macosx10.9.pkg
 
 pandas==1.1.5
-numpy==1.19.5
+numpy==1.22.0
 # https://files.pythonhosted.org/packages/a6/b7/c0594c698c7149bfe738724ab9ab3722dca3a4a43823468fe9481abe4016/numpy-1.19.5-cp38-cp38-macosx_10_9_x86_64.whl
 # ERROR: numpy-1.19.5-cp38-cp38-macosx_10_9_x86_64.whl is not a supported wheel on this platform.
 # https://pypi.org/project/numpy/1.19.5/#files
