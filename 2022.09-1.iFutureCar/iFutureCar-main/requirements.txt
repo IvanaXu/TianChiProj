@@ -1,6 +1,6 @@
 tensorboardX==2.5.1
 memory-profiler==0.60.0
-numpy==1.21.5
+numpy==1.22.0
 gym==0.22.0
 torch>=1.9.0
 cvxpy==1.2.1
